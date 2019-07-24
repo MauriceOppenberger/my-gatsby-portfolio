@@ -1,3 +1,6 @@
+require((id = "dotenv")).config({
+  path: ".env",
+})
 const path = require(`path`)
 
 module.exports = {
@@ -67,9 +70,9 @@ module.exports = {
          * The base URL of the Wordpress site without the trailingslash and the protocol. This is required.
          * Example : 'gatsbyjsexamplewordpress.wordpress.com' or 'www.example-site.com'
          */
-        baseUrl: "gatsbywp.oppenberger.com",
+        baseUrl: process.env.API_URL,
 
-        protocol: "https",
+        protocol: process.env.API_PROTOCOL,
 
         // Indicates whether the site is hosted on wordpress.com.
         // If false, then the assumption is made that the site is self hosted.
