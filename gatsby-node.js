@@ -24,7 +24,20 @@ exports.createPages = async ({ graphql, actions }) => {
             id
             slug
             status
-            template
+            featured_media {
+              title
+              localFile {
+                childImageSharp {
+                  fluid(quality: 100, maxWidth: 500) {
+                    src
+                    srcSet
+                    aspectRatio
+                    sizes
+                    base64
+                  }
+                }
+              }
+            }
             title
             content
             template
@@ -54,7 +67,7 @@ exports.createPages = async ({ graphql, actions }) => {
             id
             slug
             title
-            excerpt
+
             content
             featured_media {
               title
@@ -72,6 +85,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
             acf {
               url
+              excerpt
             }
           }
         }
@@ -96,12 +110,27 @@ exports.createPages = async ({ graphql, actions }) => {
   const portfolioUnderContentTemplate = path.resolve(
     `./src/templates/portfolioUnderContent.js`
   )
+  const contactTemplate = path.resolve(`./src/templates/contact.js`)
+
+  // allWordpressPage.edges.forEach(edge => {
+  //   createPage({
+  //     path: `/${edge.node.slug}/`,
+  //     component: slash(
+  //       edge.node.template === "portfolio_under_content.php"
+  //         ? portfolioUnderContentTemplate
+  //         : pageTemplate
+  //     ),
+  //     context: edge.node,
+  //   })
+  // })
 
   allWordpressPage.edges.forEach(edge => {
     createPage({
       path: `/${edge.node.slug}/`,
       component: slash(
-        edge.node.template === "portfolio_under_content.php"
+        edge.node.template === "contact.php"
+          ? contactTemplate
+          : edge.node.template === "portfolio_under_content.php"
           ? portfolioUnderContentTemplate
           : pageTemplate
       ),

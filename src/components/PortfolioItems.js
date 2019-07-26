@@ -11,7 +11,7 @@ const PortfolioItemsWrapper = styled.div`
     padding: 4rem 0;
   }
   .center {
-    width: 100%;
+    width: 90%;
     margin: 3rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -30,7 +30,7 @@ const PortfolioItemsWrapper = styled.div`
   @media screen and (min-width: 1200px) {
     .center {
       width: 100%;
-      max-width: 1170px;
+      /* max-width: 1170px; */
     }
   }
 `
@@ -44,7 +44,9 @@ const PortfolioItems = () => {
             id
             slug
             title
-            excerpt
+            acf {
+              excerpt
+            }
             date(formatString: "MMMM Do, Y")
             content
             featured_media {

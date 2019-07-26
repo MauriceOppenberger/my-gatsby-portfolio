@@ -2,8 +2,9 @@ import styled from "styled-components"
 
 export const PortfolioItemWrapper = styled.div`
   .blog {
-    /* box-shadow: var(--lightShadow); */
+    box-shadow: var(--lightShadow);
     transition: var(--mainTransition);
+    height: max-content;
   }
   .blog:hover {
     box-shadow: var(--darkShadow);

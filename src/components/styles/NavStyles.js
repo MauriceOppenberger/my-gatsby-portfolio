@@ -13,7 +13,7 @@ export const NavWrapper = styled.nav`
   display: none;
 
   .nav-active {
-    color: #d22e26;
+    color: #fff;
   }
 
   @media (min-width: 992px) {
@@ -35,7 +35,7 @@ export const NavWrapper = styled.nav`
     a {
       padding: 0 0 0 10px;
       transition: all 0.2s ease;
-      color: #212121;
+      color: #e4e4e4;
       text-decoration: none;
     }
 
@@ -53,7 +53,8 @@ export const NavWrapper = styled.nav`
   }
 
   ul li a:hover {
-    color: #d22e26;
+    /* color: #d22e26; */
+    color: #fff;
   }
 
   ul ul {

@@ -1,40 +1,38 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 
 import Header from "./Header"
 import Footer from "./Footer"
-import OverlayMenu from "./OverlayMenu"
+
 import SEO from "./seo"
 
 import "./layout.css"
 import "bootstrap/dist/css/bootstrap-grid.css"
-import Hamburger from "./Hamburger"
 
 const Primary = styled.main`
-  padding: 130px 0 0 0;
+  padding: 150px 0 0 0;
   margin: 0 auto;
+  min-height: calc(100vh - 9vh);
 
-  @media (min-width: 1200px) {
-    /* max-width: 1024px !important; */
+  @media (min-width: 1400px) {
+    max-width: 1370px !important;
   }
 `
 
 const Layout = ({ children }) => {
-  const [menuOpen, setMenuOpen] = useState(false)
+  // const [menuOpen, setMenuOpen] = useState(false)
 
-  const handleOverlayMenu = () => {
-    setMenuOpen(!menuOpen)
-  }
+  // const handleOverlayMenu = () => {
+  //   setMenuOpen(!menuOpen)
+  // }
   return (
     <>
       <SEO title="home" />
-      <Hamburger handleOverlayMenu={handleOverlayMenu} />
-      <OverlayMenu menuOpen={menuOpen} callback={handleOverlayMenu} />
       <Header />
       <Primary id="primary" className="container content-area">
-        <main id="main" className="site-main" role="main">
+        <section id="main" className="site-main" role="main">
           {children}
-        </main>
+        </section>
       </Primary>
       <Footer />
     </>

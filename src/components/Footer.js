@@ -39,7 +39,12 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <FooterMenu footerMenu={footer} />
+            <div className="footer-content">
+              <div className="copy">
+                <smaller>&#0169; 2019 || Maurice Oppenberger</smaller>
+              </div>
+              <FooterMenu footerMenu={footer} />
+            </div>
           </div>
         </div>
       </div>

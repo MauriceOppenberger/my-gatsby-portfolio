@@ -1,10 +1,13 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.footer`
-  background: #212121;
+  background: #000;
   color: #fff;
   text-align: center;
   padding: 40px 0;
+  /* position: sticky;
+  bottom: 0px;
+  width: 100%; */
 
   h1 {
     font-family: "Content", Arial;
@@ -20,15 +23,13 @@ export const FooterWrapper = styled.footer`
   }
   ul {
     margin: 0px;
-  }
-  li {
-    display: block;
+    display: flex;
   }
 
   a {
     text-decoration: none;
     color: #fff;
-    font-weight: 600;
+    font-size: unset;
     font-family: "Content", Arial, Helvetica, sans-serif;
   }
 
@@ -66,5 +67,48 @@ export const FooterWrapper = styled.footer`
 
   .facebook {
     margin-left: 5px;
+  }
+  @media screen and (min-width: 1025px) {
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    li {
+      display: block;
+      padding: 0px 10px;
+      border-right: 1px solid;
+      color: #e2e2e2;
+      margin: 0px;
+    }
+    li:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    li:nth-last-child(1) {
+      border-right: none;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      font-family: "Content", Arial, Helvetica, sans-serif;
+    }
+    li {
+      display: block;
+    }
+    .copy {
+      display: none;
+    }
   }
 `
