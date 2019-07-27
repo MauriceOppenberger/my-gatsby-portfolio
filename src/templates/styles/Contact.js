@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const ContactWrapper = styled.div`
   .center {
     width: 100%;
-    margin: 5rem auto 0;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 2rem;
@@ -22,23 +22,24 @@ export const ContactWrapper = styled.div`
       line-height: 2 !important;
       font-weight: 600;
       margin: 2rem auto 5rem;
+      font-size: 1rem;
     }
     .right {
-      max-width: 80%;
       margin-bottom: 5rem;
     }
   }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 767px) {
+    .blurb {
+      font-size: 0.9rem !important;
+    }
     .center {
-      width: 100%;
-      /* max-width: 1170px; */
+      margin: 5rem auto 0;
     }
   }
 
   .blurb {
     text-align: left;
-
+    font-size: 0.7rem;
     line-height: 1.5;
   }
   .blurb a {
@@ -52,6 +53,10 @@ export const ContactWrapper = styled.div`
     justify-content: center;
     margin: auto;
     width: inherit;
+    max-width: 80%;
+  }
+  .right p {
+    margin: 0px;
   }
   .right input {
     width: 100%;
@@ -68,11 +73,10 @@ export const ContactWrapper = styled.div`
     width: max-content;
     padding: 5px 25px;
     float: right;
-    margin-bottom: 1.45rem;
-    background-color: unset;
+    margin: 1.45rem auto;
+    background-color: #da1b60;
   }
   .right input.wpcf7-form-control.wpcf7-submit:hover {
-    background-color: #da1b60;
     color: #fff;
   }
 

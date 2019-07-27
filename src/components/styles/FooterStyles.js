@@ -4,7 +4,7 @@ export const FooterWrapper = styled.footer`
   background: #000;
   color: #fff;
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
   /* position: sticky;
   bottom: 0px;
   width: 100%; */
@@ -80,7 +80,7 @@ export const FooterWrapper = styled.footer`
       padding: 0px 10px;
       border-right: 1px solid;
       color: #e2e2e2;
-      margin: 0 0 1rem 0;
+      font-size: larger;
     }
     li:hover {
       color: #fff;
@@ -89,18 +89,22 @@ export const FooterWrapper = styled.footer`
     li:nth-last-child(1) {
       border-right: none;
     }
+    .copy {
+      font-size: smaller;
+    }
   }
 
   @media screen and (max-width: 993px) {
     position: sticky;
     bottom: 0px;
     width: 100%;
-    padding: 10px 0;
+    padding: 0px;
     background-image: linear-gradient(to left, #001c37, #820521);
 
     ul {
       display: flex;
       justify-content: space-evenly;
+      height: max-content;
     }
     a {
       text-decoration: none;
@@ -114,6 +118,7 @@ export const FooterWrapper = styled.footer`
       justify-content: center;
       align-items: center;
       margin: auto;
+      font-size: smaller;
     }
     .copy {
       display: none;
