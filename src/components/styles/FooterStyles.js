@@ -96,7 +96,7 @@ export const FooterWrapper = styled.footer`
     bottom: 0px;
     width: 100%;
     padding: 10px 0;
-    background-image: linear-gradient(to right, #001c37, #820521);
+    background-image: linear-gradient(to left, #001c37, #820521);
 
     ul {
       display: flex;
