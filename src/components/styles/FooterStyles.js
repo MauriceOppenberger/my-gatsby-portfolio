@@ -96,6 +96,8 @@ export const FooterWrapper = styled.footer`
     bottom: 0px;
     width: 100%;
     padding: 10px 0;
+    background-image: linear-gradient(to right, #001c37, #820521);
+
     ul {
       display: flex;
       justify-content: space-evenly;
@@ -103,7 +105,7 @@ export const FooterWrapper = styled.footer`
     a {
       text-decoration: none;
       color: #fff;
-      font-weight: 600;
+      font-weight: 400;
       font-family: "Content", Arial, Helvetica, sans-serif;
     }
     li {
