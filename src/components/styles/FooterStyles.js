@@ -22,14 +22,14 @@ export const FooterWrapper = styled.footer`
     margin-bottom: 10px;
   }
   ul {
-    margin: 0px;
+    margin: 0;
     display: flex;
+    justify-content: center;
   }
 
   a {
     text-decoration: none;
     color: #fff;
-    font-size: unset;
     font-family: "Content", Arial, Helvetica, sans-serif;
   }
 
@@ -68,18 +68,19 @@ export const FooterWrapper = styled.footer`
   .facebook {
     margin-left: 5px;
   }
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 994px) {
     .footer-content {
-      display: flex;
+      display: block;
       justify-content: space-between;
       align-items: center;
+      font-size: smaller;
     }
     li {
       display: block;
       padding: 0px 10px;
       border-right: 1px solid;
       color: #e2e2e2;
-      margin: 0px;
+      margin: 0 0 1rem 0;
     }
     li:hover {
       color: #fff;
@@ -90,10 +91,11 @@ export const FooterWrapper = styled.footer`
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 993px) {
     position: sticky;
     bottom: 0px;
     width: 100%;
+    padding: 10px 0;
     ul {
       display: flex;
       justify-content: space-evenly;
@@ -105,7 +107,11 @@ export const FooterWrapper = styled.footer`
       font-family: "Content", Arial, Helvetica, sans-serif;
     }
     li {
-      display: block;
+      display: flex;
+      height: 44px;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
     }
     .copy {
       display: none;

@@ -40,10 +40,10 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="footer-content">
-              <div className="copy">
-                <smaller>&#0169; 2019 || Maurice Oppenberger</smaller>
-              </div>
               <FooterMenu footerMenu={footer} />
+              <div className="copy">
+                <smaller> Maurice Oppenberger &#0169; 2019 </smaller>
+              </div>
             </div>
           </div>
         </div>

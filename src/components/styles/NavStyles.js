@@ -7,8 +7,8 @@ export const NavWrapper = styled.nav`
   /* position: absolute; */
   /* right: 0px; */
   font-family: "Content", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 700;
   letter-spacing: 1px;
   display: none;
 
@@ -17,12 +17,8 @@ export const NavWrapper = styled.nav`
   }
 
   @media (min-width: 992px) {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     display: inline-block;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 0.9rem;
   }
 
   ul li {

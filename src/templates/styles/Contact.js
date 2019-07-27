@@ -67,6 +67,7 @@ export const ContactWrapper = styled.div`
     padding: 5px 25px;
     float: right;
     margin-bottom: 1.45rem;
+    background-color: unset;
   }
   .right input.wpcf7-form-control.wpcf7-submit:hover {
     background-color: #da1b60;

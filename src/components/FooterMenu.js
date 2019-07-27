@@ -7,7 +7,7 @@ const FooterMenu = ({ footerMenu }) => {
       <ul>
         {footerMenu.items.map((item, i) => (
           <li key={i}>
-            <Link to={`/${item.object_slug}`}>{item.title}</Link>
+            <Link to={`/${item.object_slug}/`}>{item.title}</Link>
           </li>
         ))}
       </ul>

@@ -15,7 +15,7 @@ const Primary = styled.main`
   min-height: calc(100vh - 9vh);
 
   @media (min-width: 1400px) {
-    max-width: 1370px !important;
+    /* max-width: 1370px !important; */
   }
 `
 
