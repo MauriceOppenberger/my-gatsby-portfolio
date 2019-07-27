@@ -19,8 +19,13 @@ export const ContactWrapper = styled.div`
     }
     .blurb {
       padding-right: 15vw;
-      text-align: left !important;
       line-height: 2 !important;
+      font-weight: 600;
+      margin: 2rem auto 5rem;
+    }
+    .right {
+      max-width: 80%;
+      margin-bottom: 5rem;
     }
   }
 
@@ -32,14 +37,12 @@ export const ContactWrapper = styled.div`
   }
 
   .blurb {
-    text-align: justify;
-    margin: 2rem auto 5rem;
+    text-align: left;
 
     line-height: 1.5;
-    font-weight: 600;
   }
   .blurb a {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: underline;
     color: blue;
   }
@@ -49,7 +52,6 @@ export const ContactWrapper = styled.div`
     justify-content: center;
     margin: auto;
     width: inherit;
-    max-width: 80%;
   }
   .right input {
     width: 100%;
