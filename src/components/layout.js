@@ -10,8 +10,7 @@ import "./layout.css"
 import "bootstrap/dist/css/bootstrap-grid.css"
 
 const Primary = styled.main`
-  padding: 150px 0 0 0;
-  margin: 0 auto;
+  padding-top: 150px;
   min-height: calc(100vh - 9vh);
 
   @media (min-width: 1400px) {
