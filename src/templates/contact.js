@@ -27,7 +27,7 @@ const contact = ({ pageContext }) => (
             </p>
             <p>
               <label>
-                Email: <input type="text" name="email" />
+                Email: <input type="email" name="email" />
               </label>
             </p>
             <p>
