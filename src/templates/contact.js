@@ -18,12 +18,18 @@ const contact = ({ pageContext }) => (
             name="contact"
             method="POST"
             netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
             data-netlify="true"
           >
             <input type="hidden" name="form-name" value="contact" />
             <p class="hidden">
               <label>
                 Don’t fill this out if you're human: <input name="bot-field" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Name: <input type="text" name="name" />
               </label>
             </p>
             <p>

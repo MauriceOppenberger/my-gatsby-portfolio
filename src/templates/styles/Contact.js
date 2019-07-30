@@ -69,14 +69,14 @@ export const ContactWrapper = styled.div`
     border: 1px solid #820521;
     height: 130px;
   }
-  .right input.wpcf7-form-control.wpcf7-submit {
+  .right button {
     width: max-content;
     padding: 5px 25px;
     float: right;
     margin: 1.45rem auto;
     background-color: #da1b60;
   }
-  .right input.wpcf7-form-control.wpcf7-submit:hover {
+  .right button:hover {
     color: #fff;
   }
 
