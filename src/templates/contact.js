@@ -20,10 +20,10 @@ const contact = ({ pageContext }) => (
             netlify-honeypot="bot-field"
             data-netlify="true"
           >
-            <p class="hidden">
+            <p class="hidden" name="form-name" value="contact">
               <label>
                 Don’t fill this out if you're human:{" "}
-                <input name="bot-field" name="form-name" value="contact" />
+                <input name="bot-field" type="hidden" />
               </label>
             </p>
             <p>
