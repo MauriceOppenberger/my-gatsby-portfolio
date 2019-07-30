@@ -55,7 +55,7 @@ export const ContactWrapper = styled.div`
     width: inherit;
     max-width: 80%;
   }
-  .right p {
+  /* .right p {
     margin: 0px;
   }
   .right input {
@@ -79,6 +79,9 @@ export const ContactWrapper = styled.div`
   .right button:hover {
     color: #fff;
   }
+  .hidden {
+    display: none;
+  } */
 
   .inner {
     max-width: 90%;
