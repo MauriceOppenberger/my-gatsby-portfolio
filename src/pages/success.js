@@ -8,7 +8,6 @@ const Success = () => (
   <Layout>
     <SEO title="Success" />
     <h1>Thank you for submitting the form</h1>
-
     <Link to="/about-me">back to our site</Link>
   </Layout>
 )

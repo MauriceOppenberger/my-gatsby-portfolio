@@ -34,7 +34,7 @@ export default function ContactForm() {
       <ContactFormWrapper
         name="contact"
         method="POST"
-        // action="/success"
+        action="/success"
         netlify-honeypot="bot-field"
         data-netlify="true"
         onSubmit={handleSubmit}
