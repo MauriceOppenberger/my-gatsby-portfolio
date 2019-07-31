@@ -7,25 +7,46 @@ import { PortfolioWrapper } from "./styles/Portfolio"
 const portfolio = ({ pageContext }) => (
   <Layout>
     <PortfolioWrapper>
-      <h1>{pageContext.title}</h1>
       <div className="center">
-        <div className="left">
-          {pageContext.featured_media.title !== "default_fallback_image" ? (
+        <div className="project-media">
+          {pageContext.acf.prototype_url ? (
+            <iframe
+              width="100%"
+              height="500"
+              src={pageContext.acf.prototype_url}
+              frameborder="0"
+              allowfullscreen=""
+            ></iframe>
+          ) : pageContext.featured_media.title !== "default_fallback_image" ? (
             <Img
               fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
             />
           ) : null}
         </div>
-        <div className="right">
-          <div className="inner">
-            <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
-            <a
-              href={pageContext.acf.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Site
-            </a>
+        <div className="project-main">
+          <div className="project-inner">
+            <div className="project-title">
+              <h1>{pageContext.title}</h1>
+            </div>
+            <div className="project-details">
+              <p>Role: {pageContext.acf.role}</p>
+              <p>
+                Collaboration:{" "}
+                <a href={pageContext.acf.collaboration.team_member.url}>
+                  {pageContext.acf.collaboration.team_member.title}
+                </a>
+              </p>
+            </div>
+            <div className="project-content">
+              <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
+              <a
+                href={pageContext.acf.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site
+              </a>
+            </div>
           </div>
         </div>
       </div>

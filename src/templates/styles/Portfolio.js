@@ -1,27 +1,30 @@
 import styled from "styled-components"
 
 export const PortfolioWrapper = styled.div`
-  h1 {
-    text-align: center;
-  }
   .center {
     width: 100%;
-    margin: 3rem auto;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 2rem;
+    grid-column-gap: 0rem;
     grid-row-gap: 2rem;
+  }
+  .project-details {
+    text-align: left;
+  }
+  .project-media {
+    height: max-content;
+    margin: 2.5rem;
   }
 
   @media screen and (min-width: 992px) {
     .center {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 0.85fr 1.15fr;
     }
-    .links {
-      width: 60vw;
-    }
-    .left {
-      margin-top: 2.5rem;
+
+    .project-media {
+      position: sticky;
+      top: 30vmin;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -31,14 +34,7 @@ export const PortfolioWrapper = styled.div`
     }
   }
 
-  .right {
-    max-height: 500px;
-    overflow: scroll;
-  }
-  .right::-webkit-scrollbar {
-    display: none;
-  }
-  .inner {
+  .project-inner {
     max-width: 90%;
     margin: auto;
   }

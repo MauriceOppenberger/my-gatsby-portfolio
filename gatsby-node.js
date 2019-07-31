@@ -38,6 +38,22 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
               }
             }
+            acf {
+              social_media {
+                linkedin {
+                  title
+                  url
+                }
+                facebook {
+                  title
+                  url
+                }
+                github {
+                  title
+                  url
+                }
+              }
+            }
             title
             content
             template
@@ -86,6 +102,14 @@ exports.createPages = async ({ graphql, actions }) => {
             acf {
               url
               excerpt
+              prototype_url
+              role
+              collaboration {
+                team_member {
+                  title
+                  url
+                }
+              }
             }
           }
         }

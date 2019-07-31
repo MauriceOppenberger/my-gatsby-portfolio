@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.footer`
-  background: #eee;
+  background: #fff;
   color: #000;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
   /* position: sticky;
   bottom: 0px;
   width: 100%; */
@@ -75,7 +75,10 @@ export const FooterWrapper = styled.footer`
       align-items: center;
       font-size: smaller;
     }
-    li {
+    ul {
+      display: none;
+    }
+    /* li {
       display: block;
       padding: 0px 10px;
       border-right: 1px solid;
@@ -88,7 +91,7 @@ export const FooterWrapper = styled.footer`
     }
     li:nth-last-child(1) {
       border-right: none;
-    }
+    } */
     .copy {
       font-size: smaller;
     }

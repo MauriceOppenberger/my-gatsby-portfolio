@@ -40,9 +40,13 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="footer-content">
-              {/* <FooterMenu footerMenu={footer} /> */}
+              <FooterMenu footerMenu={footer} />
               <div className="copy">
-                <smaller> Maurice Oppenberger &#0169; 2019 </smaller>
+                <smaller>
+                  {" "}
+                  copyright &copy; Maurice Oppenberger{" "}
+                  {new Date().getFullYear()} all rights reserved{" "}
+                </smaller>
               </div>
             </div>
           </div>

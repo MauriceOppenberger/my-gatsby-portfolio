@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const ContactWrapper = styled.div`
   .center {
     width: 100%;
-    margin: 0 auto;
+    margin: 4rem auto 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 2rem;
@@ -24,16 +24,13 @@ export const ContactWrapper = styled.div`
       margin: 2rem auto 5rem;
       font-size: 1rem;
     }
-    .contact-form {
-      margin-bottom: 5rem;
-    }
   }
   @media screen and (min-width: 767px) {
     .blurb {
       font-size: 0.9rem !important;
     }
     .center {
-      margin: 5rem auto 0;
+      margin: 4rem auto 0;
     }
   }
 
@@ -48,22 +45,32 @@ export const ContactWrapper = styled.div`
     color: blue;
   }
 
-  .contact-form {
+  .social-media {
     display: block;
-    justify-content: center;
-    margin: auto;
+    /* justify-content: center; */
+    margin: 2rem 0;
     width: inherit;
     max-width: 80%;
   }
 
-  .inner {
-    max-width: 90%;
-    margin: 100%;
+  .social-media li {
+    display: flex;
+    margin: 2rem 0;
   }
+  .social-media a {
+    display: flex;
+    align-items: center;
+    word-spacing: 5px;
+  }
+  .social-media a strong {
+    margin: 0 10px;
+  }
+
   .profile-image {
     max-height: 700px;
     overflow: hidden;
     margin-top: auto;
+    border-bottom-right-radius: 200px;
   }
   .profile-image figure.wp-block-image {
     display: flex;

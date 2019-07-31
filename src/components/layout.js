@@ -12,7 +12,9 @@ import "bootstrap/dist/css/bootstrap-grid.css"
 
 const Primary = styled.main`
   padding-top: 150px;
-  min-height: calc(100vh - 5vh);
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+  min-height: calc(100vh - 11vh);
 
   @media (min-width: 1400px) {
     /* max-width: 1370px !important; */
@@ -29,7 +31,7 @@ const Layout = ({ children }) => {
     <>
       <SEO title="home" />
       <Header />
-      <Primary id="primary" className="container content-area">
+      <Primary id="primary" className="container-fluid content-area">
         <section id="main" className="site-main" role="main">
           {children}
         </section>

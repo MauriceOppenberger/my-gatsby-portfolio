@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const ModalWrapper = styled.div`
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -16,13 +16,16 @@ export const ModalWrapper = styled.div`
 `
 
 export const ButtonWrapper = styled.button`
-  background-color: #000;
+  /* background-color: #000; */
   position: fixed;
   z-index: 2;
-  right: 3vw;
+  right: 3vmax;
   color: #fff;
-  bottom: 3vw;
+  bottom: 3vmin;
   border-radius: 100px;
-  width: 80px;
-  height: 80px;
+  border: none;
+  width: 75px;
+  height: 75px;
+
+  margin-bottom: 4vh;
 `
