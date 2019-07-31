@@ -30,12 +30,14 @@ const portfolio = ({ pageContext }) => (
             </div>
             <div className="project-details">
               <p>Role: {pageContext.acf.role}</p>
-              <p>
-                Collaboration:{" "}
-                <a href={pageContext.acf.collaboration.team_member.url}>
-                  {pageContext.acf.collaboration.team_member.title}
-                </a>
-              </p>
+              {pageContext.acf.collaboration ? (
+                <p>
+                  Collaboration:{" "}
+                  <a href={pageContext.acf.collaboration.team_member.url}>
+                    {pageContext.acf.collaboration.team_member.title}
+                  </a>
+                </p>
+              ) : null}
             </div>
             <div className="project-content">
               <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
