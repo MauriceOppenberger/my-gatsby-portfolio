@@ -9,12 +9,12 @@ const contact = ({ pageContext }) => (
     <ContactWrapper>
       <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
       <div className="center">
-        <div className="left">
+        <div className="profile-image">
           <Img
             fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
           />
         </div>
-        <div className="right">
+        <div className="contact-form">
           <ContactForm />
         </div>
       </div>

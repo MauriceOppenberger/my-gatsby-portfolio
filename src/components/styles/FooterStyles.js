@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.footer`
-  background: #000;
-  color: #fff;
+  background: #eee;
+  color: #000;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   /* position: sticky;
   bottom: 0px;
   width: 100%; */

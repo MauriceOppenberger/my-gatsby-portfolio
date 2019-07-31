@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import Header from "./Header"
 import Footer from "./Footer"
+import ContactModal from "../components/ContactFormModal"
 
 import SEO from "./seo"
 
@@ -11,7 +12,7 @@ import "bootstrap/dist/css/bootstrap-grid.css"
 
 const Primary = styled.main`
   padding-top: 150px;
-  min-height: calc(100vh - 9vh);
+  min-height: calc(100vh - 5vh);
 
   @media (min-width: 1400px) {
     /* max-width: 1370px !important; */
@@ -33,6 +34,7 @@ const Layout = ({ children }) => {
           {children}
         </section>
       </Primary>
+      <ContactModal />
       <Footer />
     </>
   )

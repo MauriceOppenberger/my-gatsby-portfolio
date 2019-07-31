@@ -24,7 +24,7 @@ export const ContactWrapper = styled.div`
       margin: 2rem auto 5rem;
       font-size: 1rem;
     }
-    .right {
+    .contact-form {
       margin-bottom: 5rem;
     }
   }
@@ -48,55 +48,28 @@ export const ContactWrapper = styled.div`
     color: blue;
   }
 
-  .right {
+  .contact-form {
     display: block;
     justify-content: center;
     margin: auto;
     width: inherit;
     max-width: 80%;
   }
-  /* .right p {
-    margin: 0px;
-  }
-  .right input {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #820521;
-  }
-  .right textarea {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #820521;
-    height: 130px;
-  }
-  .right button {
-    width: max-content;
-    padding: 5px 25px;
-    float: right;
-    margin: 1.45rem auto;
-    background-color: #da1b60;
-  }
-  .right button:hover {
-    color: #fff;
-  }
-  .hidden {
-    display: none;
-  } */
 
   .inner {
     max-width: 90%;
     margin: 100%;
   }
-  .left {
+  .profile-image {
     max-height: 700px;
     overflow: hidden;
     margin-top: auto;
   }
-  .left figure.wp-block-image {
+  .profile-image figure.wp-block-image {
     display: flex;
     margin-bottom: 0px;
   }
-  .left figure.wp-block-image img {
+  .profile-image figure.wp-block-image img {
     margin-bottom: 0px;
   }
 `
