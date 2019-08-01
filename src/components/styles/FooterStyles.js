@@ -37,7 +37,9 @@ export const FooterWrapper = styled.footer`
     width: 100%;
     padding: 0px;
     height: 56px !important;
-    /* background-image: linear-gradient(to left, #001c37, #820521); */
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+
     background: rgba(255, 255, 255, 0.9);
     ul {
       display: flex;

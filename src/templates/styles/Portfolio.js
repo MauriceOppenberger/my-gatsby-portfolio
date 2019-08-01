@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const PortfolioWrapper = styled.div`
   .center {
     width: 100%;
-    margin: auto;
+    margin: auto auto 2.5rem auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 0rem;
@@ -32,11 +32,10 @@ export const PortfolioWrapper = styled.div`
       width: 100%;
       /* max-width: 1170px; */
     }
-  }
-
-  .project-inner {
-    max-width: 90%;
-    margin: auto;
+    .project-inner {
+      max-width: 95%;
+      margin: auto;
+    }
   }
 
   img {

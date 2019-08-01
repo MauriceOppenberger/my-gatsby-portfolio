@@ -19,7 +19,7 @@ const Primary = styled.main`
   /* height: 100vh; */
 
   @media screen and (max-width: 992px) {
-    padding: 150px 0 0px;
+    padding: 100px 0 0px;
   }
 
   @media (min-width: 1400px) {

@@ -29,4 +29,11 @@ export const HeaderWrapper = styled.header`
     width: 90px;
     height: auto;
   }
+  @media screen and (max-width: 992px) {
+    height: 56px;
+
+    .logo {
+      width: 40px;
+    }
+  }
 `
