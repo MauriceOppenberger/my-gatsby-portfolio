@@ -3,10 +3,10 @@ import styled from "styled-components"
 export const ContactWrapper = styled.div`
   .center {
     width: 100%;
-    margin: 4rem auto 0;
+    /* margin: 4rem auto 0; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 2rem;
+    grid-column-gap: 0rem;
     grid-row-gap: 2rem;
   }
 
@@ -18,7 +18,7 @@ export const ContactWrapper = styled.div`
       width: 60vw;
     }
     .blurb {
-      padding-right: 15vw;
+      /* padding-right: 15vw; */
       line-height: 2 !important;
       font-weight: 600;
       margin: 2rem auto 5rem;
@@ -30,14 +30,15 @@ export const ContactWrapper = styled.div`
       font-size: 0.9rem !important;
     }
     .center {
-      margin: 4rem auto 0;
+      /* margin: 4rem auto 0; */
     }
   }
 
   .blurb {
     text-align: left;
-    font-size: 0.7rem;
+    /* font-size: 0.7rem; */
     line-height: 1.5;
+    margin-bottom: 5rem;
   }
   .blurb a {
     /* text-transform: uppercase; */
@@ -48,9 +49,9 @@ export const ContactWrapper = styled.div`
   .social-media {
     display: block;
     /* justify-content: center; */
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
     width: inherit;
-    max-width: 80%;
+    /* max-width: 80%; */
   }
 
   .social-media li {

@@ -16,16 +16,80 @@ export const ModalWrapper = styled.div`
 `
 
 export const ButtonWrapper = styled.button`
-  /* background-color: #000; */
+  background-color: transparent;
   position: fixed;
   z-index: 2;
-  right: 3vmax;
+  right: 0;
   color: #fff;
-  bottom: 3vmin;
+  bottom: 56px;
   border-radius: 100px;
   border: none;
-  width: 75px;
-  height: 75px;
+  width: auto;
+  height: auto;
+  margin: 0 5vw 0 0;
+  padding: 16px 16px;
 
-  margin-bottom: 4vh;
+  :focus {
+    outline: none;
+  }
+  .modal {
+    width: 44px;
+    height: 44px;
+    /* right: 70px;
+    bottom: 0px; */
+    display: flex;
+    margin: auto;
+  }
+  .modal:hover {
+    cursor: pointer;
+  }
+  @media screen and (max-width: 992px) {
+    bottom: 56px;
+    width: auto;
+    height: auto;
+    padding: 16px 16px;
+    :focus {
+      outline: none;
+    }
+    .modal {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  @media screen and (max-width: 667px) {
+    bottom: 56px;
+    width: auto;
+    height: auto;
+    padding: 16px 16px;
+
+    :focus {
+      outline: none;
+    }
+    .modal {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  /* background: #f7f7f7;
+  height: 178px;
+  width: 100%;
+  margin: 25px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-left: 0px;
+
+  :before {
+    content: "";
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: -150px;
+    left: 0;
+    width: 95vw;
+    height: 275px;
+    border-bottom-right-radius: 150px;
+    border: 1px solid #ccc;
+  } */
 `

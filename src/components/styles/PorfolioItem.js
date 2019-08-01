@@ -24,9 +24,9 @@ export const PortfolioItemWrapper = styled.div`
   .contentContainer {
     margin: 1rem;
   }
-  .contentContainer p {
+  /* .contentContainer p {
     font-size: smaller;
-  }
+  } */
 
   .link {
     opacity: 1;

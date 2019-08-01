@@ -2,72 +2,19 @@ import styled from "styled-components"
 
 export const FooterWrapper = styled.footer`
   background: #fff;
-  color: #000;
+  color: #001c37;
   text-align: center;
-  padding: 20px 0;
+  /* padding: 10px 0; */
   /* position: sticky;
   bottom: 0px;
   width: 100%; */
+  height: 75px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 
-  h1 {
-    font-family: "Content", Arial;
-  }
-
-  h3 {
-    font-family: "Content", Arial;
-    font-size: 24px;
-    margin-bottom: 0px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-  }
-  ul {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  a {
-    text-decoration: none;
-    color: #fff;
-    font-family: "Content", Arial, Helvetica, sans-serif;
-  }
-
-  .social {
-    text-align: center;
-    display: block;
-    padding: 10px 0 0 0;
-  }
-
-  .social img {
-    width: 30px;
-    height: auto;
-    /* margin: 0 10px 0 0; */
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-
-  .contact {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .social img:hover {
-    opacity: 0.8;
-    cursor: pointer;
-  }
-
-  .linkedin {
-    margin-right: 5px;
-  }
-
-  .facebook {
-    margin-left: 5px;
-  }
   @media screen and (min-width: 994px) {
     .footer-content {
       display: block;
@@ -78,20 +25,7 @@ export const FooterWrapper = styled.footer`
     ul {
       display: none;
     }
-    /* li {
-      display: block;
-      padding: 0px 10px;
-      border-right: 1px solid;
-      color: #e2e2e2;
-      font-size: larger;
-    }
-    li:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-    li:nth-last-child(1) {
-      border-right: none;
-    } */
+
     .copy {
       font-size: smaller;
     }
@@ -102,22 +36,23 @@ export const FooterWrapper = styled.footer`
     bottom: 0px;
     width: 100%;
     padding: 0px;
-    background-image: linear-gradient(to left, #001c37, #820521);
-
+    height: 56px !important;
+    /* background-image: linear-gradient(to left, #001c37, #820521); */
+    background: rgba(255, 255, 255, 0.9);
     ul {
       display: flex;
       justify-content: space-evenly;
-      height: max-content;
+      margin: 0;
     }
     a {
       text-decoration: none;
-      color: #fff;
+      color: #001c37;
       font-weight: 400;
       font-family: "Content", Arial, Helvetica, sans-serif;
     }
     li {
       display: flex;
-      height: 44px;
+      padding: 16px 0;
       justify-content: center;
       align-items: center;
       margin: auto;

@@ -24,7 +24,7 @@ export const PortfolioWrapper = styled.div`
 
     .project-media {
       position: sticky;
-      top: 30vmin;
+      top: 90px;
     }
   }
   @media screen and (min-width: 1200px) {

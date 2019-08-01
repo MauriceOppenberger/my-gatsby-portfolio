@@ -11,7 +11,7 @@ const PortfolioItemsWrapper = styled.div`
     padding: 4rem 0;
   }
   .center {
-    width: 90%;
+    width: 100%;
     margin: 3rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -21,7 +21,7 @@ const PortfolioItemsWrapper = styled.div`
 
   @media screen and (min-width: 576px) {
     .center {
-      grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(24vw, 1fr));
     }
     .links {
       width: 60vw;

@@ -89,7 +89,7 @@ exports.createPages = async ({ graphql, actions }) => {
               title
               localFile {
                 childImageSharp {
-                  fluid(quality: 100, maxWidth: 500) {
+                  fluid(quality: 100, maxWidth: 800) {
                     src
                     srcSet
                     aspectRatio

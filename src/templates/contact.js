@@ -8,9 +8,9 @@ import { FaFacebookSquare, FaLinkedin, FaGithub } from "react-icons/fa"
 const contact = ({ pageContext }) => (
   <Layout>
     <ContactWrapper>
-      <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
       <div className="center">
         <div className="social-media">
+          <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
           <h3>Connect with me direct or via</h3>
           <ul>
             <li>
