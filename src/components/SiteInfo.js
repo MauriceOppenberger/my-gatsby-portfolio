@@ -6,7 +6,9 @@ const SiteInfoWrapper = styled.div`
   flex-grow: 1;
   margin: 0px;
 
-  h3,
+  h3 {
+    margin-bottom: 0.3rem;
+  }
   h5 {
     margin: 0;
   }

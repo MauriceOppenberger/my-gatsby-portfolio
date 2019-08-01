@@ -110,6 +110,10 @@ exports.createPages = async ({ graphql, actions }) => {
                   url
                 }
               }
+              client {
+                title
+                url
+              }
             }
           }
         }

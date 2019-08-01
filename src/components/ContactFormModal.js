@@ -18,7 +18,7 @@ export default function ContactModal() {
   return (
     <div>
       <ButtonWrapper type="button" onClick={handleOpen}>
-        <FaFeatherAlt color="#001c37" className="modal" />
+        <FaFeatherAlt color="#fff" className="modal" />
       </ButtonWrapper>
       <Modal
         aria-labelledby="contact-modal-title"

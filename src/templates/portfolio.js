@@ -11,7 +11,7 @@ const portfolio = ({ pageContext }) => (
         <div className="project-media">
           {pageContext.acf.prototype_url ? (
             <iframe
-              id={pageContext.title}
+              title={pageContext.title}
               width="100%"
               height="500"
               src={pageContext.acf.prototype_url}
@@ -30,17 +30,40 @@ const portfolio = ({ pageContext }) => (
               <h1>{pageContext.title}</h1>
             </div>
             <div className="project-details">
-              <p>Role: {pageContext.acf.role}</p>
+              {pageContext.acf.role ? (
+                <div className="role">
+                  <span>Role:</span>
+                  <span>{pageContext.acf.role}</span>
+                </div>
+              ) : null}
               {pageContext.acf.collaboration ? (
-                <p>
-                  Collaboration:{" "}
-                  <a href={pageContext.acf.collaboration.team_member.url}>
-                    {pageContext.acf.collaboration.team_member.title}
-                  </a>
-                </p>
+                <div className="team">
+                  <span> Collaboration:</span>
+                  <span>
+                    <a href={pageContext.acf.collaboration.team_member.url}>
+                      {pageContext.acf.collaboration.team_member.title}
+                    </a>
+                  </span>
+                </div>
+              ) : null}
+              {pageContext.acf.client ? (
+                <div className="client">
+                  <span>Client:</span>
+                  <span>
+                    <a
+                      href={pageContext.acf.client.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {pageContext.acf.client.title}
+                    </a>
+                  </span>
+                </div>
               ) : null}
             </div>
+
             <div className="project-content">
+              <div className="subtitle">Project discription</div>
               <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
               <a
                 href={pageContext.acf.url}
