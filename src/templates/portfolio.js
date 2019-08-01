@@ -29,16 +29,19 @@ const portfolio = ({ pageContext }) => (
             <div className="project-title">
               <h1>{pageContext.title}</h1>
             </div>
+            <div className="project-subtitle">
+              <h3>Project Details</h3>
+            </div>
             <div className="project-details">
               {pageContext.acf.role ? (
                 <div className="role">
-                  <span>Role:</span>
+                  <span>The Role:</span>
                   <span>{pageContext.acf.role}</span>
                 </div>
               ) : null}
               {pageContext.acf.collaboration ? (
                 <div className="team">
-                  <span> Collaboration:</span>
+                  <span> The Team:</span>
                   <span>
                     <a href={pageContext.acf.collaboration.team_member.url}>
                       {pageContext.acf.collaboration.team_member.title}
@@ -48,7 +51,7 @@ const portfolio = ({ pageContext }) => (
               ) : null}
               {pageContext.acf.client ? (
                 <div className="client">
-                  <span>Client:</span>
+                  <span>The Client:</span>
                   <span>
                     <a
                       href={pageContext.acf.client.url}
@@ -63,7 +66,9 @@ const portfolio = ({ pageContext }) => (
             </div>
 
             <div className="project-content">
-              <div className="subtitle">Project discription</div>
+              <div className="project-subtitle">
+                <h3>Project Discription</h3>
+              </div>
               <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
               <a
                 href={pageContext.acf.url}

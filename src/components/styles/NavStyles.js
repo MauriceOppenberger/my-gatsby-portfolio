@@ -23,7 +23,7 @@ export const NavWrapper = styled.nav`
 
   ul li {
     display: block;
-    margin: 0 10px 0 0;
+    margin: 0 30px 0 0;
     float: left;
     height: 30px; /* this should be the same as your #main-nav height */
     position: relative; /* this is needed in order to position sub menus */

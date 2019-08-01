@@ -9,43 +9,34 @@ export const PortfolioWrapper = styled.div`
     grid-column-gap: 0rem;
     grid-row-gap: 2rem;
   }
+  .project-title {
+    margin-bottom: 2rem;
+  }
   .project-details {
     text-align: left;
-    margin: 2rem auto;
+    margin: 1rem auto 3rem;
   }
   .project-details div {
-    margin: 1rem auto;
+    margin: 1rem auto 1.5rem;
     font-weight: 600;
-
-    font-size: 1rem;
+    font-size: 0.9rem;
+    display: grid;
+    grid-gap: 0.5rem;
   }
-  .role span:nth-child(1) {
+  .project-details div span:nth-child(1) {
     margin-right: 0.5rem;
   }
-  .role span:nth-child(2) {
+  .project-details div span:nth-child(2) {
     color: gray;
+    font-size: smaller;
   }
 
-  .team span:nth-child(1) {
-    margin-right: 0.5rem;
-  }
-  .team span:nth-child(2) {
-    color: gray;
-  }
-
-  .client span:nth-child(1) {
-    margin-right: 0.5rem;
-  }
-  .client span:nth-child(2) {
-    color: gray;
-  }
-
-  .project-content .subtitle {
+  .project-subtitle {
     margin: 1rem auto;
-    font-weight: 600;
+
     text-decoration: underline;
 
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
   }
 
   .project-media {
