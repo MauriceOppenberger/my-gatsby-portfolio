@@ -20,7 +20,8 @@ const portfolio = ({ pageContext }) => (
             ></iframe>
           ) : pageContext.featured_media.title !== "default_fallback_image" ? (
             <Img
-              fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
+              fixed={pageContext.featured_media.localFile.childImageSharp.fixed}
+              className="fixed-Img"
             />
           ) : null}
         </div>
@@ -67,7 +68,7 @@ const portfolio = ({ pageContext }) => (
 
             <div className="project-content">
               <div className="project-subtitle">
-                <h3>Project Discription</h3>
+                <h3>Project Description</h3>
               </div>
               <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
               <a

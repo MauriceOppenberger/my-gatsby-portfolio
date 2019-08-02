@@ -7,26 +7,23 @@ export const NavWrapper = styled.nav`
   /* position: absolute; */
   /* right: 0px; */
   font-family: "Content", Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 1px;
-  display: none;
+  /* display: none; */
+  padding: 0 15px;
 
   .nav-active {
     color: #fff;
   }
-
   @media (min-width: 992px) {
-    font-size: 0.8rem;
     display: inline-block;
   }
 
   ul li {
     display: block;
-    margin: 0 30px 0 0;
+    margin: 0 1vw 0 0;
     float: left;
-    height: 30px; /* this should be the same as your #main-nav height */
-    position: relative; /* this is needed in order to position sub menus */
 
     a {
       padding: 0 0 0 10px;
@@ -35,58 +32,20 @@ export const NavWrapper = styled.nav`
       text-decoration: none;
     }
 
-    span {
+    /* span {
       margin: 0 0 0 5px;
-    }
+    } */
   }
 
   ul li:last-child {
     margin: 0;
   }
 
-  ul li:hover > ul {
-    display: block; /* show sub menus when hovering over a parent */
-  }
-
   ul li a:hover {
     /* color: #d22e26; */
     color: #fff;
   }
-
-  ul ul {
-    animation: fadeInMenu 0.3s both ease-in;
-    display: none; /* hide all sub menus from view */
-    position: absolute;
-    left: 0;
-    margin: 0;
-    top: 30px; /* this should be the same height as the top level menu -- height + padding + borders */
-    padding: 5px 5px 10px 5px;
-    text-transform: none;
-    background: #fff; /* Old browsers */
-    -webkit-box-shadow: 0px 6px 23px -10px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 6px 23px -10px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 6px 23px -10px rgba(0, 0, 0, 0.5);
-  }
-
-  ul ul li {
-    /* this targets all submenu items */
-    width: auto; /* set to the width you want your sub menus to be. This needs to match the value we set below */
-    min-width: 170px;
-  }
-
-  ul ul li a {
-    /* target all sub menu item links */
-    padding: 5px 10px; /* give our sub menu links a nice button feel */
-    text-decoration: none;
-    white-space: nowrap;
-  }
-
-  @keyframes fadeInMenu {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  @media screen and (max-width: 390px) {
+    padding: 0px;
   }
 `

@@ -36,17 +36,17 @@ const Header = () => {
     <HeaderWrapper>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-1">
+          <div className="logoBox col-md-1">
             <Link to="/">
               <div className="logo">
                 <SiteLogo />
               </div>
             </Link>
           </div>
-          <div className="col-md-3">
+          <div className="siteInfo col-md-auto">
             <SiteInfo />
           </div>
-          <div className="col-md-7">
+          <div className="navBar col-md-auto">
             <MainMenu menu={menu} />
           </div>
         </div>

@@ -7,8 +7,10 @@ import SEO from "../components/seo"
 const Success = () => (
   <Layout>
     <SEO title="Success" />
-    <h1>Thank you for submitting the form</h1>
-    <Link to="/about-me">back to our site</Link>
+    <div className="container">
+      <h1>Thank you for submitting the form</h1>
+      <Link to="/about-me">continue browsing</Link>
+    </div>
   </Layout>
 )
 

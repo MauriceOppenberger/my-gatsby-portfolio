@@ -3,8 +3,10 @@ import Layout from "../components/layout"
 
 const post = ({ pageContext }) => (
   <Layout>
-    <h1>{pageContext.title}</h1>
-    <div dangerouslySetInnerHTML={{ __html: pageContext.content }}></div>
+    <div className="container">
+      <h1>{pageContext.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: pageContext.content }}></div>
+    </div>
   </Layout>
 )
 

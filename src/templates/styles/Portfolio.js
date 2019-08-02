@@ -28,7 +28,23 @@ export const PortfolioWrapper = styled.div`
   }
   .project-details div span:nth-child(2) {
     color: gray;
-    font-size: smaller;
+    /* font-size: smaller; */
+  }
+  .project-content h4 {
+    text-transform: uppercase;
+    color: gray;
+    padding-top: 1.45rem;
+  }
+  .project-content .wp-block-image {
+    text-align: center;
+  }
+  .project-content .wp-block-image img {
+    margin: auto;
+  }
+  .project-content .wp-block-image figcaption {
+    font-size: small;
+    color: gray;
+    text-transform: lowercase;
   }
 
   .project-subtitle {
@@ -40,8 +56,12 @@ export const PortfolioWrapper = styled.div`
   }
 
   .project-media {
-    height: max-content;
-    margin: 2.5rem;
+    height: initial;
+    margin: 0;
+  }
+  .project-media .fixed-Img {
+    width: 100%;
+    height: 42vh;
   }
 
   @media screen and (min-width: 992px) {
@@ -49,10 +69,25 @@ export const PortfolioWrapper = styled.div`
       grid-template-columns: 0.85fr 1.15fr;
     }
 
-    .project-media {
+    /* .project-media {
       position: sticky;
-      top: 90px;
-      padding-top: 5rem;
+      top: calc(115px + 8vw);
+    } */
+    .project-media iframe {
+      position: fixed;
+      left: 14vw;
+      width: auto;
+      top: 25vh;
+    }
+    .project-media .fixed-Img {
+      position: fixed !important;
+      width: 35vmax;
+      height: 30vw;
+      top: 155px;
+      left: 5vw;
+    }
+    .project-media {
+      margin: 2.5rem;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -61,7 +96,7 @@ export const PortfolioWrapper = styled.div`
       /* max-width: 1170px; */
     }
     .project-inner {
-      max-width: 95%;
+      max-width: 90%;
     }
   }
 

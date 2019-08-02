@@ -2,8 +2,12 @@ import styled from "styled-components"
 
 export const ContactFormWrapper = styled.form`
   p {
-    margin: 0px;
+    margin: 0.5rem 0;
   }
+  p:nth-child(n + 3):nth-child(-n + 4) {
+    width: 80%;
+  }
+
   input {
     width: 100%;
     padding: 5px;
@@ -20,10 +24,11 @@ export const ContactFormWrapper = styled.form`
     padding: 5px 25px;
     float: right;
     margin: 1.45rem auto;
-    background-color: #da1b60;
+    background-color: transparent;
+    border: 1px solid #820521;
   }
   button:hover {
-    color: #fff;
+    /* color: #001c37; */
   }
   .hidden {
     display: none;
