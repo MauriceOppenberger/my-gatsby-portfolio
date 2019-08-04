@@ -3,6 +3,7 @@ import Modal from "@material-ui/core/Modal"
 import ContactForm from "./ContactForm"
 import { ButtonWrapper, ModalWrapper } from "./styles/ContactFormModal"
 import { FaCommentDots } from "react-icons/fa"
+import { MdChat } from "react-icons/md"
 
 export default function ContactModal() {
   const [open, setOpen] = useState(false)
@@ -18,7 +19,7 @@ export default function ContactModal() {
   return (
     <div>
       <ButtonWrapper type="button" onClick={handleOpen}>
-        <FaCommentDots color="#001c37" className="modal" />
+        <MdChat color="#001c37" className="modal" />
       </ButtonWrapper>
       <Modal
         aria-labelledby="contact-modal-title"
@@ -28,7 +29,8 @@ export default function ContactModal() {
         contentLabel="Contact Form"
       >
         <ModalWrapper>
-          <h2 id="contact-modal-title">Let's get in touch</h2>
+          <h2 id="contact-modal-title">Hi there, </h2>
+          <h3>I'd love to hear from you!</h3>
           <div id="contact-modal-form">
             <ContactForm />
           </div>

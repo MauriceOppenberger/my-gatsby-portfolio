@@ -51,6 +51,10 @@ export const FooterWrapper = styled.footer`
       color: #001c37;
       font-weight: 400;
       font-family: "Content", Arial, Helvetica, sans-serif;
+      line-height: 0.5;
+    }
+    li p {
+      font-size: smaller;
     }
     li {
       display: flex;
@@ -58,7 +62,7 @@ export const FooterWrapper = styled.footer`
       justify-content: center;
       align-items: center;
       margin: auto;
-      font-size: smaller;
+      font-size: small;
     }
     .copy {
       display: none;

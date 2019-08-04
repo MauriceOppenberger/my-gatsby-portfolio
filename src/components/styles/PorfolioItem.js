@@ -22,7 +22,7 @@ export const PortfolioItemWrapper = styled.div`
     opacity: 0.3;
   }
   .contentContainer {
-    margin: 1rem;
+    margin: 1rem !important;
   }
   /* .contentContainer p {
     font-size: smaller;
@@ -44,5 +44,16 @@ export const PortfolioItemWrapper = styled.div`
   }
   .img-container:hover .link {
     opacity: 1;
+  }
+
+  @media screen and (min-width: 992px) {
+    .blog {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .contentContainer {
+      margin: auto;
+      max-width: 95%;
+    }
   }
 `

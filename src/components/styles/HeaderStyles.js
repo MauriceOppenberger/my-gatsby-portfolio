@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const HeaderWrapper = styled.header`
   /* background-color: #001c37; */
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   margin-bottom: 1.45rem;
   min-height: 56px;
   height: 9vw;
@@ -13,9 +13,9 @@ export const HeaderWrapper = styled.header`
   position: fixed;
   z-index: 999;
   width: 100%;
-  color: #fff;
+  color: #001c37;
   h3 {
-    color: #fff;
+    color: #001c37;
   }
   .menu {
     display: flex;

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FaUserAlt, FaRegFolder, FaHome } from "react-icons/fa"
+import { FaUserAlt, FaHome, FaCode } from "react-icons/fa"
+import { MdCode, MdHome, MdPerson } from "react-icons/md"
 
 const FooterMenu = ({ footerMenu }) => {
   return (
@@ -10,18 +11,18 @@ const FooterMenu = ({ footerMenu }) => {
           <li key={i}>
             {item.title === "About Me" ? (
               <Link to={`/${item.object_slug}/`}>
-                <FaUserAlt size={22} />
-                {item.title}
+                <MdPerson size={33} />
+                <p>{item.title}</p>
               </Link>
             ) : item.title === "Projects" ? (
               <Link to={`/${item.object_slug}/`}>
-                <FaRegFolder size={22} />
-                {item.title}
+                <MdCode size={33} />
+                <p>{item.title}</p>
               </Link>
             ) : item.title === "Home" ? (
               <Link to={`/${item.object_slug}/`}>
-                <FaHome size={22} />
-                {item.title}
+                <MdHome size={33} />
+                <p>{item.title}</p>
               </Link>
             ) : null}
           </li>

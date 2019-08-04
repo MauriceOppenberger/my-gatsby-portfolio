@@ -39,8 +39,8 @@ export const ButtonWrapper = styled.button`
     outline: none;
   }
   .modal {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
 
     display: flex;
     margin: auto;
