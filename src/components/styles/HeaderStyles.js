@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const HeaderWrapper = styled.header`
-  /* background-image: linear-gradient(to right, #001c37, #820521); */
-  background-color: #001c37;
+  /* background-color: #001c37; */
+  background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 1.45rem;
   min-height: 56px;
   height: 9vw;

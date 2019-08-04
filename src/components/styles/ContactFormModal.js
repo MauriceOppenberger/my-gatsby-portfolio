@@ -21,7 +21,8 @@ export const ModalWrapper = styled.div`
 `
 
 export const ButtonWrapper = styled.button`
-  background-color: #001c37;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: transparent;
   position: fixed;
   z-index: 2;
   right: 0;
@@ -65,7 +66,7 @@ export const ButtonWrapper = styled.button`
     width: auto;
     height: auto;
     padding: 16px 16px;
-    margin: 0 16px 16px 0;
+    /* margin: 0 16px 16px 0; */
 
     :focus {
       outline: none;

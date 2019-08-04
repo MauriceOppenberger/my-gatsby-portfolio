@@ -2,7 +2,8 @@ import styled from "styled-components"
 
 export const NavWrapper = styled.nav`
   /* margin: 5px 0 10px 0; just to give some spacing */
-  color: #212121;
+  /* color: #212121; */
+  color: #001c37;
   text-transform: uppercase;
   /* position: absolute; */
   /* right: 0px; */
@@ -10,11 +11,11 @@ export const NavWrapper = styled.nav`
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 1px;
-  /* display: none; */
+  display: none;
   padding: 0 15px;
 
   .nav-active {
-    color: #fff;
+    color: #000;
   }
   @media (min-width: 992px) {
     display: inline-block;
@@ -28,7 +29,7 @@ export const NavWrapper = styled.nav`
     a {
       padding: 0 0 0 10px;
       transition: all 0.2s ease;
-      color: #e4e4e4;
+      color: #001c37;
       text-decoration: none;
     }
 
@@ -43,7 +44,7 @@ export const NavWrapper = styled.nav`
 
   ul li a:hover {
     /* color: #d22e26; */
-    color: #fff;
+    color: #000;
   }
   @media screen and (max-width: 390px) {
     padding: 0px;

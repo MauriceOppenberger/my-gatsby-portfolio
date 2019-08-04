@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Modal from "@material-ui/core/Modal"
 import ContactForm from "./ContactForm"
 import { ButtonWrapper, ModalWrapper } from "./styles/ContactFormModal"
-import { FaFeatherAlt } from "react-icons/fa"
+import { FaCommentDots } from "react-icons/fa"
 
 export default function ContactModal() {
   const [open, setOpen] = useState(false)
@@ -18,7 +18,7 @@ export default function ContactModal() {
   return (
     <div>
       <ButtonWrapper type="button" onClick={handleOpen}>
-        <FaFeatherAlt color="#fff" className="modal" />
+        <FaCommentDots color="#001c37" className="modal" />
       </ButtonWrapper>
       <Modal
         aria-labelledby="contact-modal-title"
