@@ -8,11 +8,12 @@ export const NavWrapper = styled.nav`
   /* position: absolute; */
   /* right: 0px; */
   font-family: "Content", Arial, Helvetica, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 1px;
   display: none;
   padding: 0 15px;
+  background-color: rgba(255, 255, 255, 0.9);
 
   .nav-active {
     color: #000;

@@ -83,15 +83,13 @@ exports.createPages = async ({ graphql, actions }) => {
             id
             slug
             title
-
             content
             featured_media {
               title
               localFile {
                 childImageSharp {
-                  fixed(width: 2000, height: 2000) {
+                  fixed(width: 1000, height: 1000) {
                     src
-
                     base64
                   }
                 }

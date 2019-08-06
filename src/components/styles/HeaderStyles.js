@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const HeaderWrapper = styled.header`
   /* background-color: #001c37; */
-  background-color: rgba(255, 255, 255, 0.9);
+  /* background-color: rgba(255, 255, 255, 0.9); */
   margin-bottom: 1.45rem;
   min-height: 56px;
   height: 9vw;
@@ -30,6 +30,7 @@ export const HeaderWrapper = styled.header`
   .navBar {
     width: max-content;
   }
+
   .navBar {
     margin-left: auto;
     /* padding-right: 15px; */
@@ -40,7 +41,7 @@ export const HeaderWrapper = styled.header`
     max-width: 1800px;
   }
   .logo {
-    width: 90px;
+    width: 75px;
     height: auto;
   }
   @media screen and (max-width: 992px) {
