@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import Modal from "@material-ui/core/Modal"
 import ContactForm from "./ContactForm"
 import { ButtonWrapper, ModalWrapper } from "./styles/ContactFormModal"
-import { FaCommentDots } from "react-icons/fa"
 import { MdChat } from "react-icons/md"
 
 export default function ContactModal() {
