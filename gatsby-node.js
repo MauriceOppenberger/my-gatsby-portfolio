@@ -77,7 +77,7 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-      allWordpressWpPortfolio {
+      allWordpressWpPortfolio(sort: { fields: date, order: DESC }) {
         edges {
           node {
             id
@@ -88,7 +88,7 @@ exports.createPages = async ({ graphql, actions }) => {
               title
               localFile {
                 childImageSharp {
-                  fixed(width: 1000, height: 1000) {
+                  fixed(width: 800, height: 800) {
                     src
                     base64
                   }

@@ -41,7 +41,7 @@ const SiteInfo = () => {
         <h3>{info.name}</h3>
       </div>
       <div>
-        <h5>{info.description}</h5>
+        <h5 dangerouslySetInnerHTML={{ __html: info.description }} />
       </div>
     </SiteInfoWrapper>
   )

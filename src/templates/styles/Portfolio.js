@@ -6,7 +6,7 @@ export const PortfolioWrapper = styled.div`
     margin: auto auto 2.5rem auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 0rem;
+    grid-column-gap: 1rem;
     grid-row-gap: 2rem;
   }
   .project-title {
@@ -17,11 +17,17 @@ export const PortfolioWrapper = styled.div`
     margin: 1rem auto 3rem;
   }
   .project-details div {
-    margin: 1rem auto 1.5rem;
+    margin: 0.75rem auto;
     font-weight: 600;
-    font-size: 0.9rem;
-    display: grid;
+    font-size: smaller;
+    /* display: grid; */
     grid-gap: 0.5rem;
+  }
+  .project-details div a {
+    text-decoration: underline;
+  }
+  .project-details div a:hover {
+    color: blue;
   }
   .project-details div span:nth-child(1) {
     margin-right: 0.5rem;
@@ -58,7 +64,9 @@ export const PortfolioWrapper = styled.div`
   .project-media {
     height: initial;
     margin: 0;
+    margin-bottom: 2rem;
   }
+
   .project-media .fixed-Img {
     width: 100%;
     height: 42vh;
@@ -69,15 +77,13 @@ export const PortfolioWrapper = styled.div`
       grid-template-columns: 0.85fr 1.15fr;
     }
 
-    /* .project-media {
-      position: sticky;
-      top: calc(115px + 8vw);
-    } */
     .project-media iframe {
       position: fixed;
-      left: 14vw;
-      width: auto;
-      top: 25vh;
+      right: 65vw;
+      width: 360px;
+      /* width: auto; */
+      top: 15vh;
+      margin-top: 0rem;
     }
     .project-media .fixed-Img {
       position: fixed !important;

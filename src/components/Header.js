@@ -31,17 +31,18 @@ const Header = () => {
       }
     }
   `)
-  // < div className = "logoBox col-md-1" >
-  //   <Link to="/">
-  //     <div className="logo">
-  //       <SiteLogo />
-  //     </div>
-  //   </Link>
-  //       </div >
+
   return (
     <HeaderWrapper>
       <div className="container-fluid">
         <div className="row">
+          <div className="logoBox col-md-1">
+            <Link to="/">
+              <div className="logo">
+                <SiteLogo />
+              </div>
+            </Link>
+          </div>
           <div className="siteInfo col-md-auto">
             <SiteInfo />
           </div>
