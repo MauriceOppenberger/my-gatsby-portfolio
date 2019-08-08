@@ -16,7 +16,7 @@ const portfolio = ({ pageContext }) => (
               <iframe
                 title={pageContext.title}
                 width="100%"
-                height="736px"
+                height="650px"
                 src={pageContext.acf.prototype_url}
                 frameborder="0"
                 allowfullscreen=""
@@ -85,7 +85,7 @@ const portfolio = ({ pageContext }) => (
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <p>take a look at the live site</p>
+                    <p>visit: {pageContext.acf.client.url}</p>
                   </a>
                 ) : null}
               </div>

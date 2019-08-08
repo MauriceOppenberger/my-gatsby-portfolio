@@ -14,7 +14,7 @@ const contact = ({ pageContext }) => (
         <div className="center">
           <div className="social-media">
             <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
-            <h4>find me on </h4>
+            <strong>get in touch via</strong>
             <ul>
               <li>
                 <a

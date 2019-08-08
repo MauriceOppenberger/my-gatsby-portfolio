@@ -83,10 +83,10 @@ export const PortfolioWrapper = styled.div`
 
     .project-media iframe {
       position: fixed;
-      right: 65vw;
-      width: 360px;
-      /* width: auto; */
-      top: 15vh;
+      right: 60vw;
+      width: 35vw;
+
+      top: 20vmin;
       margin-top: 0rem;
     }
     .project-media .fixed-Img {

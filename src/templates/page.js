@@ -9,19 +9,28 @@ export const PageWrapper = styled.div`
   .blurb {
     line-height: 2 !important;
     font-weight: 600;
-    margin: 2rem 0 5rem;
-    font-size: 0.9rem;
+    /* margin: 2rem 0; */
+    font-size: 1rem;
+  }
+  .blurb a {
+    color: blue;
+    text-decoration: underline;
   }
   @media screen and (min-width: 992px) {
+    h1 {
+      max-width: 42%;
+    }
     .blurb {
-      max-width: 80%;
+      max-width: 75%;
     }
   }
   .status {
     font-size: 2rem;
     color: green;
-    margin: 4rem 0;
+    margin: 6rem 0;
     line-height: 1.5;
+    font-weight: 700;
+    /* text-align: center; */
     max-width: 90%;
   }
   .contact {
@@ -36,7 +45,11 @@ export const PageWrapper = styled.div`
     text-decoration: underline;
   }
 `
-
+// < div className = "projects" >
+//   <h5>
+//     check out my latest <Link to="/projects">projects</Link>
+//   </h5>
+//       </div >
 const page = ({ pageContext }) => (
   <Layout>
     <SEO title="Homepage" />
@@ -45,13 +58,9 @@ const page = ({ pageContext }) => (
         <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
 
         <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
+
         <div className="contact">
           <ContactForm />
-        </div>
-        <div className="projects">
-          <h3>
-            check out my latest <Link to="/projects">projects</Link>
-          </h3>
         </div>
       </PageWrapper>
     </div>
