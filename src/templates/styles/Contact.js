@@ -5,9 +5,9 @@ export const ContactWrapper = styled.div`
     width: 100%;
     /* margin: 4rem auto 0; */
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-column-gap: 0rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 0rem;
   }
 
   @media screen and (min-width: 992px) {
@@ -32,6 +32,10 @@ export const ContactWrapper = styled.div`
     .center {
       /* margin: 4rem auto 0; */
     }
+    .social-media ul {
+      display: flex !important;
+      margin-left: 0;
+    }
   }
 
   .blurb {
@@ -54,7 +58,7 @@ export const ContactWrapper = styled.div`
     /* max-width: 80%; */
   }
   .social-media ul {
-    display: flex;
+    display: block;
     margin-left: 0;
   }
 
