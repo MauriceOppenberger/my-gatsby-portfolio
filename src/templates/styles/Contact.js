@@ -8,11 +8,13 @@ export const ContactWrapper = styled.div`
     grid-template-columns: 100%;
     grid-column-gap: 0rem;
     grid-row-gap: 0rem;
+    height: auto;
   }
 
   @media screen and (min-width: 992px) {
     .center {
-      grid-template-columns: 1.3fr 0.7fr;
+      grid-template-columns: 1.2fr 0.8fr;
+      height: 73vh !important;
     }
     .links {
       width: 60vw;
@@ -64,7 +66,7 @@ export const ContactWrapper = styled.div`
 
   .social-media li {
     display: flex;
-    margin: 1rem 2rem 1rem 0;
+    margin: 1.45rem 1.45rem 1rem 0;
   }
   .social-media a {
     display: flex;

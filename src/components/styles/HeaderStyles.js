@@ -5,7 +5,7 @@ export const HeaderWrapper = styled.header`
   background-color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2rem;
   min-height: 56px;
-  height: 9vw;
+  height: 9vmin;
   max-height: 110px;
   /* border-bottom: 1px solid #e7e7e7; */
   display: flex;

@@ -58,7 +58,7 @@ export const FooterWrapper = styled.footer`
     }
     li {
       display: flex;
-      padding: 16px 0;
+
       justify-content: center;
       align-items: center;
       margin: auto;

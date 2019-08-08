@@ -23,9 +23,7 @@ export const PortfolioWrapper = styled.div`
     /* display: grid; */
     grid-gap: 0.5rem;
   }
-  .project-details div a {
-    text-decoration: underline;
-  }
+
   .project-details div a:hover {
     color: blue;
   }
@@ -78,13 +76,13 @@ export const PortfolioWrapper = styled.div`
 
   @media screen and (min-width: 992px) {
     .center {
-      grid-template-columns: 0.85fr 1.15fr;
+      grid-template-columns: 0.9fr 1.1fr;
     }
 
     .project-media iframe {
       position: fixed;
-      right: 60vw;
-      width: 35vw;
+      right: 57vw;
+      width: 37vw;
 
       top: 20vmin;
       margin-top: 0rem;
