@@ -50,7 +50,10 @@ const portfolio = ({ pageContext }) => (
                   <div className="team">
                     <span>Team:</span>
                     <span>
-                      <a href={pageContext.acf.collaboration.team_member.url}>
+                      <a
+                        href={pageContext.acf.collaboration.team_member.url}
+                        rel={pageContext.acf.collaboration.team_member.title}
+                      >
                         {pageContext.acf.collaboration.team_member.title}
                       </a>
                     </span>

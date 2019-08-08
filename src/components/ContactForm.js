@@ -63,7 +63,9 @@ export default function ContactForm() {
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button name="button" type="submit">
+            Send
+          </button>
         </p>
       </ContactFormWrapper>
     </>
