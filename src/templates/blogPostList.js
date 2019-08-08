@@ -2,10 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import { Pagination, PageNumberWrapper } from "./styles/BlogPostList"
+import SEO from "../components/seo"
 
 const blogPostList = ({ pageContext }) => {
   return (
     <Layout>
+      <SEO title="Posts" />
       <div className="container">
         {pageContext.posts.map(post => (
           <div key={post.node.wordpress_id} style={{ margin: "1rem 0 3rem" }}>

@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FaUserAlt, FaHome, FaCode } from "react-icons/fa"
 import { MdCode, MdHome, MdPerson } from "react-icons/md"
 
 const FooterMenu = ({ footerMenu }) => {

@@ -12,7 +12,7 @@ export const ContactWrapper = styled.div`
 
   @media screen and (min-width: 992px) {
     .center {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1.3fr 0.7fr;
     }
     .links {
       width: 60vw;
@@ -53,10 +53,14 @@ export const ContactWrapper = styled.div`
     width: inherit;
     /* max-width: 80%; */
   }
+  .social-media ul {
+    display: flex;
+    margin-left: 0;
+  }
 
   .social-media li {
     display: flex;
-    margin: 2rem 0;
+    margin: 1rem 2rem 1rem 0;
   }
   .social-media a {
     display: flex;
@@ -75,9 +79,6 @@ export const ContactWrapper = styled.div`
   }
   .profile-image figure.wp-block-image {
     display: flex;
-    margin-bottom: 0px;
-  }
-  .profile-image figure.wp-block-image img {
     margin-bottom: 0px;
   }
 `

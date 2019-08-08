@@ -28,8 +28,8 @@ export default function ContactModal() {
         contentLabel="Contact Form"
       >
         <ModalWrapper>
-          <h2 id="contact-modal-title">Hi there, </h2>
-          <h3>I'd love to hear from you!</h3>
+          <h1 id="contact-modal-title">Hi there, </h1>
+          <h3> i would love to hear from you!</h3>
           <div id="contact-modal-form">
             <ContactForm />
           </div>

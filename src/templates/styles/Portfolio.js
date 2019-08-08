@@ -71,6 +71,10 @@ export const PortfolioWrapper = styled.div`
     width: 100%;
     height: 42vh;
   }
+  a p {
+    color: blue;
+    text-decoration: underline;
+  }
 
   @media screen and (min-width: 992px) {
     .center {

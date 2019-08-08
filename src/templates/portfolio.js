@@ -1,11 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 
 import { PortfolioWrapper } from "./styles/Portfolio"
 
 const portfolio = ({ pageContext }) => (
   <Layout>
+    <SEO title={pageContext.title} />
     <PortfolioWrapper>
       <div className="container-fluid">
         <div className="center">
@@ -77,13 +79,15 @@ const portfolio = ({ pageContext }) => (
                 <div
                   dangerouslySetInnerHTML={{ __html: pageContext.content }}
                 />
-                <a
-                  href={pageContext.acf.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live Site
-                </a>
+                {pageContext.acf.url ? (
+                  <a
+                    href={pageContext.acf.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>take a look at the live site</p>
+                  </a>
+                ) : null}
               </div>
             </div>
           </div>

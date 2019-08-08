@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import ContactForm from "../components/ContactForm"
 import { Link } from "gatsby"
+import SEO from "../components/seo"
 
 export const PageWrapper = styled.div`
   .blurb {
@@ -38,6 +39,7 @@ export const PageWrapper = styled.div`
 
 const page = ({ pageContext }) => (
   <Layout>
+    <SEO title="Homepage" />
     <div className="container">
       <PageWrapper>
         <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
@@ -47,9 +49,9 @@ const page = ({ pageContext }) => (
           <ContactForm />
         </div>
         <div className="projects">
-          <h2>
+          <h3>
             check out my latest <Link to="/projects">projects</Link>
-          </h2>
+          </h3>
         </div>
       </PageWrapper>
     </div>

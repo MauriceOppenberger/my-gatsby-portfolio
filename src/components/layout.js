@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
   // }
   return (
     <>
-      <SEO title="home" />
+      <SEO />
       <Header />
       <Primary id="primary" className="container-fluid content-area">
         <section id="main" className="site-main" role="main">
