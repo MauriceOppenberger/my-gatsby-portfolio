@@ -63,8 +63,12 @@ export const PortfolioWrapper = styled.div`
     height: initial;
     margin: 0;
     margin-bottom: 2rem;
+    text-align: center;
   }
-
+  .project-media iframe {
+    height: 300px;
+    width: 70%;
+  }
   .project-media .fixed-Img {
     width: 100%;
     height: 42vh;
@@ -82,17 +86,17 @@ export const PortfolioWrapper = styled.div`
     .project-media iframe {
       position: fixed;
       right: 57vw;
-      width: 37vw;
-
+      height: 650px !important;
+      width: 37vw !important;
       top: 20vmin;
       margin-top: 0rem;
     }
     .project-media .fixed-Img {
       position: fixed !important;
-      width: 35vmax;
-      height: 30vw;
-      top: 155px;
-      left: 5vw;
+      width: 45vmax;
+      height: 33vw;
+      top: 170px;
+      left: 2vw;
     }
     .project-media {
       margin: 2.5rem;
@@ -110,6 +114,6 @@ export const PortfolioWrapper = styled.div`
 
   img {
     max-width: 100%;
-    max-height: 400px;
+    max-height: 500px;
   }
 `

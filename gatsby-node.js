@@ -88,7 +88,7 @@ exports.createPages = async ({ graphql, actions }) => {
               title
               localFile {
                 childImageSharp {
-                  fixed(width: 800, height: 800) {
+                  fixed(width: 1200) {
                     src
                     base64
                   }

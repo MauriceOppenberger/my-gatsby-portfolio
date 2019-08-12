@@ -16,9 +16,6 @@ const PortfolioItem = ({ portfolio }) => (
           ) : null}
         </div>
         <div className="contentContainer">
-          <div className="date">
-            <p>{portfolio.date}</p>
-          </div>
           <h2>{portfolio.title}</h2>
           {/* <div
             dangerouslySetInnerHTML={{
@@ -26,6 +23,9 @@ const PortfolioItem = ({ portfolio }) => (
             }}
           /> */}
           <p>{portfolio.acf.excerpt} &#123;...&#125;</p>
+          <div className="date">
+            <p>{portfolio.date}</p>
+          </div>
         </div>
       </div>
     </PortfolioItemWrapper>
