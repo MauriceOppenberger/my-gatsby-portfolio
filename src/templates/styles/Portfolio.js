@@ -23,6 +23,9 @@ export const PortfolioWrapper = styled.div`
     /* display: grid; */
     grid-gap: 0.5rem;
   }
+  .project-content ul li {
+    font-size: 0.9rem;
+  }
 
   .project-details div a:hover {
     color: blue;
