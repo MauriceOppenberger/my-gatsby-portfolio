@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import { PageWrapper } from "./styles/Page"
 import ContactForm from "../components/ContactForm"
-import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 // < div className = "projects" >

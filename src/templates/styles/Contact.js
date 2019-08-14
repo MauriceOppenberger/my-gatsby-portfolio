@@ -62,9 +62,9 @@ export const ContactWrapper = styled.div`
       z-index: 100;
       display: flex;
       flex-direction: column;
-      left: 0;
-      bottom: 56px;
-      margin: 0 0 0 1vw;
+      right: 0;
+      bottom: 20%;
+      margin: 0 3vw 0 0;
       padding: 0px 16px;
     }
     .social-media li {

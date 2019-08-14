@@ -19,7 +19,7 @@ export const PortfolioWrapper = styled.div`
   .project-details div {
     margin: 0.75rem auto;
     font-weight: 600;
-    font-size: smaller;
+    font-size: small;
     /* display: grid; */
     grid-gap: 0.5rem;
   }
