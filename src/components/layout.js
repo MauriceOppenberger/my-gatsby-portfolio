@@ -12,18 +12,12 @@ import "bootstrap/dist/css/bootstrap-grid.css"
 
 const Primary = styled.main`
   padding: 150px 0px 100px 0px;
-  /* padding-left: 5vw !important;
-  padding-right: 5vw !important; */
-  /* min-height: 100%; */
-  /* min-height: calc(100vh - 12vh); */
-  /* height: 100vh; */
+
+  min-height: 73vh !important;
 
   @media screen and (max-width: 992px) {
     padding: 75px 0px 0px 0px !important;
-  }
-
-  @media (min-width: 1400px) {
-    /* max-width: 1370px !important; */
+    min-height: 90vh !important;
   }
 `
 

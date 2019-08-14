@@ -36,7 +36,7 @@ export const ContactWrapper = styled.div`
   @media screen and (min-width: 992px) {
     .center {
       grid-template-columns: 0.7fr;
-      min-height: 73vh !important;
+
       /* width: 60vw; */
     }
 
