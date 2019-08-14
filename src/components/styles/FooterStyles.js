@@ -38,8 +38,8 @@ export const FooterWrapper = styled.footer`
     height: 56px !important;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    /* background: rgba(255, 255, 255, 0.9); */
-    background-color: #001c3f;
+    background: rgba(255, 255, 255, 0.9);
+
     ul {
       display: flex;
       justify-content: space-evenly;
@@ -47,7 +47,7 @@ export const FooterWrapper = styled.footer`
     }
     a {
       text-decoration: none;
-      color: #fff;
+      color: #001c3f;
       font-weight: 400;
       font-family: "Content", Arial, Helvetica, sans-serif;
       line-height: 0.5;
