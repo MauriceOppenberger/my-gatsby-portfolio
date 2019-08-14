@@ -22,7 +22,7 @@ export const PortfolioItemWrapper = styled.div`
     opacity: 0.3;
   }
   .contentContainer {
-    margin: auto 1rem !important;
+    margin: 1rem 1rem;
   }
   /* .contentContainer p {
     font-size: smaller;
@@ -52,7 +52,7 @@ export const PortfolioItemWrapper = styled.div`
       grid-template-columns: 1fr 1fr;
     }
     .contentContainer {
-      margin: auto;
+      margin: auto 1rem !important;
       max-width: 95%;
     }
     .date {

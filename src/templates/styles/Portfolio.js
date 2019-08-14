@@ -66,7 +66,7 @@ export const PortfolioWrapper = styled.div`
     text-align: center;
   }
   .project-media iframe {
-    height: 300px;
+    height: 500px;
     width: 70%;
   }
   .project-media .fixed-Img {

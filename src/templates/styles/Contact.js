@@ -13,6 +13,7 @@ export const ContactWrapper = styled.div`
 
   .stack {
     display: flex;
+
     align-items: center;
     justify-content: space-between;
     /* width: 90%; */
@@ -22,7 +23,7 @@ export const ContactWrapper = styled.div`
     margin-bottom: 2rem;
   }
   .stack .wp-block-column .wp-block-image figure img {
-    width: 80px;
+    width: 110px;
     height: auto;
     margin: 0;
   }
@@ -38,6 +39,7 @@ export const ContactWrapper = styled.div`
       min-height: 73vh !important;
       /* width: 60vw; */
     }
+
     .links {
       width: 60vw;
     }
