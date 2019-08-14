@@ -71,7 +71,7 @@ export const PortfolioWrapper = styled.div`
   }
   .project-media .fixed-Img {
     width: 100%;
-    height: 42vh;
+    height: 80vw;
   }
   a p {
     color: blue;
@@ -80,7 +80,7 @@ export const PortfolioWrapper = styled.div`
 
   @media screen and (min-width: 992px) {
     .center {
-      grid-template-columns: 0.9fr 1.1fr;
+      grid-template-columns: 0.8fr 1.2fr;
     }
 
     .project-media iframe {
@@ -93,10 +93,12 @@ export const PortfolioWrapper = styled.div`
     }
     .project-media .fixed-Img {
       position: fixed !important;
-      width: 45vmax;
-      height: 33vw;
+      width: 34vmax;
+      height: 29vmax;
       top: 170px;
-      left: 2vw;
+      right: 61%;
+      max-width: 100%;
+      max-height: 500px;
     }
     .project-media {
       margin: 2.5rem;
@@ -110,10 +112,5 @@ export const PortfolioWrapper = styled.div`
     .project-inner {
       max-width: 90%;
     }
-  }
-
-  img {
-    max-width: 100%;
-    max-height: 500px;
   }
 `

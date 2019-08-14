@@ -11,10 +11,32 @@ export const ContactWrapper = styled.div`
     height: auto;
   }
 
+  .stack {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 90%; */
+    height: 120px;
+  }
+  .stack:nth-last-child(1) {
+    margin-bottom: 2rem;
+  }
+  .stack .wp-block-column .wp-block-image figure img {
+    width: 80px;
+    height: auto;
+    margin: 0;
+  }
+  .gatsby-image-wrapper {
+    max-width: 400px;
+    margin: auto;
+    border-bottom-right-radius: 200px;
+  }
+
   @media screen and (min-width: 992px) {
     .center {
-      grid-template-columns: 1.2fr 0.8fr;
-      height: 73vh !important;
+      grid-template-columns: 0.7fr;
+      min-height: 73vh !important;
+      /* width: 60vw; */
     }
     .links {
       width: 60vw;
@@ -23,28 +45,68 @@ export const ContactWrapper = styled.div`
       /* padding-right: 15vw; */
       line-height: 2 !important;
       font-weight: 600;
-      margin: 2rem auto 5rem;
+      margin: 2rem auto 2rem;
       font-size: 1rem;
+    }
+    .profile-image {
+      position: absolute;
+      width: 400px;
+      right: 5vw;
+      bottom: 56px;
+    }
+    .social-media ul {
+      position: fixed;
+
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      left: 0;
+      bottom: 56px;
+      margin: 0 0 0 1vw;
+      padding: 0px 16px;
+    }
+    .social-media li {
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      margin: 1.45rem 0rem 1rem 0 !important;
+      padding: 1rem 0;
+    }
+    .social-media li a svg {
+      -webkit-transition: width, height 0.2s ease-out;
+      -moz-transition: width, height 0.2s ease-out;
+      -o-transition: width, height 0.2s ease-out;
+      transition: width, height 0.2s ease-out;
+    }
+    .social-media li a svg:hover {
+      width: 32px;
+      height: 32px;
     }
   }
   @media screen and (min-width: 767px) {
-    .blurb {
-      font-size: 0.9rem !important;
-    }
     .center {
       /* margin: 4rem auto 0; */
     }
-    .social-media ul {
+    /* .social-media ul {
       display: flex !important;
       margin-left: 0;
+    } */
+    .stack .wp-block-column .wp-block-image figure img {
+      width: 130px;
+      height: auto;
+      margin: 0;
+    }
+    .stack:nth-last-child(1) {
+      margin-bottom: 5rem;
     }
   }
 
   .blurb {
     text-align: left;
-    /* font-size: 0.7rem; */
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 2;
     margin-bottom: 5rem;
+    font-weight: 600;
   }
   .blurb a {
     /* text-transform: uppercase; */
@@ -59,9 +121,14 @@ export const ContactWrapper = styled.div`
     width: inherit;
     /* max-width: 80%; */
   }
-  .social-media ul {
-    display: block;
-    margin-left: 0;
+  @media screen and (max-width: 992px) {
+    .social-media ul {
+      display: flex;
+      margin: auto;
+      /* margin-left: 0; */
+      justify-content: space-evenly;
+      width: 80%;
+    }
   }
 
   .social-media li {
@@ -73,15 +140,11 @@ export const ContactWrapper = styled.div`
     align-items: center;
     word-spacing: 5px;
   }
-  .social-media a strong {
-    margin: 0 10px;
-  }
 
   .profile-image {
-    max-height: 700px;
+    height: auto;
     overflow: hidden;
     margin-top: auto;
-    border-bottom-right-radius: 200px;
   }
   .profile-image figure.wp-block-image {
     display: flex;

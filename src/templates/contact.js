@@ -13,8 +13,8 @@ const contact = ({ pageContext }) => (
       <ContactWrapper>
         <div className="center">
           <div className="social-media">
+            <h1>{pageContext.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
-            <strong>get in touch via</strong>
             <ul>
               <li>
                 <a
@@ -22,8 +22,7 @@ const contact = ({ pageContext }) => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin size={22} />
-                  <strong>{pageContext.acf.social_media.linkedin.title}</strong>
+                  <FaLinkedin size={26} />
                 </a>
               </li>
               <li>
@@ -32,8 +31,7 @@ const contact = ({ pageContext }) => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFacebookSquare size={22} />
-                  <strong>{pageContext.acf.social_media.facebook.title}</strong>
+                  <FaFacebookSquare size={26} />
                 </a>
               </li>
               <li>
@@ -42,8 +40,7 @@ const contact = ({ pageContext }) => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub size={22} />
-                  <strong>{pageContext.acf.social_media.github.title}</strong>
+                  <FaGithub size={26} />
                 </a>
               </li>
             </ul>
