@@ -8,7 +8,8 @@ export const ModalWrapper = styled.div`
   width: 35%;
   max-width: 650px;
   background-color: #fff;
-  /* border: 2px solid #000; */
+  border: 5px solid #001c3f;
+  border-radius: 10px;
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.2),
     0px 32px 52px 4px rgba(0, 0, 0, 0.14),
     0px 12px 62px 11px rgba(0, 0, 0, 0.12);

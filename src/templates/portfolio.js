@@ -31,14 +31,24 @@ const portfolio = ({ pageContext }) => (
               />
             ) : null}
           </div>
+
           <div className="project-main">
             <div className="project-inner">
               <div className="project-title">
                 <h1>{pageContext.title}</h1>
               </div>
-              <div className="project-subtitle">
-                <h3>Project Details</h3>
+
+              <div className="project-content">
+                {/* <div className="project-subtitle">
+                  <h3>Project Description</h3>
+                </div> */}
+                <div
+                  dangerouslySetInnerHTML={{ __html: pageContext.content }}
+                />
               </div>
+              {/* <div className="project-subtitle">
+                <h3>Project Details</h3>
+              </div> */}
               <div className="project-details">
                 {pageContext.acf.role ? (
                   <div className="role">
@@ -46,6 +56,7 @@ const portfolio = ({ pageContext }) => (
                     <span>{pageContext.acf.role}</span>
                   </div>
                 ) : null}
+
                 {pageContext.acf.collaboration ? (
                   <div className="team">
                     <span>Team:</span>
@@ -74,24 +85,15 @@ const portfolio = ({ pageContext }) => (
                   </div>
                 ) : null}
               </div>
-
-              <div className="project-content">
-                <div className="project-subtitle">
-                  <h3>Project Description</h3>
-                </div>
-                <div
-                  dangerouslySetInnerHTML={{ __html: pageContext.content }}
-                />
-                {pageContext.acf.url ? (
-                  <a
-                    href={pageContext.acf.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <p>visit: {pageContext.acf.client.url}</p>
-                  </a>
-                ) : null}
-              </div>
+              {pageContext.acf.url ? (
+                <a
+                  href={pageContext.acf.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>Learn more</p>
+                </a>
+              ) : null}
             </div>
           </div>
         </div>

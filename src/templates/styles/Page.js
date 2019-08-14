@@ -27,13 +27,13 @@ export const PageWrapper = styled.div`
     }
   }
   .status {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: green;
-    margin: 4rem 0 2rem;
+    margin: 4rem 0;
     line-height: 1.5;
     font-weight: 700;
     /* text-align: center; */
-    max-width: 90%;
+    max-width: 600px;
   }
   .contact {
     margin: 0 0 4rem;

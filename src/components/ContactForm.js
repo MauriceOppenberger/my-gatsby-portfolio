@@ -12,7 +12,7 @@ export default function ContactForm() {
   const [state, setState] = useState({})
 
   const handleChange = e => {
-    setState({ [e.target.name]: e.target.value })
+    setState({ ...state, [e.target.name]: e.target.value })
   }
 
   const handleSubmit = e => {
@@ -29,6 +29,7 @@ export default function ContactForm() {
       .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error))
   }
+  console.log(state)
   return (
     <>
       <ContactFormWrapper
@@ -53,7 +54,7 @@ export default function ContactForm() {
         </p>
         <p>
           <label>
-            Email: <input type="email" name="email" onChange={handleChange} />
+            Email: <input name="email" type="email" onChange={handleChange} />
           </label>
         </p>
         <p>
