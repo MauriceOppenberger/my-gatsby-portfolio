@@ -1,9 +1,6 @@
 import styled from "styled-components"
 
 export const PageWrapper = styled.div`
-  .about {
-    width: 90%;
-  }
   .blurb {
     line-height: 2 !important;
     font-weight: 600;
@@ -35,6 +32,9 @@ export const PageWrapper = styled.div`
     box-shadow: var(--darkShadow);
   }
   @media screen and (min-width: 992px) {
+    .about {
+      width: 90%;
+    }
     .blurb {
       max-width: 80%;
     }

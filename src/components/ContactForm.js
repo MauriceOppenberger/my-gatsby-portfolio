@@ -13,6 +13,8 @@ export default function ContactForm(props) {
 
   const handleChange = e => {
     setState({ ...state, [e.target.name]: e.target.value })
+  }
+  const setName = e => {
     props.getName(e.target.value)
   }
 
@@ -55,6 +57,7 @@ export default function ContactForm(props) {
               type="text"
               name="name"
               onChange={handleChange}
+              onKeyUp={setName}
               value={props.value}
             />
           </label>

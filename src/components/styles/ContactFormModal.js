@@ -24,6 +24,14 @@ export const ModalWrapper = styled.div`
   @media screen and (max-width: 1024px) {
     width: 90%;
   }
+  @media screen and (max-width: 992px) {
+    transform: translate(-50%, 0%);
+    width: 100%;
+    padding: 12px 12px;
+    h5 {
+      margin: auto;
+    }
+  }
 `
 
 export const ButtonWrapper = styled.button`
