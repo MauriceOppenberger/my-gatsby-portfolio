@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const ContactFormWrapper = styled.form`
   max-width: 600px;
-  margin-left: auto;
+  /* margin-left: auto; */
   p {
     margin: 0.5rem 0;
   }
@@ -26,8 +26,8 @@ export const ContactFormWrapper = styled.form`
   button {
     width: max-content;
     padding: 8px 25px;
-    float: right;
-    margin: 1.45rem auto;
+    display: flex;
+    margin: 1.45rem 0 0 auto;
     background-color: transparent;
     border: 1px solid #001c3f;
     border-radius: 5px;
@@ -38,5 +38,7 @@ export const ContactFormWrapper = styled.form`
   }
   .hidden {
     display: none;
+  }
+  @media screen and (min-width: 992px) {
   }
 `

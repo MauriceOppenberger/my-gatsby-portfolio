@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
 export const PageWrapper = styled.div`
+  .about {
+    width: 90%;
+  }
   .blurb {
     line-height: 2 !important;
     font-weight: 600;
@@ -32,26 +35,37 @@ export const PageWrapper = styled.div`
     box-shadow: var(--darkShadow);
   }
   @media screen and (min-width: 992px) {
+    .about {
+      margin-left: 10vw;
+    }
     h1 {
       /* max-width: 42%; */
     }
     .blurb {
       max-width: 75%;
     }
+    .contact {
+      max-width: 50%;
+      margin: 8rem 2vw 4rem auto;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .contact {
+      max-width: 90%;
+      margin: 8rem auto 8rem;
+    }
   }
   .status {
     font-size: 1.5rem;
     color: green;
-    margin: 8rem 0 2rem auto;
+    /* margin-left: auto; */
     line-height: 1.5;
     font-weight: 700;
     /* text-align: center; */
     max-width: 600px;
   }
-  .contact {
-    margin: 0 0 4rem auto;
-    max-width: 80%;
-  }
+
   .projects {
     padding: 4rem 0;
   }

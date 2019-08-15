@@ -23,7 +23,7 @@ export const ModalWrapper = styled.div`
 
 export const ButtonWrapper = styled.button`
   /* background-color: rgba(255, 255, 255, 0.5); */
-  background-color: transparent;
+  background-color: #fff;
   position: fixed;
   z-index: 2;
   right: 0;
@@ -35,7 +35,7 @@ export const ButtonWrapper = styled.button`
   height: auto;
   margin: 0 3vw 0 0;
   padding: 16px 16px;
-  /* box-shadow: var(--lightShadow); */
+  box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 
   :hover {
@@ -45,41 +45,13 @@ export const ButtonWrapper = styled.button`
     outline: none;
   }
   .modal {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
 
     display: flex;
     margin: auto;
   }
   .modal:hover {
     cursor: pointer;
-  }
-  @media screen and (max-width: 992px) {
-    bottom: 56px;
-    width: auto;
-    height: auto;
-    padding: 16px 16px;
-    :focus {
-      outline: none;
-    }
-    .modal {
-      width: 32px;
-      height: 32px;
-    }
-  }
-  @media screen and (max-width: 667px) {
-    bottom: 56px;
-    width: auto;
-    height: auto;
-    padding: 16px 16px;
-    /* margin: 0 16px 16px 0; */
-
-    :focus {
-      outline: none;
-    }
-    .modal {
-      width: 24px;
-      height: 24px;
-    }
   }
 `
