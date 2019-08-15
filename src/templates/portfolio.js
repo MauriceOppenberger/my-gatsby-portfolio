@@ -39,16 +39,13 @@ const portfolio = ({ pageContext }) => (
               </div>
 
               <div className="project-content">
-                {/* <div className="project-subtitle">
-                  <h3>Project Description</h3>
-                </div> */}
                 <div
                   dangerouslySetInnerHTML={{ __html: pageContext.content }}
                 />
               </div>
-              {/* <div className="project-subtitle">
-                <h3>Project Details</h3>
-              </div> */}
+              <div className="project-subtitle">
+                <h4>Project Details</h4>
+              </div>
               <div className="project-details">
                 {pageContext.acf.role ? (
                   <div className="role">

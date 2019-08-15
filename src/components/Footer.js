@@ -42,11 +42,11 @@ const Footer = () => {
             <div className="footer-content">
               <FooterMenu footerMenu={footer} />
               <div className="copy">
-                <smaller>
+                <p>
                   {" "}
                   copyright &copy; Maurice Oppenberger{" "}
                   {new Date().getFullYear()} all rights reserved{" "}
-                </smaller>
+                </p>
               </div>
             </div>
           </div>

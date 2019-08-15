@@ -15,7 +15,7 @@ const contact = ({ pageContext }) => (
           <div className="social-media">
             <h1>{pageContext.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
-            <ul>
+            <ul className="social-icons">
               <li>
                 <a
                   href={pageContext.acf.social_media.linkedin.url}

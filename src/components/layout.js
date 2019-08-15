@@ -11,7 +11,7 @@ import "./layout.css"
 import "bootstrap/dist/css/bootstrap-grid.css"
 
 const Primary = styled.main`
-  padding: 150px 0px 100px 0px;
+  padding: 125px 0px 100px 0px;
 
   min-height: 73vh !important;
 
@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
   // }
   return (
     <>
-      <SEO />
+      <SEO title="Maurice Oppenberger" />
       <Header />
       <Primary id="primary" className="container-fluid content-area">
         <section id="main" className="site-main" role="main">

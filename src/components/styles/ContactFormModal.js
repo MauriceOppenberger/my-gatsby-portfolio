@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
 export const ModalWrapper = styled.div`
-  top: 50%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 5%);
   position: absolute;
-  width: 35%;
+  width: 100%;
   max-width: 650px;
   background-color: #fff;
   border: 2px solid #001c3f;
@@ -15,6 +15,11 @@ export const ModalWrapper = styled.div`
     0px 12px 62px 11px rgba(0, 0, 0, 0.12);
   padding: 32px 32px;
   outline: none;
+
+  .greeting {
+    font-style: italic;
+    text-transform: capitalize;
+  }
 
   @media screen and (max-width: 1024px) {
     width: 90%;

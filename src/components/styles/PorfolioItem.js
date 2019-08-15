@@ -24,9 +24,9 @@ export const PortfolioItemWrapper = styled.div`
   .contentContainer {
     margin: 1rem 1rem;
   }
-  /* .contentContainer p {
-    font-size: smaller;
-  } */
+  .contentContainer p {
+    font-weight: 600;
+  }
 
   .link {
     opacity: 1;
@@ -52,7 +52,7 @@ export const PortfolioItemWrapper = styled.div`
       grid-template-columns: 1fr 1fr;
     }
     .contentContainer {
-      margin: auto 1rem !important;
+      margin: auto 2rem !important;
       max-width: 95%;
     }
     .date {

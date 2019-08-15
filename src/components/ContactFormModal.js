@@ -6,6 +6,7 @@ import { MdChat } from "react-icons/md"
 
 export default function ContactModal() {
   const [open, setOpen] = useState(false)
+  const [name, setName] = useState("...")
 
   const handleOpen = () => {
     setOpen(!open)
@@ -13,6 +14,13 @@ export default function ContactModal() {
 
   const handleClose = () => {
     setOpen(false)
+  }
+
+  const getName = value => {
+    const originalString = value
+    const splitString = originalString.split(" ")
+    const firstName = splitString[0]
+    setName(firstName)
   }
 
   return (
@@ -28,11 +36,14 @@ export default function ContactModal() {
         contentLabel="Contact Form"
       >
         <ModalWrapper>
-          <h1 id="contact-modal-title">Drop me a line</h1>
-          <h5> i look forward hearing for you!</h5>
+          <h2 id="contact-modal-title">
+            Good Day <span className="greeting">{name}</span>{" "}
+          </h2>
+
           <div id="contact-modal-form">
-            <ContactForm />
+            <ContactForm getName={getName} />
           </div>
+          <h5> i look forward hearing for you!</h5>
         </ModalWrapper>
       </Modal>
     </div>

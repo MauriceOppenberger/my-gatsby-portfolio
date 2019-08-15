@@ -15,6 +15,7 @@ export const ContactFormWrapper = styled.form`
     padding: 8px;
     border: 1px solid #001c3f;
     border-radius: 5px;
+    box-shadow: var(--lightShadow);
   }
   textarea {
     width: 100%;
@@ -22,6 +23,7 @@ export const ContactFormWrapper = styled.form`
     border: 1px solid #001c3f;
     height: 130px;
     border-radius: 5px;
+    box-shadow: var(--lightShadow);
   }
   button {
     width: max-content;
@@ -31,10 +33,13 @@ export const ContactFormWrapper = styled.form`
     background-color: transparent;
     border: 1px solid #001c3f;
     border-radius: 5px;
+    box-shadow: var(--lightShadow);
+    transition: var(--mainTransition);
   }
   button:hover {
     background-color: #001c37;
     color: #fff;
+    box-shadow: var(--darkShadow);
   }
   .hidden {
     display: none;

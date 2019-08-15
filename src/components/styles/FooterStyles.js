@@ -4,10 +4,7 @@ export const FooterWrapper = styled.footer`
   background: #fff;
   color: #001c37;
   text-align: center;
-  /* padding: 10px 0; */
-  /* position: sticky;
-  bottom: 0px;
-  width: 100%; */
+
   height: 75px;
   display: flex;
   align-items: center;
@@ -25,8 +22,9 @@ export const FooterWrapper = styled.footer`
       display: none;
     }
 
-    .copy {
+    .copy p {
       font-size: smaller;
+      margin: auto;
     }
   }
 

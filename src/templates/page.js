@@ -12,7 +12,7 @@ import SEO from "../components/seo"
 const page = ({ pageContext }) => (
   <Layout>
     <SEO title="Homepage" />
-    <div className="container-fluid">
+    <div className="container">
       <PageWrapper>
         <div className="about">
           <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />

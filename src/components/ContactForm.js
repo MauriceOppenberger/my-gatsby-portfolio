@@ -8,11 +8,12 @@ function encode(data) {
     .join("&")
 }
 
-export default function ContactForm() {
+export default function ContactForm(props) {
   const [state, setState] = useState({})
 
   const handleChange = e => {
     setState({ ...state, [e.target.name]: e.target.value })
+    props.getName(e.target.value)
   }
 
   const handleSubmit = e => {
@@ -29,7 +30,7 @@ export default function ContactForm() {
       .then(() => navigate(form.getAttribute("action")))
       .catch(error => alert(error))
   }
-  console.log(state)
+
   return (
     <>
       <ContactFormWrapper
@@ -49,7 +50,13 @@ export default function ContactForm() {
         </p>
         <p>
           <label>
-            Name: <input type="text" name="name" onChange={handleChange} />
+            Name:{" "}
+            <input
+              type="text"
+              name="name"
+              onChange={handleChange}
+              value={props.value}
+            />
           </label>
         </p>
         <p>

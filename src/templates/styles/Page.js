@@ -35,14 +35,8 @@ export const PageWrapper = styled.div`
     box-shadow: var(--darkShadow);
   }
   @media screen and (min-width: 992px) {
-    .about {
-      margin-left: 10vw;
-    }
-    h1 {
-      /* max-width: 42%; */
-    }
     .blurb {
-      max-width: 75%;
+      max-width: 80%;
     }
     .contact {
       max-width: 50%;

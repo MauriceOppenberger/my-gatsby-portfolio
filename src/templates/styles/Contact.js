@@ -3,30 +3,29 @@ import styled from "styled-components"
 export const ContactWrapper = styled.div`
   .center {
     width: 100%;
-    /* margin: 4rem auto 0; */
+
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 0rem;
     grid-row-gap: 0rem;
     height: auto;
   }
-
   .stack {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 3rem;
+  }
+  .stack li {
     align-items: center;
-    justify-content: space-between;
-    /* width: 90%; */
-    height: 120px;
+    display: flex;
+    height: 100px;
   }
-  .stack:nth-last-child(1) {
-    margin-bottom: 2rem;
-  }
-  .stack .wp-block-column .wp-block-image figure img {
+  .stack li figure img {
     width: 110px;
     height: auto;
     margin: 0;
   }
+
   .gatsby-image-wrapper {
     max-width: 400px;
     margin: auto;
@@ -36,15 +35,12 @@ export const ContactWrapper = styled.div`
   @media screen and (min-width: 992px) {
     .center {
       grid-template-columns: 0.7fr;
-
-      /* width: 60vw; */
     }
 
     .links {
       width: 60vw;
     }
     .blurb {
-      /* padding-right: 15vw; */
       line-height: 2 !important;
       font-weight: 600;
       margin: 2rem auto 2rem;
@@ -53,12 +49,11 @@ export const ContactWrapper = styled.div`
     .profile-image {
       position: absolute;
       width: 400px;
-      right: 5vw;
+      right: 8vw;
       bottom: 56px;
     }
-    .social-media ul {
+    .social-media .social-icons {
       position: fixed;
-
       z-index: 100;
       display: flex;
       flex-direction: column;
@@ -67,39 +62,26 @@ export const ContactWrapper = styled.div`
       margin: 0 3vw 0 0;
       padding: 0px 16px;
     }
-    .social-media li {
+    .social-media .social-icons li {
       width: 40px;
       display: flex;
       justify-content: center;
       margin: 1.45rem 0rem 1rem 0 !important;
       padding: 1rem 0;
     }
-    .social-media li a svg {
+    .social-media .social-icons li a svg {
       -webkit-transition: width, height 0.2s ease-out;
       -moz-transition: width, height 0.2s ease-out;
       -o-transition: width, height 0.2s ease-out;
       transition: width, height 0.2s ease-out;
     }
-    .social-media li a svg:hover {
+    .social-media .social-icons li a svg:hover {
       width: 32px;
       height: 32px;
     }
-  }
-  @media screen and (min-width: 767px) {
-    .center {
-      /* margin: 4rem auto 0; */
-    }
-    /* .social-media ul {
-      display: flex !important;
-      margin-left: 0;
-    } */
-    .stack .wp-block-column .wp-block-image figure img {
-      width: 130px;
-      height: auto;
-      margin: 0;
-    }
-    .stack:nth-last-child(1) {
-      margin-bottom: 5rem;
+    .stack {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
     }
   }
 
@@ -111,33 +93,31 @@ export const ContactWrapper = styled.div`
     font-weight: 600;
   }
   .blurb a {
-    /* text-transform: uppercase; */
     text-decoration: underline;
     color: blue;
   }
 
   .social-media {
     display: block;
-    /* justify-content: center; */
-    /* margin: 2rem 0; */
+
     width: inherit;
-    /* max-width: 80%; */
   }
+
   @media screen and (max-width: 992px) {
-    .social-media ul {
+    .social-media .social-icons {
       display: flex;
       margin: auto;
-      /* margin-left: 0; */
+
       justify-content: space-evenly;
       width: 80%;
     }
   }
 
-  .social-media li {
+  .social-media .social-icons li {
     display: flex;
     margin: 1.45rem 1.45rem 1rem 0;
   }
-  .social-media a {
+  .social-media .social-icons li a {
     display: flex;
     align-items: center;
     word-spacing: 5px;
