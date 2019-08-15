@@ -1,14 +1,13 @@
 import styled from "styled-components"
 
 export const ContactFormWrapper = styled.form`
-  max-width: 600px;
-  /* margin-left: auto; */
   p {
     margin: 0.5rem 0;
   }
-  /* p:nth-child(n + 3):nth-child(-n + 4) {
-    width: 80%;
-  } */
+
+  label {
+    font-weight: 600;
+  }
 
   input {
     width: 100%;
@@ -45,5 +44,8 @@ export const ContactFormWrapper = styled.form`
     display: none;
   }
   @media screen and (min-width: 992px) {
+    p:nth-child(n + 3):nth-child(-n + 4) {
+      width: 80%;
+    }
   }
 `

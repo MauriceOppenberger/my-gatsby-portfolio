@@ -83,7 +83,7 @@ export const PortfolioWrapper = styled.div`
 
   @media screen and (min-width: 992px) {
     .center {
-      grid-template-columns: 0.8fr 1.2fr;
+      grid-template-columns: 0.8fr 1.1fr;
     }
 
     .project-media iframe {

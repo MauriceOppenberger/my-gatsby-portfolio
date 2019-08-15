@@ -13,7 +13,7 @@ export const ContactWrapper = styled.div`
   .stack {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-top: 3rem;
+    margin: 3rem auto;
   }
   .stack li {
     align-items: center;
@@ -21,7 +21,7 @@ export const ContactWrapper = styled.div`
     height: 100px;
   }
   .stack li figure img {
-    width: 110px;
+    width: 90px;
     height: auto;
     margin: 0;
   }
@@ -82,6 +82,10 @@ export const ContactWrapper = styled.div`
     .stack {
       display: grid;
       grid-template-columns: auto auto auto auto;
+    }
+
+    .stack li figure img {
+      width: 110px;
     }
   }
 
