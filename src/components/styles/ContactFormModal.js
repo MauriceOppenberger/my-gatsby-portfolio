@@ -8,7 +8,7 @@ export const ModalWrapper = styled.div`
   width: 35%;
   max-width: 650px;
   background-color: #fff;
-  border: 5px solid #001c3f;
+  border: 2px solid #001c3f;
   border-radius: 10px;
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.2),
     0px 32px 52px 4px rgba(0, 0, 0, 0.14),
@@ -35,7 +35,12 @@ export const ButtonWrapper = styled.button`
   height: auto;
   margin: 0 3vw 0 0;
   padding: 16px 16px;
+  /* box-shadow: var(--lightShadow); */
+  transition: var(--mainTransition);
 
+  :hover {
+    box-shadow: var(--darkShadow);
+  }
   :focus {
     outline: none;
   }

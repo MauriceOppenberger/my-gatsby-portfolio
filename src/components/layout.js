@@ -16,8 +16,8 @@ const Primary = styled.main`
   min-height: 73vh !important;
 
   @media screen and (max-width: 992px) {
-    padding: 75px 0px 0px 0px !important;
-    min-height: 90vh !important;
+    padding: 100px 0px 0px 0px !important;
+    min-height: 90vmax !important;
   }
 `
 

@@ -6,7 +6,7 @@ export const PageWrapper = styled.div`
     font-weight: 600;
     /* margin: 2rem 0; */
     font-size: 1rem;
-    margin-bottom: 5rem;
+    margin: 2rem 0 3rem;
   }
   .blurb a {
     color: blue;
@@ -18,9 +18,22 @@ export const PageWrapper = styled.div`
     justify-content: space-between; */
     border: none;
   }
+  .cta-btn a {
+    display: flex;
+    width: max-content;
+    padding: 10px 15px;
+    color: #fff;
+
+    border-radius: 20px;
+    box-shadow: var(--lightShadow);
+    transition: var(--mainTransition);
+  }
+  .cta-btn a:hover {
+    box-shadow: var(--darkShadow);
+  }
   @media screen and (min-width: 992px) {
     h1 {
-      max-width: 42%;
+      /* max-width: 42%; */
     }
     .blurb {
       max-width: 75%;
@@ -29,14 +42,14 @@ export const PageWrapper = styled.div`
   .status {
     font-size: 1.5rem;
     color: green;
-    margin: 4rem 0;
+    margin: 8rem 0 2rem auto;
     line-height: 1.5;
     font-weight: 700;
     /* text-align: center; */
     max-width: 600px;
   }
   .contact {
-    margin: 0 0 4rem;
+    margin: 0 0 4rem auto;
     max-width: 80%;
   }
   .projects {

@@ -21,7 +21,7 @@ export const SuccessWrapper = styled.div`
   div p {
     padding: 50px;
     font-size: 140px;
-    margin-bottom: 2rem;
+    margin: 4rem 0;
   }
   h4 {
     padding: 2rem;
