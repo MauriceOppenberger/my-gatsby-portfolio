@@ -36,7 +36,7 @@ export const FooterWrapper = styled.footer`
     height: 56px !important;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 255);
 
     ul {
       display: flex;
