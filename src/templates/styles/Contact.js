@@ -49,7 +49,7 @@ export const ContactWrapper = styled.div`
     .profile-image {
       position: absolute;
       width: 400px;
-      right: 8vw;
+      right: 10vw;
       bottom: 56px;
     }
     .social-media .social-icons {
@@ -85,7 +85,7 @@ export const ContactWrapper = styled.div`
     }
 
     .stack li figure img {
-      width: 110px;
+      width: 120px;
     }
   }
 

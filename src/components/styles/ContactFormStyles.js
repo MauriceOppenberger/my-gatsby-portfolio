@@ -20,7 +20,7 @@ export const ContactFormWrapper = styled.form`
     width: 100%;
     padding: 8px;
     border: 1px solid #001c3f;
-    height: 130px;
+    height: 15vmax;
     border-radius: 5px;
     box-shadow: var(--lightShadow);
   }

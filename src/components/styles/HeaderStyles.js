@@ -4,9 +4,8 @@ export const HeaderWrapper = styled.header`
   /* background-color: #001c37; */
   background-color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
-  height: 110px;
-
-  /* border-bottom: 1px solid #e7e7e7; */
+  height: max-content;
+  padding: 16px 0px;
   display: flex;
   align-items: center;
   position: fixed;
@@ -28,6 +27,8 @@ export const HeaderWrapper = styled.header`
   .siteInfo,
   .navBar {
     width: max-content;
+    display: flex;
+    align-items: center;
   }
 
   .navBar {
@@ -40,18 +41,22 @@ export const HeaderWrapper = styled.header`
     max-width: 1800px;
   }
   .logo {
-    width: 85px;
+    /* width: 70px; */
     height: auto;
+    width: 4.5vw;
+    max-height: 5vw;
+    min-width: 2vw;
+    margin-right: 1rem;
   }
   @media screen and (max-width: 992px) {
     height: 56px;
     background-color: #001c3f;
     /* height: 56px; */
     .siteInfo {
-      display: none;
+      /* display: none; */
     }
     .logo {
-      width: 40px;
+      /* width: 40px; */
     }
   }
   @media screen and (max-width: 390px) {

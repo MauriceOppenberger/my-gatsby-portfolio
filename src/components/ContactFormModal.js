@@ -37,13 +37,12 @@ export default function ContactModal() {
       >
         <ModalWrapper>
           <h2 id="contact-modal-title">
-            Good Day <span className="greeting">{name}</span>{" "}
+            <span className="greeting">Hey {name},</span>{" "}
           </h2>
 
           <div id="contact-modal-form">
             <ContactForm getName={getName} />
           </div>
-          <h5> i look forward hearing for you!</h5>
         </ModalWrapper>
       </Modal>
     </div>

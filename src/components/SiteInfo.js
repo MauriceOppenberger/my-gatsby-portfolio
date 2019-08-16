@@ -6,8 +6,9 @@ const SiteInfoWrapper = styled.div`
   flex-grow: 1;
   margin: 0px;
 
-  h3 {
-    margin-bottom: 0.3rem;
+  h2 {
+    margin-bottom: 0rem;
+    /* font-size: 2.25rem; */
   }
   h5 {
     margin: 0;
@@ -38,7 +39,7 @@ const SiteInfo = () => {
   return (
     <SiteInfoWrapper>
       <div>
-        <h3>{info.name}</h3>
+        <h2>{info.name}</h2>
       </div>
       <div>
         <h5 dangerouslySetInnerHTML={{ __html: info.description }} />

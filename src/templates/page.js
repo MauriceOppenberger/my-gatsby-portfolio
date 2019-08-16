@@ -21,8 +21,9 @@ const page = ({ pageContext }) => (
         </div>
 
         <div className="contact">
+          <h1>Get in touch!</h1>
           <p className="status">
-            Get in touch! I would love to hear about your Project.
+            Drop me a line, I would love to hear about your Project.
           </p>
           <ContactForm />
         </div>

@@ -40,22 +40,25 @@ export const PageWrapper = styled.div`
     }
     .contact {
       max-width: 50%;
-      margin: 8rem 2vw 4rem auto;
+      margin: 7rem 2vw 4rem auto;
     }
   }
 
   @media screen and (max-width: 992px) {
     .contact {
       max-width: 90%;
-      margin: 8rem auto 8rem;
+      margin: 5rem auto 8rem;
     }
   }
   .status {
-    font-size: 1.5rem;
+    line-height: 2 !important;
+    font-weight: 600;
+    font-size: 1rem;
+    /* font-size: 1.5rem; */
     color: green;
     /* margin-left: auto; */
-    line-height: 1.5;
-    font-weight: 700;
+    /* line-height: 1.5; */
+    /* font-weight: 700; */
     /* text-align: center; */
     max-width: 600px;
   }

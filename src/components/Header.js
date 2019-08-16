@@ -36,14 +36,12 @@ const Header = () => {
     <HeaderWrapper>
       <div className="container-fluid">
         <div className="row">
-          <div className="logoBox col-md-1">
+          <div className="siteInfo col-md-auto">
             <Link to="/">
               <div className="logo">
                 <SiteLogo />
               </div>
             </Link>
-          </div>
-          <div className="siteInfo col-md-auto">
             <SiteInfo />
           </div>
           <div className="navBar col-md-auto">

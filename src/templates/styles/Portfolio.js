@@ -37,6 +37,13 @@ export const PortfolioWrapper = styled.div`
     color: gray;
     /* font-size: smaller; */
   }
+
+  .explainer {
+    max-width: 100%;
+  }
+  .explainer video {
+    max-width: inherit;
+  }
   .project-content h4 {
     text-transform: uppercase;
     color: gray;

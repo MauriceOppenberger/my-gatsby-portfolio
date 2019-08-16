@@ -4,8 +4,8 @@ export const FooterWrapper = styled.footer`
   background: #fff;
   color: #001c37;
   text-align: center;
-
-  height: 75px;
+  padding: 16px 0px;
+  height: auto;
   display: flex;
   align-items: center;
   position: absolute;

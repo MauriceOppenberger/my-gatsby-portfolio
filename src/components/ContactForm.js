@@ -73,6 +73,7 @@ export default function ContactForm(props) {
             <textarea name="message" onChange={handleChange}></textarea>
           </label>
         </p>
+        <h5> i look forward hearing for you!</h5>
         <p>
           <button name="button" type="submit">
             Send
