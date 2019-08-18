@@ -25,7 +25,7 @@ const contact = ({ pageContext }) => (
                   <FaLinkedin size={26} />
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href={pageContext.acf.social_media.facebook.url}
                   target="_blank"
@@ -33,7 +33,7 @@ const contact = ({ pageContext }) => (
                 >
                   <FaFacebookSquare size={26} />
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href={pageContext.acf.social_media.github.url}
