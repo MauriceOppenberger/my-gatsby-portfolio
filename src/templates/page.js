@@ -4,11 +4,6 @@ import { PageWrapper } from "./styles/Page"
 import ContactForm from "../components/ContactForm"
 import SEO from "../components/seo"
 
-// < div className = "projects" >
-//   <h5>
-//     check out my latest <Link to="/projects">projects</Link>
-//   </h5>
-//       </div >
 const page = ({ pageContext }) => (
   <Layout>
     <SEO title="Homepage" />
@@ -21,7 +16,7 @@ const page = ({ pageContext }) => (
         </div>
 
         <div className="contact">
-          <h1>Get in touch!</h1>
+          <h2>Get in touch!</h2>
           <p className="status">
             Drop me a line, I would love to hear about your Project.
           </p>

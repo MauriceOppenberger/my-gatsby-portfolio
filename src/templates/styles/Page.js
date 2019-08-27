@@ -31,6 +31,9 @@ export const PageWrapper = styled.div`
   .cta-btn a:hover {
     box-shadow: var(--darkShadow);
   }
+  .contact h2 {
+    font-size: 2.5rem;
+  }
   @media screen and (min-width: 992px) {
     .about {
       width: 90%;
