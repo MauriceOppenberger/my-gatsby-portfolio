@@ -7,6 +7,7 @@ module.exports = {
   siteMetadata: {
     title: `Maurice Oppenberger`,
     description: `Personal portfolio website of Maurice Oppenberger, Web developer and UX designer.`,
+    keywords: `web developemt, ux design, ui design, toronto, multimedia design, digital design, wep app development, freelance web developer toronto`,
     author: `@mauriceoppenberger`,
     siteUrl: "https://gatsbywp.oppenberger.com",
   },
