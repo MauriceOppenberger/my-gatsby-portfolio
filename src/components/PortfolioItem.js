@@ -5,8 +5,8 @@ import Img from "gatsby-image"
 import { PortfolioItemWrapper } from "./styles/PorfolioItem"
 
 const PortfolioItem = ({ portfolio }) => (
-  <Link to={`/portfolio/${portfolio.slug}`} className="link">
-    <PortfolioItemWrapper>
+  <PortfolioItemWrapper>
+    <Link to={`/portfolio/${portfolio.slug}`} className="link">
       <div className="blog">
         <div className="imgContainer">
           {portfolio.featured_media.title !== "default_fallback_image" ? (
@@ -28,8 +28,8 @@ const PortfolioItem = ({ portfolio }) => (
           </div>
         </div>
       </div>
-    </PortfolioItemWrapper>
-  </Link>
+    </Link>
+  </PortfolioItemWrapper>
 )
 
 export default PortfolioItem

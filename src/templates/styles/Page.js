@@ -1,12 +1,20 @@
 import styled from "styled-components"
 
 export const PageWrapper = styled.div`
+  width: 95vw;
+  max-width: 1280px;
+  margin: auto;
+
+  h1 {
+    font-size: 5vmax;
+  }
   .blurb {
     line-height: 2 !important;
     font-weight: 600;
     /* margin: 2rem 0; */
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 2rem 0 3rem;
+    max-width: 90vw;
   }
   .blurb a {
     color: blue;
@@ -32,7 +40,7 @@ export const PageWrapper = styled.div`
     box-shadow: var(--darkShadow);
   }
   .contact h2 {
-    font-size: 2.5rem;
+    font-size: 4vmax;
   }
   @media screen and (min-width: 992px) {
     .about {
@@ -40,6 +48,7 @@ export const PageWrapper = styled.div`
     }
     .blurb {
       max-width: 80%;
+      font-size: 1.1rem !important;
     }
     .contact {
       max-width: 50%;

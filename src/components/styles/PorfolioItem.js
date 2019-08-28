@@ -29,10 +29,11 @@ export const PortfolioItemWrapper = styled.div`
   }
 
   .link {
+    background: var(--mainWhite);
     opacity: 1;
     text-transform: capitalize;
     color: var(--mainBlack);
-    padding: 0.5rem 0rem;
+    margin: 0.5rem 0rem;
     display: flex;
     justify-content: flex-end;
     transition: var(--mainTransition);

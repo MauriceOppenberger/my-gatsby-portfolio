@@ -19,6 +19,9 @@ const Primary = styled.main`
     padding: 85px 0px 0px 0px !important;
     min-height: 90vmax !important;
   }
+  .site-main {
+    margin-top: 2rem;
+  }
 `
 
 const Layout = ({ children }) => {

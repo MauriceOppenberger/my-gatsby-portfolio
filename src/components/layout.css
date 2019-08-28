@@ -22,6 +22,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom, #f4f7f6, #eee);
 }
 article,
 aside,
@@ -252,7 +253,8 @@ h1 {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.75rem;
+  /* font-size: 2.75rem; */
+  font-size: 5vmax;
   line-height: 1.1;
 }
 h2 {
@@ -286,7 +288,8 @@ h3 {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  /* font-size: 1.38316rem; */
+  font-size: 1.8rem;
   line-height: 1.1;
 }
 h4 {

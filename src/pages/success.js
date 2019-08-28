@@ -35,7 +35,7 @@ const Success = () => (
       <SuccessWrapper>
         <h1>Thanks for reaching out!</h1>
         <div>
-          <p>:-)</p>
+          <p>{":-)"}</p>
         </div>
         <Link to="/home">
           <h4>back to Homepage</h4>
