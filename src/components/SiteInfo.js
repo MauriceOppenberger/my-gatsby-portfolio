@@ -12,9 +12,9 @@ const SiteInfoWrapper = styled.div`
     font-size: 1.62671rem;
     color: #fff;
   }
-  /* h5 {
+  h5 {
     margin: 0;
-  } */
+  }
   @media (max-width: 991px) {
     display: none;
   }
