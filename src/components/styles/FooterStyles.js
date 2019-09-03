@@ -10,7 +10,7 @@ export const FooterWrapper = styled.footer`
   align-items: center;
   position: absolute;
   width: 100%;
-  bottom: 0px;
+  bottom: 24px;
   @media screen and (min-width: 994px) {
     .footer-content {
       display: block;
