@@ -30,8 +30,11 @@ export const NavWrapper = styled.nav`
     a {
       padding: 0 0 0 10px;
       transition: all 0.2s ease;
-      color: #001c37;
+      color: #eee;
       text-decoration: none;
+    }
+    a:hover {
+      color: #fff;
     }
 
     /* span {

@@ -10,10 +10,11 @@ const SiteInfoWrapper = styled.div`
     margin-bottom: 0rem;
     /* font-size: 2.25rem; */
     font-size: 1.62671rem;
+    color: #fff;
   }
-  h5 {
+  /* h5 {
     margin: 0;
-  }
+  } */
   @media (max-width: 991px) {
     display: none;
   }
