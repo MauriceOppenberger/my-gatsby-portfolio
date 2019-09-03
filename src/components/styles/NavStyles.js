@@ -16,7 +16,7 @@ export const NavWrapper = styled.nav`
   /* background-color: rgba(255, 255, 255, 0.9); */
 
   .nav-active {
-    color: #000;
+    color: #fff;
   }
   @media (min-width: 992px) {
     display: inline-block;
@@ -48,7 +48,7 @@ export const NavWrapper = styled.nav`
 
   ul li a:hover {
     /* color: #d22e26; */
-    color: #000;
+    color: #fff;
   }
   @media screen and (max-width: 390px) {
     padding: 0px;
