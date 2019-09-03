@@ -36,14 +36,14 @@ const contact = ({ pageContext }) => (
             </li>
           </ul>
         </div>
-        <div className="profile-image">
-          <Img
-            fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
-          />
-        </div>
       </div>
     </ContactWrapper>
   </Layout>
 )
+// < div className = "profile-image" >
+//   <Img
+//     fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
+//   />
+//       </div >
 
 export default contact

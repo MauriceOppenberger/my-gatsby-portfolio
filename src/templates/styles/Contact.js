@@ -98,19 +98,20 @@ export const ContactWrapper = styled.div`
     .blurb {
       font-size: 1.1rem !important;
     }
-    .profile-image {
+    /* .profile-image {
+      display: none;
       position: absolute;
       width: 400px;
       right: 10vw;
       bottom: 56px;
-    }
+    } */
     .social-media .social-icons {
       position: fixed;
       z-index: 100;
       display: flex;
       flex-direction: column;
       right: 0;
-      bottom: 20%;
+      bottom: 35%;
       margin: 0 3vw 0 0;
       padding: 0px 16px;
     }
@@ -183,7 +184,7 @@ export const ContactWrapper = styled.div`
     word-spacing: 5px;
   }
 
-  .profile-image {
+  /* .profile-image {
     height: auto;
     overflow: hidden;
     margin-top: auto;
@@ -191,5 +192,5 @@ export const ContactWrapper = styled.div`
   .profile-image figure.wp-block-image {
     display: flex;
     margin-bottom: 0px;
-  }
+  } */
 `

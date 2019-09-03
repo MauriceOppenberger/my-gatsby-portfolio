@@ -43,9 +43,9 @@ export const HeaderWrapper = styled.header`
   .logo {
     /* width: 70px; */
     height: auto;
-    width: 4.5vw;
-    max-height: 5vw;
-    min-width: 2vw;
+    width: 3rem;
+    /* max-height: 5vw;
+    min-width: 2vw; */
     margin-right: 1rem;
   }
   @media screen and (max-width: 992px) {

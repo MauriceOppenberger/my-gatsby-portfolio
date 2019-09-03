@@ -41,14 +41,13 @@ export const ButtonWrapper = styled.button`
   z-index: 2;
   right: 0;
   color: #fff;
-  bottom: 56px;
+  bottom: 72px;
   border-radius: 100px;
   border: none;
   width: auto;
   height: auto;
   margin: 0 3vw 0 0;
   padding: 16px 16px;
-  box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 
   :hover {
