@@ -9,7 +9,7 @@ module.exports = {
     description: `Personal portfolio website of Maurice Oppenberger, Web developer and UX designer.`,
     keywords: `web developemt, ux design, ui design, toronto, multimedia design, digital design, wep app development, freelance web developer toronto`,
     author: `@mauriceoppenberger`,
-    siteUrl: "https://gatsbywp.oppenberger.com",
+    siteUrl: "https://oppenberger.com",
   },
 
   plugins: [
@@ -28,6 +28,17 @@ module.exports = {
         host: "https://gatsbywp.oppenberger.com",
         sitemap: "https://gatsbywp.oppenberger.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        // your google analytics tracking id
+        trackingId: `UA-133562630-4`,
+        // Puts tracking script in the head instead of the body
+        head: true,
+        // enable ip anonymization
+        anonymize: true,
       },
     },
     `gatsby-transformer-sharp`,

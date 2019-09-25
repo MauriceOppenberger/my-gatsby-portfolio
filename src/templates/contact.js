@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import { ContactWrapper } from "./styles/Contact"
-import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 import { FaLinkedin, FaGithub } from "react-icons/fa"
