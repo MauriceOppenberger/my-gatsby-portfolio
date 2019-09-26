@@ -22,7 +22,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to bottom, #f4f7f6, #eee);
 }
 article,
 aside,

@@ -88,7 +88,7 @@ const portfolio = ({ pageContext }) => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p>Learn more</p>
+                  <p>Visit the Website</p>
                 </a>
               ) : null}
             </div>

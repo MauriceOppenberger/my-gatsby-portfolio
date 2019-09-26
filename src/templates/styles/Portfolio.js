@@ -84,7 +84,8 @@ export const PortfolioWrapper = styled.div`
     height: 80vw;
   }
   a p {
-    color: blue;
+    text-align: center;
+    color: #000;
     text-decoration: underline;
   }
 
