@@ -9,7 +9,7 @@ const SiteInfoWrapper = styled.div`
   h2 {
     margin-bottom: 0rem;
     /* font-size: 2.25rem; */
-    font-size: 1.62671rem;
+    font-size: 1rem;
     color: #fff;
   }
   h5 {

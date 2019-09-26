@@ -98,7 +98,7 @@ export const PortfolioWrapper = styled.div`
       right: 57vw;
       height: 650px !important;
       width: 37vw !important;
-      top: 20vmin;
+      top: 17vmin;
       margin-top: 0rem;
     }
     .project-media .fixed-Img {
