@@ -26,12 +26,12 @@ export const ContactFormWrapper = styled.form`
   }
   button {
     width: max-content;
-    padding: 8px 25px;
+    padding: 10px 35px;
     display: flex;
     margin: 1.45rem 0 0 auto;
     background-color: transparent;
     border: 1px solid #001c3f;
-    border-radius: 5px;
+    border-radius: 30px;
     box-shadow: var(--lightShadow);
     transition: var(--mainTransition);
   }

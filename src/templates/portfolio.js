@@ -9,7 +9,7 @@ const portfolio = ({ pageContext }) => (
   <Layout>
     <SEO title={pageContext.title} />
     <PortfolioWrapper>
-      <div className="container-fluid">
+      <div className="container">
         <div className="center">
           <div className="project-media">
             {pageContext.acf.prototype_url ? (
@@ -24,10 +24,10 @@ const portfolio = ({ pageContext }) => (
             ) : pageContext.featured_media.title !==
               "default_fallback_image" ? (
               <Img
-                fixed={
-                  pageContext.featured_media.localFile.childImageSharp.fixed
+                fluid={
+                  pageContext.featured_media.localFile.childImageSharp.fluid
                 }
-                className="fixed-Img"
+                className="fluid-Img"
               />
             ) : null}
           </div>

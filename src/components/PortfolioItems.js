@@ -12,11 +12,15 @@ const PortfolioItemsWrapper = styled.div`
   }
   .center {
     width: 100%;
-    margin: 3rem auto;
+    margin: 5rem auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    grid-column-gap: 2rem;
-    grid-row-gap: 5rem;
+    /* grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); */
+    /* grid-column-gap: 2rem; */
+    grid-row-gap: 7rem;
+  }
+  .center div:nth-child(even) .imgContainer {
+    grid-row: 1;
+    grid-column: 2;
   }
   @media screen and (min-width: 992px) {
     .center {
@@ -35,7 +39,25 @@ const PortfolioItems = () => {
             slug
             title
             acf {
+              prototype_url
+            }
+            acf {
               excerpt
+            }
+            acf {
+              role
+              collaboration {
+                team_member {
+                  title
+                  url
+                  target
+                }
+              }
+              client {
+                title
+                url
+                target
+              }
             }
             date(formatString: "MMMM Do, Y")
             content
@@ -43,7 +65,7 @@ const PortfolioItems = () => {
               title
               localFile {
                 childImageSharp {
-                  fluid(quality: 100, maxWidth: 500, maxHeight: 300) {
+                  fluid(quality: 100, maxWidth: 300) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }

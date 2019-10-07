@@ -48,6 +48,7 @@ export const ButtonWrapper = styled.button`
   height: auto;
   margin: 0 3vw 0 0;
   padding: 16px 16px;
+  box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 
   :hover {

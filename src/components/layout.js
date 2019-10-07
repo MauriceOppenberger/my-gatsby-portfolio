@@ -11,7 +11,7 @@ import "./layout.css"
 import "bootstrap/dist/css/bootstrap-grid.css"
 
 const Primary = styled.main`
-  padding: 125px 0px 100px 0px;
+  padding: 25px 0px 70px 0px;
 
   min-height: 73vh !important;
 

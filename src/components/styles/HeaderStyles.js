@@ -1,14 +1,14 @@
 import styled from "styled-components"
 
 export const HeaderWrapper = styled.header`
-  background-color: #001c37;
-  /* background-color: rgba(255, 255, 255, 0.9); */
+  /* background-color: #001c37; */
+  background-color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
   height: max-content;
-  padding: 16px 0px;
+  padding: 26px 0px;
   display: flex;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   z-index: 999;
   width: 100%;
   color: #001c37;
@@ -21,6 +21,8 @@ export const HeaderWrapper = styled.header`
   }
   .row {
     align-items: center;
+    max-width: 1350px;
+    margin: auto;
   }
 
   .logoBox,

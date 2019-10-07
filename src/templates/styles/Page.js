@@ -29,10 +29,9 @@ export const PageWrapper = styled.div`
   .cta-btn a {
     display: flex;
     width: max-content;
-    padding: 10px 15px;
+    padding: 10px 35px;
     color: #fff;
-
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: var(--lightShadow);
     transition: var(--mainTransition);
   }

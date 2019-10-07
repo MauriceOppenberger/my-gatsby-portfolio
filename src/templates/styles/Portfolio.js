@@ -73,15 +73,19 @@ export const PortfolioWrapper = styled.div`
     height: initial;
     margin: 0;
     margin-bottom: 2rem;
-    text-align: center;
+
+    display: flex;
+    justify-content: center;
   }
   .project-media iframe {
     height: 500px;
     width: 70%;
   }
-  .project-media .fixed-Img {
-    width: 100%;
-    height: 80vw;
+  .project-media .fluid-Img {
+    /* width: 52vw;
+    height: 60vw; */
+    width: 40vw;
+    /* height: 580px; */
   }
   a p {
     text-align: center;
@@ -91,26 +95,26 @@ export const PortfolioWrapper = styled.div`
 
   @media screen and (min-width: 992px) {
     .center {
-      grid-template-columns: 0.8fr 1.1fr;
+      /* grid-template-columns: 0.8fr 1.1fr; */
     }
 
-    .project-media iframe {
+    /* .project-media iframe {
       position: fixed;
       right: 57vw;
       height: 650px !important;
       width: 37vw !important;
       top: 17vmin;
       margin-top: 0rem;
-    }
-    .project-media .fixed-Img {
+    } */
+    /* .project-media .fixed-Img {
       position: fixed !important;
-      width: 34vmax;
+      width: 25vmax;
       height: 29vmax;
       top: 170px;
       right: 61%;
       max-width: 100%;
-      max-height: 500px;
-    }
+      max-height: 700px;
+    } */
     .project-media {
       margin: 2.5rem;
     }

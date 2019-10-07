@@ -8,7 +8,7 @@ export const NavWrapper = styled.nav`
   /* position: absolute; */
   /* right: 0px; */
   font-family: "Content", Arial, Helvetica, sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 1px;
   display: none;
@@ -16,7 +16,7 @@ export const NavWrapper = styled.nav`
   /* background-color: rgba(255, 255, 255, 0.9); */
 
   .nav-active {
-    color: #fff;
+    color: #4a4a4a;
   }
   @media (min-width: 992px) {
     display: inline-block;
@@ -30,11 +30,11 @@ export const NavWrapper = styled.nav`
     a {
       padding: 0 0 0 10px;
       transition: all 0.2s ease;
-      color: #eee;
+      color: #4a4a4a;
       text-decoration: none;
     }
     a:hover {
-      color: #fff;
+      color: #000;
     }
 
     /* span {
@@ -48,7 +48,7 @@ export const NavWrapper = styled.nav`
 
   ul li a:hover {
     /* color: #d22e26; */
-    color: #fff;
+    color: #000;
   }
   @media screen and (max-width: 390px) {
     padding: 0px;
