@@ -5,6 +5,7 @@ export const PortfolioItemWrapper = styled.div`
     box-shadow: var(--lightShadow);
     transition: var(--mainTransition);
     height: max-content;
+    width: 100%;
   }
   .blog:hover {
     box-shadow: var(--darkShadow);
@@ -20,6 +21,9 @@ export const PortfolioItemWrapper = styled.div`
   }
   .img-container:hover .img {
     opacity: 0.3;
+  }
+  .contentContainer > * {
+    display: none;
   }
   .contentContainer {
     margin: 1rem 1rem;
@@ -50,7 +54,7 @@ export const PortfolioItemWrapper = styled.div`
   @media screen and (min-width: 992px) {
     .blog {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      /* grid-template-columns: 1fr 1fr; */
     }
     .contentContainer {
       margin: auto 2rem !important;

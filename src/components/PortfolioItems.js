@@ -14,14 +14,14 @@ const PortfolioItemsWrapper = styled.div`
     width: 100%;
     margin: 3rem auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     grid-column-gap: 2rem;
     grid-row-gap: 5rem;
   }
   @media screen and (min-width: 992px) {
-    .center {
+    /* .center {
       grid-template-columns: 1fr;
-    }
+    } */
   }
 `
 
