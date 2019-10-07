@@ -50,20 +50,25 @@ export const ButtonWrapper = styled.button`
   padding: 16px 16px;
   transition: var(--mainTransition);
 
-  :hover {
+  /* :hover {
     box-shadow: var(--darkShadow);
-  }
+  } */
   :focus {
     outline: none;
   }
   .modal {
     width: 24px;
     height: 24px;
-
+    color: #000;
     display: flex;
     margin: auto;
+    transition-duration: 0.5s;
   }
   .modal:hover {
     cursor: pointer;
+    width: 48px;
+    height: 48px;
+    color: green;
+    transition-duration: 0.5s;
   }
 `

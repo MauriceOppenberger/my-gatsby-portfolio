@@ -38,9 +38,9 @@ const Header = () => {
         <div className="row">
           <div className="siteInfo col-md-auto">
             <Link to="/">
-              <div className="logo">
+              {/* <div className="logo">
                 <SiteLogo />
-              </div>
+              </div> */}
             </Link>
             <SiteInfo />
           </div>

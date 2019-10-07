@@ -110,8 +110,10 @@ export const ContactWrapper = styled.div`
       z-index: 100;
       display: flex;
       flex-direction: column;
+      height: 15%;
+      justify-content: space-between;
       right: 0;
-      bottom: 35%;
+      bottom: 45%;
       margin: 0 3vw 0 0;
       padding: 0px 16px;
     }
@@ -119,14 +121,14 @@ export const ContactWrapper = styled.div`
       width: 40px;
       display: flex;
       justify-content: center;
-      margin: 1.45rem 0rem 1rem 0 !important;
-      padding: 1rem 0;
+      margin: 0px !important;
+      /* padding: 1rem 0; */
     }
     .social-media .social-icons li a svg {
-      -webkit-transition: width, height 0.2s ease-out;
-      -moz-transition: width, height 0.2s ease-out;
-      -o-transition: width, height 0.2s ease-out;
-      transition: width, height 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
     }
     .social-media .social-icons li a svg:hover {
       width: 32px;
