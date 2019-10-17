@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm"
 import { ButtonWrapper, ModalWrapper } from "./styles/ContactFormModal"
 import { MdChat } from "react-icons/md"
 
-export default function ContactModal() {
+export default function ContactModal(props) {
   const [open, setOpen] = useState(false)
   const [name, setName] = useState("...")
 
@@ -25,7 +25,15 @@ export default function ContactModal() {
 
   return (
     <div>
-      <ButtonWrapper type="button" onClick={handleOpen}>
+      <ButtonWrapper
+        position={props.position}
+        width={props.width}
+        height={props.height}
+        margin={props.margin}
+        padding={props.padding}
+        type="button"
+        onClick={handleOpen}
+      >
         <MdChat color="#001c37" className="modal" />
       </ButtonWrapper>
       <Modal

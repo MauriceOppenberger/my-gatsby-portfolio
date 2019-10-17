@@ -98,13 +98,13 @@ export const ContactWrapper = styled.div`
     .blurb {
       font-size: 1.1rem !important;
     }
-    /* .profile-image {
-      display: none;
+    .profile-image {
+      /* display: none; */
       position: absolute;
       width: 400px;
       right: 10vw;
-      bottom: 56px;
-    } */
+      bottom: 86px;
+    }
     .social-media .social-icons {
       position: fixed;
       z-index: 100;

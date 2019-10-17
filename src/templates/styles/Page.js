@@ -29,7 +29,7 @@ export const PageWrapper = styled.div`
   .cta-btn a {
     display: flex;
     width: max-content;
-    padding: 10px 15px;
+    padding: 10px 30px;
     color: #fff;
 
     border-radius: 20px;
@@ -51,8 +51,9 @@ export const PageWrapper = styled.div`
       font-size: 1.1rem !important;
     }
     .contact {
-      max-width: 50%;
-      margin: 7rem 2vw 4rem auto;
+      text-align: center;
+      max-width: 60%;
+      margin: auto;
     }
   }
 
@@ -72,7 +73,7 @@ export const PageWrapper = styled.div`
     /* line-height: 1.5; */
     /* font-weight: 700; */
     /* text-align: center; */
-    max-width: 600px;
+    /* max-width: 600px; */
   }
 
   .projects {

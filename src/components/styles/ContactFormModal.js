@@ -37,7 +37,7 @@ export const ModalWrapper = styled.div`
 export const ButtonWrapper = styled.button`
   /* background-color: rgba(255, 255, 255, 0.5); */
   background-color: #fff;
-  position: fixed;
+  position: ${props => props.position};
   z-index: 2;
   right: 0;
   color: #fff;
@@ -46,8 +46,8 @@ export const ButtonWrapper = styled.button`
   border: none;
   width: auto;
   height: auto;
-  margin: 0 3vw 0 0;
-  padding: 16px 16px;
+  margin: ${props => (props.margin ? props.margin : `0 3vw 0 0`)};
+  padding: ${props => props.padding};
   transition: var(--mainTransition);
 
   /* :hover {
@@ -57,8 +57,8 @@ export const ButtonWrapper = styled.button`
     outline: none;
   }
   .modal {
-    width: 24px;
-    height: 24px;
+    width: ${props => props.width};
+    height: ${props => props.height};
     color: #000;
     display: flex;
     margin: auto;

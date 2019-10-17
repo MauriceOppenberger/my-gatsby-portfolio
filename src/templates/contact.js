@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { ContactWrapper } from "./styles/Contact"
+import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 import { FaLinkedin, FaGithub } from "react-icons/fa"
@@ -13,6 +14,11 @@ const contact = ({ pageContext }) => (
         <div className="social-media">
           <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
           <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
+          <div className="profile-image">
+            <Img
+              fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
+            />
+          </div>
           <ul className="social-icons">
             <li>
               <a
@@ -39,10 +45,12 @@ const contact = ({ pageContext }) => (
     </ContactWrapper>
   </Layout>
 )
-// < div className = "profile-image" >
-//   <Img
-//     fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
-//   />
-//       </div >
+{
+  /* <div className = "profile-image">
+  <Img
+    fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
+  />
+  </div> */
+}
 
 export default contact

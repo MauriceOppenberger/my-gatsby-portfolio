@@ -39,7 +39,12 @@ const Layout = ({ children }) => {
           {children}
         </section>
       </Primary>
-      <ContactModal />
+      <ContactModal
+        position="fixed"
+        width="24px"
+        height="24px"
+        padding="16px"
+      />
       <Footer />
     </>
   )

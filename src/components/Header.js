@@ -37,12 +37,14 @@ const Header = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="siteInfo col-md-auto">
-            <Link to="/">
-              {/* <div className="logo">
+            {/* <Link to="/">
+              <div className="logo">
                 <SiteLogo />
-              </div> */}
+              </div>
+            </Link> */}
+            <Link to="/">
+              <SiteInfo />
             </Link>
-            <SiteInfo />
           </div>
           <div className="navBar col-md-auto">
             <MainMenu menu={menu} />
