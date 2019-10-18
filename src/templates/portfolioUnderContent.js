@@ -10,7 +10,7 @@ import ContactModal from "../components/ContactFormModal"
 const PortfolioListWrapper = styled.div`
   width: 95vw;
   max-width: 1280px;
-  margin: 5rem auto;
+  margin: 0 auto 5rem auto;
 `
 
 const portfolioUnderContent = ({ pageContext }) => (
@@ -31,7 +31,8 @@ const portfolioUnderContent = ({ pageContext }) => (
         <p className="status">
           I am always open to new opportunities and cool projects!
         </p>
-        <ContactModal margin="0" width="48px" height="48px" padding="0px" />
+        {/* <ContactModal margin="0" width="48px" height="48px" padding="0px" /> */}
+        <ContactForm />
       </div>
     </PageWrapper>
   </Layout>

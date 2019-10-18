@@ -4,7 +4,9 @@ export const PageWrapper = styled.div`
   width: 95vw;
   max-width: 1280px;
   margin: auto;
-
+  .about {
+    margin-bottom: 7rem;
+  }
   h1 {
     font-size: 5vmax;
   }
@@ -13,13 +15,14 @@ export const PageWrapper = styled.div`
     font-weight: 600;
     /* margin: 2rem 0; */
     font-size: 0.9rem;
-    margin: 2rem 0 3rem;
+    margin: 2rem 0 5rem;
     max-width: 90vw;
   }
   .blurb a {
     color: blue;
     text-decoration: underline;
   }
+
   .stack td {
     /* display: flex;
     align-items: center;
@@ -51,9 +54,9 @@ export const PageWrapper = styled.div`
       font-size: 1.1rem !important;
     }
     .contact {
-      text-align: center;
-      max-width: 60%;
-      margin: auto;
+      /* text-align: center; */
+      max-width: 50%;
+      margin-left: auto;
     }
   }
 

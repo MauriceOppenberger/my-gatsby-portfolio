@@ -16,13 +16,13 @@ const PortfolioItemsWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 4rem;
   }
-  @media screen and (min-width: 992px) {
-    /* .center {
+  /* @media screen and (max-width: 660px) {
+    .center {
       grid-template-columns: 1fr;
-    } */
-  }
+    }
+  } */
 `
 
 const PortfolioItems = () => {
