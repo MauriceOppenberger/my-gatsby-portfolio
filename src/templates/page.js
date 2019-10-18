@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import { PageWrapper } from "./styles/Page"
-import ContactForm from "../components/ContactForm"
 import SEO from "../components/seo"
 
 const page = ({ pageContext }) => (
@@ -20,7 +19,6 @@ const page = ({ pageContext }) => (
         <p className="status">
           I am always open to new opportunities and cool projects!
         </p>
-        <ContactForm />
       </div>
     </PageWrapper>
   </Layout>
