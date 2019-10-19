@@ -153,7 +153,7 @@ export const ContactWrapper = styled.div`
 
   @media screen and (max-width: 992px) {
     .gatsby-image-wrapper {
-      max-width: 75px;
+      max-width: 100px;
 
       border-radius: 200px;
     }
