@@ -6,8 +6,6 @@ export const PortfolioWrapper = styled.div`
     margin: auto auto 2.5rem auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 1rem;
-    grid-row-gap: 2rem;
   }
   .project-title {
     margin-bottom: 2rem;
@@ -70,18 +68,27 @@ export const PortfolioWrapper = styled.div`
   }
 
   .project-media {
-    height: initial;
+    /* height: initial;
     margin: 0;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: center; */
+    /* stick media item to top */
+    position: sticky;
+    top: calc(56px + 1rem);
+    z-index: 98;
+    background: #fff;
+    max-height: 400px;
   }
   .project-media iframe {
-    height: 500px;
-    width: 70%;
+    /* height: 500px; */
+    /* width: 70%; */
+
+    width: 100%;
   }
   .project-media .fixed-Img {
     width: 100%;
-    height: 80vw;
+    /* height: 80vw; */
+    height: 115vw;
   }
   a p {
     text-align: center;
@@ -89,9 +96,16 @@ export const PortfolioWrapper = styled.div`
     text-decoration: underline;
   }
 
+  .project-main {
+    padding: 1rem 15px 0px 15px;
+    background: #fff;
+    z-index: 99;
+  }
   @media screen and (min-width: 992px) {
     .center {
       grid-template-columns: 0.8fr 1.1fr;
+      grid-column-gap: 1rem;
+      grid-row-gap: 2rem;
     }
 
     .project-media iframe {

@@ -15,9 +15,9 @@ const SiteInfoWrapper = styled.div`
   h5 {
     margin: 0;
   }
-  @media (max-width: 991px) {
+  /* @media (max-width: 991px) {
     display: none;
-  }
+  } */
 `
 
 const SiteInfo = () => {

@@ -34,7 +34,6 @@ export const PageWrapper = styled.div`
     width: max-content;
     padding: 10px 30px;
     color: #fff;
-
     border-radius: 20px;
     box-shadow: var(--lightShadow);
     transition: var(--mainTransition);
@@ -45,6 +44,9 @@ export const PageWrapper = styled.div`
   .contact h2 {
     font-size: 4vmax;
   }
+  form {
+    display: none;
+  }
   @media screen and (min-width: 992px) {
     .about {
       width: 90%;
@@ -53,17 +55,28 @@ export const PageWrapper = styled.div`
       max-width: 80%;
       font-size: 1.1rem !important;
     }
+    form {
+      display: block;
+    }
+
     .contact {
       /* text-align: center; */
       max-width: 50%;
-      margin-left: auto;
+
+      margin: 7rem 0 8rem auto;
     }
   }
 
   @media screen and (max-width: 992px) {
     .contact {
-      max-width: 90%;
-      margin: 5rem auto 8rem;
+      /* max-width: 90%; */
+      margin: 5rem auto 3rem;
+    }
+    .cta-btn a {
+      height: 50px;
+      font-size: 1.5rem;
+      align-items: center;
+      width: max-content;
     }
   }
   .status {

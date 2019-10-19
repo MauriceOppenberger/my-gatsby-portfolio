@@ -38,7 +38,7 @@ export const ButtonWrapper = styled.button`
   /* background-color: rgba(255, 255, 255, 0.5); */
   background-color: #fff;
   position: ${props => props.position};
-  z-index: 2;
+  z-index: 102;
   right: 0;
   color: #fff;
   bottom: 72px;

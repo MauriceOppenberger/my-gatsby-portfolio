@@ -11,6 +11,10 @@ const PortfolioListWrapper = styled.div`
   width: 95vw;
   max-width: 1280px;
   margin: 0 auto 5rem auto;
+
+  h2 {
+    opacity: 0.5;
+  }
 `
 
 const portfolioUnderContent = ({ pageContext }) => (
@@ -23,15 +27,17 @@ const portfolioUnderContent = ({ pageContext }) => (
         <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
       </div>
       <PortfolioListWrapper>
+        <h2>My Projects</h2>
         <PortfolioItems />
       </PortfolioListWrapper>
       <div className="contact">
-        <h2>Get in touch!</h2>
+        <h1>Get in touch!</h1>
 
         <p className="status">
           I am always open to new opportunities and cool projects!
         </p>
         {/* <ContactModal margin="0" width="48px" height="48px" padding="0px" /> */}
+
         <ContactForm />
       </div>
     </PageWrapper>
