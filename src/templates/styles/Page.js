@@ -63,7 +63,7 @@ export const PageWrapper = styled.div`
       /* text-align: center; */
       max-width: 50%;
 
-      margin: 7rem 0 8rem auto;
+      margin: 7rem auto 8rem 0;
     }
   }
 

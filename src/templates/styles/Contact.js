@@ -17,16 +17,23 @@ export const ContactWrapper = styled.div`
   .technologies {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: auto auto 5rem auto;
   }
   .technologies li {
     flex: 1 1 max-content;
     margin-right: 1.3rem;
     display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
 
-    padding: 5px;
+    background: #fff;
+    border-radius: 21px;
+    padding: 8px 20px;
     /* border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px; */
+  }
+  .technologies li:hover {
+    box-shadow: var(--lightShadow);
   }
   .technologies li:nth-child(1) {
     border-bottom: 2px solid #20759b;
@@ -65,26 +72,10 @@ export const ContactWrapper = styled.div`
     border-bottom: 2px solid #69b23f;
   }
 
-  /* .stack {
-    display: none;
-    grid-template-columns: auto auto auto;
-    margin: 3rem auto;
-  }
-  .stack li {
-    align-items: center;
-    display: flex;
-    height: 100px;
-  }
-  .stack li figure img {
-    width: 90px;
-    height: auto;
-    margin: 0;
-  } */
-
   .gatsby-image-wrapper {
-    max-width: 400px;
-    margin: auto;
-    border-bottom-right-radius: 200px;
+    max-width: 100px;
+    margin-right: auto;
+    border-radius: 200px;
   }
 
   @media screen and (min-width: 992px) {
@@ -98,13 +89,7 @@ export const ContactWrapper = styled.div`
     .blurb {
       font-size: 1.1rem !important;
     }
-    .profile-image {
-      /* display: none; */
-      position: absolute;
-      width: 400px;
-      right: 10vw;
-      bottom: 86px;
-    }
+
     .social-media .social-icons {
       position: fixed;
       z-index: 100;
@@ -135,7 +120,7 @@ export const ContactWrapper = styled.div`
       height: 32px;
     }
     .technologies {
-      margin: 0 auto 0 0;
+      margin: 0 auto 5rem 0;
       max-width: 90%;
     }
     /* .stack {
@@ -167,6 +152,15 @@ export const ContactWrapper = styled.div`
   }
 
   @media screen and (max-width: 992px) {
+    .gatsby-image-wrapper {
+      max-width: 75px;
+
+      border-radius: 200px;
+    }
+    .profile-image {
+      /* display: none; */
+    }
+
     .social-media .social-icons {
       display: flex;
       margin: auto;
