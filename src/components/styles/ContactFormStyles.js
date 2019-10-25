@@ -43,9 +43,4 @@ export const ContactFormWrapper = styled.form`
   .hidden {
     display: none;
   }
-  /* @media screen and (min-width: 992px) {
-    p:nth-child(n + 3):nth-child(-n + 4) {
-      width: 80%;
-    }
-  } */
 `

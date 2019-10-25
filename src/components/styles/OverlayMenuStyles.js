@@ -8,7 +8,7 @@ export const Overlay = styled.div`
   transform: ${props =>
     props.menuOpen ? "translateX(0%)" : "translateX(+100%)"};
   z-index: 9999;
-  /* background: #fff; */
+
   left: 0px;
   padding: 20px;
   transition: all 0.3s ease;
@@ -17,7 +17,7 @@ export const Overlay = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+
     background: rgba(0, 0, 0, 0.9);
     width: 100%;
     height: 100%;

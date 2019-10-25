@@ -12,7 +12,9 @@ export const PortfolioWrapper = styled.div`
   }
   .project-title {
     text-align: center;
-}
+  }
+  .project-title h1 {
+    margin: 2rem auto;
   }
   .project-details {
     text-align: left;
@@ -22,7 +24,7 @@ export const PortfolioWrapper = styled.div`
     margin: 0.75rem auto;
     font-weight: 600;
     font-size: small;
-    /* display: grid; */
+
     grid-gap: 0.5rem;
   }
   .project-content ul li {
@@ -37,7 +39,6 @@ export const PortfolioWrapper = styled.div`
   }
   .project-details div span:nth-child(2) {
     color: gray;
-    /* font-size: smaller; */
   }
 
   .explainer {
@@ -67,31 +68,13 @@ export const PortfolioWrapper = styled.div`
     margin: 1rem auto;
 
     text-decoration: underline;
-
-    /* font-size: 0.9rem; */
   }
 
-  .project-media {
-    /* height: initial;
-    margin: 0;
-    margin-bottom: 2rem;
-    text-align: center; */
-    /* stick media item to top */
-    /* position: sticky;
-    top: calc(56px + 1rem);
-    z-index: 98;
-    background: #fff;
-    max-height: 400px; */
-  }
   .project-media iframe {
-    /* height: 500px; */
-    /* width: 70%; */
-
-    width: 100%;
+    display: none;
   }
   .project-media .fixed-Img {
     width: 100%;
-    /* height: 80vw; */
     height: 115vw;
   }
   a p {
@@ -106,29 +89,14 @@ export const PortfolioWrapper = styled.div`
     z-index: 99;
   }
   @media screen and (min-width: 992px) {
-    /* .center {
-      grid-template-columns: 0.8fr 1.1fr;
-      grid-column-gap: 1rem;
-      grid-row-gap: 2rem;
-    } */
-
     .project-media iframe {
-      /* position: fixed; */
-      /* right: 57vw; */
+      display: block;
+      width: 100%;
       height: 650px !important;
-      /* width: 37vw !important; */
-      /* top: 17vmin; */
+
       margin-top: 0rem;
     }
-    /* .project-media .fixed-Img {
-      position: fixed !important;
-      width: 34vmax;
-      height: 29vmax;
-      top: 170px;
-      right: 61%;
-      max-width: 100%;
-      max-height: 500px;
-    } */
+
     .project-media .fixed-Img {
       height: 29vmax;
       max-height: 500px;
@@ -143,17 +111,8 @@ export const PortfolioWrapper = styled.div`
       /* max-width: 75%; */
       margin: auto;
     }
-      .center {
-      width: 75%;
-      }
-  }
-  @media screen and (min-width: 1200px) {
     .center {
-      /* width: 100%; */
-      /* max-width: 1170px; */
+      width: 75%;
     }
-    /* .project-inner {
-      max-width: 90%;
-    }
-  /* } */
+  }
 `

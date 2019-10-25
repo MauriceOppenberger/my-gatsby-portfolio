@@ -35,7 +35,6 @@ export const ModalWrapper = styled.div`
 `
 
 export const ButtonWrapper = styled.button`
-  /* background-color: rgba(255, 255, 255, 0.5); */
   background-color: #fff;
   position: ${props => props.position};
   z-index: 102;
@@ -50,9 +49,6 @@ export const ButtonWrapper = styled.button`
   padding: ${props => props.padding};
   transition: var(--mainTransition);
 
-  /* :hover {
-    box-shadow: var(--darkShadow);
-  } */
   :focus {
     outline: none;
   }

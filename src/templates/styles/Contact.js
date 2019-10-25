@@ -128,14 +128,6 @@ export const ContactWrapper = styled.div`
       margin: 0 auto 5rem 0;
       max-width: 90%;
     }
-    /* .stack {
-      display: none;
-      grid-template-columns: auto auto auto auto;
-    }
-
-    .stack li figure img {
-      width: 120px;
-    } */
   }
 
   .blurb {
@@ -162,9 +154,6 @@ export const ContactWrapper = styled.div`
 
       border-radius: 200px;
     }
-    .profile-image {
-      /* display: none; */
-    }
 
     .social-media .social-icons {
       display: flex;
@@ -184,14 +173,4 @@ export const ContactWrapper = styled.div`
     align-items: center;
     word-spacing: 5px;
   }
-
-  /* .profile-image {
-    height: auto;
-    overflow: hidden;
-    margin-top: auto;
-  }
-  .profile-image figure.wp-block-image {
-    display: flex;
-    margin-bottom: 0px;
-  } */
 `
