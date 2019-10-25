@@ -15,16 +15,12 @@ const PortfolioItem = ({ portfolio }) => {
         ) : null}
       </div>
       <div className="contentContainer">
-        <h2>{portfolio.title}</h2>
-        {/* <div
-            dangerouslySetInnerHTML={{
-              __html: portfolio.acf.excerpt,
-            }}
-          /> */}
-        <p>{portfolio.acf.excerpt} &#123;...&#125;</p>
-        <div className="date">
+        {/* <h2>{portfolio.title}</h2> */}
+        <p>{portfolio.acf.excerpt}</p>
+
+        {/* <div className="date">
           <p>{portfolio.date}</p>
-        </div>
+        </div> */}
       </div>
     </div>
   )

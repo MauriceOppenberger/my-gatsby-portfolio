@@ -22,14 +22,14 @@ export const PortfolioItemWrapper = styled.div`
   .img-container:hover .img {
     opacity: 0.3;
   }
-  .contentContainer > * {
-    display: none;
-  }
   .contentContainer {
-    margin: 1rem 1rem;
+    display: none;
   }
   .contentContainer p {
     font-weight: 600;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
   }
 
   .link {
@@ -54,11 +54,25 @@ export const PortfolioItemWrapper = styled.div`
   @media screen and (min-width: 992px) {
     .blog {
       display: grid;
-      /* grid-template-columns: 1fr 1fr; */
+    }
+    .imgContainer {
+      grid-row: 1;
+      grid-column: 1;
+      z-index: 100;
     }
     .contentContainer {
-      margin: auto 2rem !important;
-      max-width: 95%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      grid-row: 1;
+      grid-column: 1;
+      margin: 0 !important;
+      height: 100%;
+      z-index: 101;
+      padding: 2rem 2rem;
+      text-align: center;
+    }
+    .blog:hover .contentContainer {
+      display: block;
     }
     .date {
       float: right;
