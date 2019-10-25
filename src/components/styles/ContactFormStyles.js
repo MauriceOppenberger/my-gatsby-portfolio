@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const ContactFormWrapper = styled.form`
   p {
-    margin: 0.5rem 0;
+    margin: 0.5rem auto;
   }
 
   label {
@@ -43,9 +43,9 @@ export const ContactFormWrapper = styled.form`
   .hidden {
     display: none;
   }
-  @media screen and (min-width: 992px) {
+  /* @media screen and (min-width: 992px) {
     p:nth-child(n + 3):nth-child(-n + 4) {
       width: 80%;
     }
-  }
+  } */
 `

@@ -71,10 +71,15 @@ export const ContactWrapper = styled.div`
   .technologies li:nth-last-child(1) {
     border-bottom: 2px solid #69b23f;
   }
+  .profile-image {
+    display: flex;
+    align-items: baseline;
+  }
 
   .gatsby-image-wrapper {
     max-width: 100px;
-    margin-right: auto;
+    width: 100px;
+    margin-left: 30px;
     border-radius: 200px;
   }
 

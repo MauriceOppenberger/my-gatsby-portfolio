@@ -12,13 +12,15 @@ const contact = ({ pageContext }) => (
     <ContactWrapper>
       <div className="center">
         <div className="social-media">
-          <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
-          <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
           <div className="profile-image">
+            <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
             <Img
               fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
             />
           </div>
+
+          <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
+
           <ul className="social-icons">
             <li>
               <a

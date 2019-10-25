@@ -5,7 +5,7 @@ export const PageWrapper = styled.div`
   max-width: 1280px;
   margin: auto;
   .about {
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
   }
   h1 {
     font-size: 5vmax;
@@ -63,7 +63,7 @@ export const PageWrapper = styled.div`
       /* text-align: center; */
       max-width: 50%;
 
-      margin: 7rem auto 8rem 0;
+      margin: 7rem auto 5rem auto;
     }
   }
 
@@ -73,8 +73,8 @@ export const PageWrapper = styled.div`
       margin: 5rem auto 3rem;
     }
     .cta-btn a {
-      height: 50px;
-      font-size: 1.5rem;
+      height: 44px;
+      font-size: 1rem;
       align-items: center;
       width: max-content;
     }

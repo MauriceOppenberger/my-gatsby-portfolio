@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
 export const PortfolioWrapper = styled.div`
+  width: 95vw;
+  max-width: 1280px;
+  margin: auto;
   .center {
     width: 100%;
     margin: auto auto 2.5rem auto;
@@ -8,7 +11,8 @@ export const PortfolioWrapper = styled.div`
     grid-template-columns: 1fr;
   }
   .project-title {
-    margin-bottom: 2rem;
+    text-align: center;
+}
   }
   .project-details {
     text-align: left;
@@ -73,11 +77,11 @@ export const PortfolioWrapper = styled.div`
     margin-bottom: 2rem;
     text-align: center; */
     /* stick media item to top */
-    position: sticky;
+    /* position: sticky;
     top: calc(56px + 1rem);
     z-index: 98;
     background: #fff;
-    max-height: 400px;
+    max-height: 400px; */
   }
   .project-media iframe {
     /* height: 500px; */
@@ -102,21 +106,21 @@ export const PortfolioWrapper = styled.div`
     z-index: 99;
   }
   @media screen and (min-width: 992px) {
-    .center {
+    /* .center {
       grid-template-columns: 0.8fr 1.1fr;
       grid-column-gap: 1rem;
       grid-row-gap: 2rem;
-    }
+    } */
 
     .project-media iframe {
-      position: fixed;
-      right: 57vw;
+      /* position: fixed; */
+      /* right: 57vw; */
       height: 650px !important;
-      width: 37vw !important;
-      top: 17vmin;
+      /* width: 37vw !important; */
+      /* top: 17vmin; */
       margin-top: 0rem;
     }
-    .project-media .fixed-Img {
+    /* .project-media .fixed-Img {
       position: fixed !important;
       width: 34vmax;
       height: 29vmax;
@@ -124,18 +128,32 @@ export const PortfolioWrapper = styled.div`
       right: 61%;
       max-width: 100%;
       max-height: 500px;
+    } */
+    .project-media .fixed-Img {
+      height: 29vmax;
+      max-height: 500px;
+    }
+    .project-media .fixed-Img picture img {
+      object-fit: contain !important;
     }
     .project-media {
       margin: 2.5rem;
     }
+    .project-inner {
+      /* max-width: 75%; */
+      margin: auto;
+    }
+      .center {
+      width: 75%;
+      }
   }
   @media screen and (min-width: 1200px) {
     .center {
-      width: 100%;
+      /* width: 100%; */
       /* max-width: 1170px; */
     }
-    .project-inner {
+    /* .project-inner {
       max-width: 90%;
     }
-  }
+  /* } */
 `

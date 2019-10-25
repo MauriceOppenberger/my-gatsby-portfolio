@@ -27,7 +27,7 @@ const portfolioUnderContent = ({ pageContext }) => (
         <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
       </div>
       <PortfolioListWrapper>
-        <h2>My Projects</h2>
+        <h2>Latest Projects</h2>
         <PortfolioItems />
       </PortfolioListWrapper>
       <div className="contact">

@@ -35,6 +35,7 @@ const PortfolioItems = () => {
             slug
             title
             acf {
+              link
               excerpt
             }
             date(formatString: "MMMM Do, Y")

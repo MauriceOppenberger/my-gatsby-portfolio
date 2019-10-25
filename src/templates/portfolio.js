@@ -11,6 +11,9 @@ const portfolio = ({ pageContext }) => (
     <PortfolioWrapper>
       {/* <div className="container-fluid"> */}
       <div className="center">
+        <div className="project-title">
+          <h1>{pageContext.title}</h1>
+        </div>
         <div className="project-media">
           {pageContext.acf.prototype_url ? (
             <iframe
@@ -31,9 +34,9 @@ const portfolio = ({ pageContext }) => (
 
         <div className="project-main">
           <div className="project-inner">
-            <div className="project-title">
+            {/* <div className="project-title">
               <h1>{pageContext.title}</h1>
-            </div>
+            </div> */}
 
             <div className="project-content">
               <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
