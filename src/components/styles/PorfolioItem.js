@@ -27,9 +27,11 @@ export const PortfolioItemWrapper = styled.div`
   }
   .contentContainer p {
     font-weight: 600;
-    color: #fff;
-    font-size: 1rem;
+    color: #000;
+    font-size: 0.8rem;
     text-align: center;
+    margin: 0.5rem auto;
+    font-weight: 600;
   }
 
   .link {
@@ -61,18 +63,14 @@ export const PortfolioItemWrapper = styled.div`
       z-index: 100;
     }
     .contentContainer {
-      background: rgba(0, 0, 0, 0.9);
-      display: none;
-      grid-row: 1;
+      background: #fff;
+      display: block;
+      grid-row: 2;
       grid-column: 1;
       margin: 0 !important;
-      height: 100%;
+      height: max-content;
       z-index: 101;
-      padding: 2rem 2rem;
       text-align: center;
-    }
-    .blog:hover .contentContainer {
-      display: block;
     }
     .date {
       float: right;
