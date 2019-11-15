@@ -36,7 +36,7 @@ const Header = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="siteInfo col-md-auto">
-            <Link to="/">
+            <Link to="/home">
               <SiteInfo />
             </Link>
           </div>

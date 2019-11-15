@@ -5,6 +5,7 @@ import { PageWrapper } from "./styles/Page"
 import ContactForm from "../components/ContactForm"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import DOMPurify from "dompurify"
 
 const PortfolioListWrapper = styled.div`
   width: 95vw;
@@ -20,30 +21,45 @@ const PortfolioListWrapper = styled.div`
   }
 `
 
-const portfolioUnderContent = ({ pageContext }) => (
-  <Layout>
-    <SEO title="Portfolio Page" />
-    <PageWrapper>
-      <div className="about">
-        <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
+const portfolioUnderContent = ({ pageContext }) => {
+  const cleanHtml = DOMPurify.sanitize
+  return (
+    <Layout>
+      <SEO title="Portfolio Page" />
+      <PageWrapper>
+        <div className="about">
+          <h1
+            dangerouslySetInnerHTML={{
+              __html: cleanHtml(pageContext.title, {
+                SAFE_FOR_JQUERY: true,
+              }),
+            }}
+          />
 
-        <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
-      </div>
-      <PortfolioListWrapper>
-        <h3>--- Projects I've been working on ---</h3>
-        <PortfolioItems />
-      </PortfolioListWrapper>
-      <div className="contact">
-        <h1>Get in touch!</h1>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: cleanHtml(pageContext.content, {
+                SAFE_FOR_JQUERY: true,
+              }),
+            }}
+          />
+        </div>
+        <PortfolioListWrapper>
+          <h3>--- Projects I've been working on ---</h3>
+          <PortfolioItems />
+        </PortfolioListWrapper>
+        <div className="contact">
+          <h1>Get in touch!</h1>
 
-        <p className="status">
-          I am always open to new opportunities and cool projects!
-        </p>
+          <p className="status">
+            I am always open to new opportunities and cool projects!
+          </p>
 
-        <ContactForm />
-      </div>
-    </PageWrapper>
-  </Layout>
-)
+          <ContactForm />
+        </div>
+      </PageWrapper>
+    </Layout>
+  )
+}
 
 export default portfolioUnderContent
