@@ -5,15 +5,18 @@ import { PageWrapper } from "./styles/Page"
 import ContactForm from "../components/ContactForm"
 import SEO from "../components/seo"
 import styled from "styled-components"
-import ContactModal from "../components/ContactFormModal"
 
 const PortfolioListWrapper = styled.div`
   width: 95vw;
   max-width: 1280px;
   margin: 0 auto 5rem auto;
 
-  h2 {
-    opacity: 0.5;
+  h3 {
+    font-size: 1.5rem;
+    color: #4a4949;
+    /* max-width: 45vw; */
+    margin: auto;
+    text-align: center;
   }
 `
 
@@ -27,7 +30,7 @@ const portfolioUnderContent = ({ pageContext }) => (
         <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
       </div>
       <PortfolioListWrapper>
-        <h2>Latest Projects</h2>
+        <h3>--- Projects I've been working on ---</h3>
         <PortfolioItems />
       </PortfolioListWrapper>
       <div className="contact">
@@ -36,7 +39,6 @@ const portfolioUnderContent = ({ pageContext }) => (
         <p className="status">
           I am always open to new opportunities and cool projects!
         </p>
-        {/* <ContactModal margin="0" width="48px" height="48px" padding="0px" /> */}
 
         <ContactForm />
       </div>

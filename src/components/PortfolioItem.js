@@ -1,26 +1,37 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
+import SiteLogo from "./SiteLogo"
 
 import { PortfolioItemWrapper } from "./styles/PorfolioItem"
 
 const PortfolioItem = ({ portfolio }) => {
   const markUp = (
     <div className="blog">
-      <div className="imgContainer">
-        {portfolio.featured_media.title !== "default_fallback_image" ? (
-          <Img
-            fluid={portfolio.featured_media.localFile.childImageSharp.fluid}
-          />
-        ) : null}
-      </div>
       <div className="contentContainer">
-        {/* <h2>{portfolio.title}</h2> */}
-        <p>{portfolio.acf.excerpt}</p>
+        <div className="frontmatter">
+          <div className="logo">
+            <SiteLogo />
+          </div>
+          <div className="info">
+            <p>Maurice Oppenberger</p>
+            <p>{portfolio.date}</p>
+          </div>
+        </div>
 
-        {/* <div className="date">
-          <p>{portfolio.date}</p>
-        </div> */}
+        <div className="imgContainer">
+          {portfolio.featured_media.title !== "default_fallback_image" ? (
+            <Img
+              className="image"
+              fluid={portfolio.featured_media.localFile.childImageSharp.fluid}
+            />
+          ) : null}
+        </div>
+        <h2>{portfolio.title}</h2>
+
+        <p className="excerpt">{portfolio.acf.excerpt}...</p>
+        {/* <p className="stack">{portfolio.acf.excerpt}</p> */}
+        <p className="role">{portfolio.acf.role}</p>
       </div>
     </div>
   )

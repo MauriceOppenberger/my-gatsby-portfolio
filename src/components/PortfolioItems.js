@@ -9,20 +9,28 @@ import styled from "styled-components"
 const PortfolioItemsWrapper = styled.div`
   .portfolio {
     padding: 4rem 0;
+    margin: auto;
+    max-width: 45vw;
   }
   .center {
     width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+
+    grid-template-columns: 1fr;
     grid-column-gap: 2rem;
-    grid-row-gap: 4rem;
+    grid-row-gap: 2rem;
   }
-  /* @media screen and (max-width: 660px) {
-    .center {
-      grid-template-columns: 1fr;
+  @media screen and (max-width: 992px) {
+    .portfolio {
+      max-width: 100%;
     }
-  } */
+    .center {
+      max-width: 100%;
+      /* grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); */
+      /* grid-template-columns: 1fr; */
+    }
+  }
 `
 
 const PortfolioItems = () => {
@@ -34,7 +42,9 @@ const PortfolioItems = () => {
             id
             slug
             title
+
             acf {
+              role
               link
               excerpt
             }
@@ -49,6 +59,9 @@ const PortfolioItems = () => {
                   }
                 }
               }
+              author {
+                name
+              }
             }
           }
         }
@@ -58,7 +71,7 @@ const PortfolioItems = () => {
 
   return (
     <PortfolioItemsWrapper>
-      <div className="portflolio">
+      <div className="portfolio">
         <div className="center">
           {data.porfolioItems.edges.map(({ node }) => (
             <PortfolioItem key={node.id} portfolio={node} />

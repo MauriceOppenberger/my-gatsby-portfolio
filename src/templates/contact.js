@@ -47,12 +47,5 @@ const contact = ({ pageContext }) => (
     </ContactWrapper>
   </Layout>
 )
-{
-  /* <div className = "profile-image">
-  <Img
-    fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
-  />
-  </div> */
-}
 
 export default contact
