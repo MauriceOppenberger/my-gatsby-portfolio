@@ -22,7 +22,12 @@ const PortfolioListWrapper = styled.div`
 `
 
 const portfolioUnderContent = ({ pageContext }) => {
-  const cleanHtml = DOMPurify.sanitize
+  const cleanHtmlTitle = DOMPurify.sanitize(pageContext.title, {
+    SAFE_FOR_JQUERY: true,
+  })
+  const cleanHtmlContent = DOMPurify.sanitize(pageContext.content, {
+    SAFE_FOR_JQUERY: true,
+  })
   return (
     <Layout>
       <SEO title="Portfolio Page" />
@@ -30,17 +35,13 @@ const portfolioUnderContent = ({ pageContext }) => {
         <div className="about">
           <h1
             dangerouslySetInnerHTML={{
-              __html: cleanHtml(pageContext.title, {
-                SAFE_FOR_JQUERY: true,
-              }),
+              __html: cleanHtmlTitle,
             }}
           />
 
           <div
             dangerouslySetInnerHTML={{
-              __html: cleanHtml(pageContext.content, {
-                SAFE_FOR_JQUERY: true,
-              }),
+              __html: cleanHtmlContent,
             }}
           />
         </div>

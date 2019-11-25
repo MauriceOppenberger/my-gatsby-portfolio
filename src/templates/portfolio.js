@@ -7,7 +7,9 @@ import DOMPurify from "dompurify"
 import { PortfolioWrapper } from "./styles/Portfolio"
 
 const portfolio = ({ pageContext }) => {
-  const cleanHtml = DOMPurify.sanitize
+  const cleanHtml = DOMPurify.sanitize(pageContext.content, {
+    SAFE_FOR_JQUERY: true,
+  })
   return (
     <Layout>
       <SEO title={pageContext.title} />
@@ -46,9 +48,7 @@ const portfolio = ({ pageContext }) => {
               <div className="project-content">
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: cleanHtml(pageContext.content, {
-                      SAFE_FOR_JQUERY: true,
-                    }),
+                    __html: cleanHtml,
                   }}
                 />
               </div>

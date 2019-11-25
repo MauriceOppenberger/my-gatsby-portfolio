@@ -4,7 +4,12 @@ import { PageWrapper } from "./styles/Page"
 import SEO from "../components/seo"
 
 const page = ({ pageContext }) => {
-  const cleanHtml = DOMPurify.sanitize
+  const cleanHtmlTitle = DOMPurify.sanitize(pageContext.title, {
+    SAFE_FOR_JQUERY: true,
+  })
+  const cleanHtmlContent = DOMPurify.sanitize(pageContext.content, {
+    SAFE_FOR_JQUERY: true,
+  })
 
   return (
     <Layout>
@@ -13,17 +18,13 @@ const page = ({ pageContext }) => {
         <div className="about">
           <h1
             dangerouslySetInnerHTML={{
-              __html: cleanHtml(pageContext.title, {
-                SAFE_FOR_JQUERY: true,
-              }),
+              __html: cleanHtmlTitle,
             }}
           />
 
           <div
             dangerouslySetInnerHTML={{
-              __html: cleanHtml(pageContext.content, {
-                SAFE_FOR_JQUERY: true,
-              }),
+              __html: cleanHtmlContent,
             }}
           />
         </div>

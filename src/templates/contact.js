@@ -8,7 +8,9 @@ import DOMPurify from "dompurify"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 const contact = ({ pageContext }) => {
-  const cleanHtml = DOMPurify.sanitize
+  const cleanHtml = DOMPurify.sanitize(pageContext.title, {
+    SAFE_FOR_JQUERY: true,
+  })
 
   return (
     <Layout>
@@ -19,9 +21,7 @@ const contact = ({ pageContext }) => {
             <div className="profile-image">
               <h1
                 dangerouslySetInnerHTML={{
-                  __html: cleanHtml(pageContext.title, {
-                    SAFE_FOR_JQUERY: true,
-                  }),
+                  __html: cleanHtml,
                 }}
               />
               <Img

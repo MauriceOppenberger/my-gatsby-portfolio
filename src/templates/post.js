@@ -4,7 +4,9 @@ import SEO from "../components/seo"
 import DOMPurify from "dompurify"
 
 const post = ({ pageContext }) => {
-  const cleanHtml = DOMPurify.sanitize
+  const cleanHtml = DOMPurify.sanitize(pageContext.content, {
+    SAFE_FOR_JQUERY: true,
+  })
   return (
     <Layout>
       <SEO title={pageContext.title} />
@@ -12,9 +14,7 @@ const post = ({ pageContext }) => {
         <h1>{pageContext.title}</h1>
         <div
           dangerouslySetInnerHTML={{
-            __html: cleanHtml(pageContext.content, {
-              SAFE_FOR_JQUERY: true,
-            }),
+            __html: cleanHtml,
           }}
         ></div>
       </div>
