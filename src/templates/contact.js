@@ -3,15 +3,10 @@ import Layout from "../components/layout"
 import { ContactWrapper } from "./styles/Contact"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
-import DOMPurify from "dompurify"
 
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 const contact = ({ pageContext }) => {
-  const cleanHtml = DOMPurify.sanitize(pageContext.title, {
-    SAFE_FOR_JQUERY: true,
-  })
-
   return (
     <Layout>
       <SEO title="About Me" />
@@ -21,7 +16,7 @@ const contact = ({ pageContext }) => {
             <div className="profile-image">
               <h1
                 dangerouslySetInnerHTML={{
-                  __html: cleanHtml,
+                  __html: pageContext.title,
                 }}
               />
               <Img
@@ -33,9 +28,7 @@ const contact = ({ pageContext }) => {
 
             <div
               dangerouslySetInnerHTML={{
-                __html: cleanHtml(pageContext.content, {
-                  SAFE_FOR_JQUERY: true,
-                }),
+                __html: pageContext.content,
               }}
             />
 
