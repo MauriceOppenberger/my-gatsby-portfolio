@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://gatsbywp.oppenberger.com",
-        sitemap: "https://gatsbywp.oppenberger.com/sitemap.xml",
+        host: "https://oppenberger.com",
+        sitemap: "https://oppenberger.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
