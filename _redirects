@@ -1,5 +1,4 @@
 # Redirect default Netlify subdomain to primary domain
-#https://oppenberger.netlify.com/* https://gatsbywp.oppenberger.com/:splat 301!
 
 /wp-admin https://cms.oppenberger.com/wp-admin 200
 /wp-json  https://cms.oppenberger.com/wp-json  200
