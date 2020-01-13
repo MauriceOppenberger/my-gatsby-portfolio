@@ -15,6 +15,13 @@ exports.createPages = async ({ graphql, actions }) => {
     redirectInBrowser: true,
     IsPermanent: true,
   })
+  createRedirect({
+    fromPath: "/wp-admin",
+    toPath: "https://cms.oppenberger.com/wp-admin",
+    redirectInBrowser: true,
+    IsPermanent: true,
+    statusCode: 200,
+  })
 
   const result = await graphql(`
     {
