@@ -1,5 +1,4 @@
 # Redirect default Netlify subdomain to primary domain
 
-
 /wp-admin https://cms.oppenberger.com/wp-admin 
 /wp-json  https://cms.oppenberger.com/wp-json  
