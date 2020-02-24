@@ -9,7 +9,7 @@ module.exports = {
     description: `Personal portfolio website of Maurice Oppenberger, Web developer and UX designer.`,
     keywords: `web developemt, ux design, ui design, toronto, multimedia design, digital design, wep app development, freelance web developer toronto`,
     author: `@mauriceoppenberger`,
-    siteUrl: "https://maurice.oppenberger.com",
+    siteUrl: "https://oppenberger.com",
   },
 
   plugins: [
@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://maurice.oppenberger.com",
-        sitemap: "https://maurice.oppenberger.com/sitemap.xml",
+        host: "https://oppenberger.com",
+        sitemap: "https://oppenberger.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
