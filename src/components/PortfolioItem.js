@@ -37,20 +37,9 @@ const PortfolioItem = ({ portfolio }) => {
   )
   return (
     <PortfolioItemWrapper>
-      {portfolio.acf.link ? (
-        <a
-          href={`https://${portfolio.acf.link}`}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="link"
-        >
-          {markUp}
-        </a>
-      ) : (
-        <Link to={`/portfolio/${portfolio.slug}`} className="link">
-          {markUp}
-        </Link>
-      )}
+      <Link to={`/portfolio/${portfolio.slug}`} className="link">
+        {markUp}
+      </Link>
     </PortfolioItemWrapper>
   )
 }

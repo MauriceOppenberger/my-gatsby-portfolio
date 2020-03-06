@@ -34,6 +34,19 @@ const portfolio = ({ pageContext }) => {
                 className="fixed-Img"
               />
             ) : null}
+            <div className="btn-container">
+              {pageContext.acf.client.url ? (
+                <button className="cta-btn">
+                  <a
+                    href={pageContext.acf.client.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>Visit the Website</p>
+                  </a>
+                </button>
+              ) : null}
+            </div>
           </div>
 
           <div className="project-main">
@@ -88,15 +101,6 @@ const portfolio = ({ pageContext }) => {
                   </div>
                 ) : null}
               </div>
-              {pageContext.acf.url ? (
-                <a
-                  href={pageContext.acf.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p>Visit the Website</p>
-                </a>
-              ) : null}
             </div>
           </div>
         </div>

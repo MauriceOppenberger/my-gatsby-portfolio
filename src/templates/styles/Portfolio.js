@@ -73,20 +73,45 @@ export const PortfolioWrapper = styled.div`
   .project-media iframe {
     display: none;
   }
-  .project-media .fixed-Img {
-    width: 100%;
-    height: 115vw;
-  }
-  a p {
+  .project-media {
     text-align: center;
-    color: #000;
-    text-decoration: underline;
+  }
+  .project-media .fixed-Img {
+    /* width: 100%;
+    height: 115vw; */
+
+    width: 100%;
+    max-width: 500px;
+
+    max-height: 400px;
+    height: 60vw;
   }
 
   .project-main {
     padding: 1rem 15px 0px 15px;
     background: #fff;
     z-index: 99;
+  }
+  .btn-container {
+    margin: 2rem 0 0;
+  }
+  .cta-btn {
+    background-color: #001c3f;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: var(--lightShadow);
+    transition: var(--mainTransition);
+  }
+  .cta-btn a {
+    display: flex;
+    height: 44px;
+    width: max-content;
+    padding: 10px 16px;
+    color: #fff;
+  }
+  .cta-btn :hover {
+    box-shadow: var(--darkShadow);
   }
   @media screen and (min-width: 992px) {
     .project-media iframe {

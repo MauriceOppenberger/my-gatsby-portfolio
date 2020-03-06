@@ -39,7 +39,7 @@ const portfolioUnderContent = ({ pageContext }) => {
           />
         </div>
         <PortfolioListWrapper>
-          <h3>--- Projects I've been working on ---</h3>
+          <h3>--- My Work ---</h3>
           <PortfolioItems />
         </PortfolioListWrapper>
         <div className="contact">

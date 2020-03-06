@@ -10,24 +10,25 @@ const PortfolioItemsWrapper = styled.div`
   .portfolio {
     padding: 4rem 0;
     margin: auto;
-    max-width: 45vw;
+    /* max-width: 45vw; */
   }
   .center {
     width: 100%;
     margin: auto;
     display: grid;
+    grid-template-columns: auto auto;
 
-    grid-template-columns: 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
   }
   @media screen and (max-width: 992px) {
     .portfolio {
-      max-width: 100%;
+      width: 100%;
+      max-width: 500px;
     }
     .center {
       max-width: 100%;
-      /* grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); */
+      grid-template-columns: 1fr;
       /* grid-template-columns: 1fr; */
     }
   }
