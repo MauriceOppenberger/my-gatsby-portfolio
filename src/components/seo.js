@@ -94,6 +94,15 @@ function SEO({ description, lang, meta, title }) {
             }`,
           },
         ]}
+        link={[
+          {
+            rel: "stylesheet",
+            href:
+              "https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.css",
+            type: "text/css",
+            media: "all",
+          },
+        ]}
       />
     </>
   )

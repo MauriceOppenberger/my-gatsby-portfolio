@@ -9,6 +9,7 @@ export const PageWrapper = styled.div`
   }
   h1 {
     font-size: 5vmax;
+    max-width: 50vmax;
   }
   .blurb {
     line-height: 2 !important;

@@ -3,15 +3,19 @@ import styled from "styled-components"
 export const PortfolioItemWrapper = styled.div`
   .blog {
     /* box-shadow: var(--lightShadow); */
+    border: 2px solid;
+
+    border-radius: 6px;
+    border-color: rgb(210, 210, 210);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
     transition: var(--mainTransition);
     height: max-content;
     width: 100%;
     background-color: rgba(255, 255, 255, 1);
   }
-  .blog:hover {
+  /* .blog:hover {
     box-shadow: var(--lightShadow);
-  }
+  } */
 
   .img-container {
     position: relative;
@@ -25,10 +29,10 @@ export const PortfolioItemWrapper = styled.div`
     opacity: 0.3;
   }
   .contentContainer {
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   .contentContainer p {
-    font-weight: 600;
+    line-height: 1.5;
     color: #000;
     font-size: 0.8rem;
     margin: 0.5rem auto;
@@ -36,13 +40,14 @@ export const PortfolioItemWrapper = styled.div`
   }
 
   .link {
+    font-size: 0.9rem;
+
+    font-weight: 700;
     background: var(--mainWhite);
     opacity: 1;
-    text-transform: capitalize;
     color: var(--mainBlack);
-    margin: 0.5rem 0rem;
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     transition: var(--mainTransition);
     cursor: pointer;
   }
@@ -76,13 +81,14 @@ export const PortfolioItemWrapper = styled.div`
     /* padding: 5px; */
     margin-right: 1rem;
   }
+
   .contentContainer h2 {
     color: #000;
-    /* font-weight: 800; */
-    font-size: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
   .contentContainer .excerpt {
-    color: #4a4949;
+    color: #000;
   }
 
   .contentContainer .role {
@@ -90,8 +96,17 @@ export const PortfolioItemWrapper = styled.div`
     padding: 10px;
     text-align: end;
   }
-  .imgContainer {
+  .imgContainer .image {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .imgContainer .image img {
+    object-fit: contain !important;
+    max-height: 100%;
+  }
+  .textContainer {
     margin: 1rem;
+    padding: 0.5rem;
   }
 
   @media screen and (min-width: 992px) {
@@ -114,11 +129,7 @@ export const PortfolioItemWrapper = styled.div`
       z-index: 100;
     }
     .imgContainer .image {
-      height: 250px;
-      margin: 1rem;
-    }
-    .imgContainer .image img {
-      object-position: top !important;
+      height: 350px;
     }
   }
 `

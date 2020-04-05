@@ -8,7 +8,7 @@ import styled from "styled-components"
 
 const PortfolioItemsWrapper = styled.div`
   .portfolio {
-    padding: 4rem 0;
+    padding: 4rem 2rem;
     margin: auto;
     /* max-width: 45vw; */
   }
@@ -16,9 +16,9 @@ const PortfolioItemsWrapper = styled.div`
     width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
-    grid-column-gap: 2rem;
+    grid-column-gap: 1rem;
     grid-row-gap: 2rem;
   }
   @media screen and (max-width: 992px) {
@@ -55,7 +55,7 @@ const PortfolioItems = () => {
               title
               localFile {
                 childImageSharp {
-                  fluid(quality: 100, maxWidth: 500, maxHeight: 300) {
+                  fluid(quality: 100, maxWidth: 500) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }

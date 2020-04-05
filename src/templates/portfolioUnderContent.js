@@ -5,6 +5,8 @@ import { PageWrapper } from "./styles/Page"
 import ContactForm from "../components/ContactForm"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import Hero from "../components/Hero"
+import DOMPurify from "dompurify"
 
 const PortfolioListWrapper = styled.div`
   width: 95vw;
@@ -21,23 +23,32 @@ const PortfolioListWrapper = styled.div`
 `
 
 const portfolioUnderContent = ({ pageContext }) => {
+  const cleanHtmlTitle = DOMPurify.sanitize(pageContext.title, {
+    SAFE_FOR_JQUERY: true,
+  })
+  const cleanHtmlContent = DOMPurify.sanitize(pageContext.content, {
+    SAFE_FOR_JQUERY: true,
+  })
+
   return (
     <Layout>
       <SEO title="Portfolio Page" />
+
       <PageWrapper>
         <div className="about">
           <h1
             dangerouslySetInnerHTML={{
-              __html: pageContext.title,
+              __html: cleanHtmlTitle,
             }}
           />
 
           <div
             dangerouslySetInnerHTML={{
-              __html: pageContext.content,
+              __html: cleanHtmlContent,
             }}
           />
         </div>
+
         <PortfolioListWrapper>
           <h3>--- My Work ---</h3>
           <PortfolioItems />

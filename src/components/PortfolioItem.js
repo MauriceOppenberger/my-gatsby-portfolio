@@ -9,7 +9,7 @@ const PortfolioItem = ({ portfolio }) => {
   const markUp = (
     <div className="blog">
       <div className="contentContainer">
-        <div className="frontmatter">
+        {/* <div className="frontmatter">
           <div className="logo">
             <SiteLogo />
           </div>
@@ -17,7 +17,7 @@ const PortfolioItem = ({ portfolio }) => {
             <p>Maurice Oppenberger</p>
             <p>{portfolio.date}</p>
           </div>
-        </div>
+        </div> */}
 
         <div className="imgContainer">
           {portfolio.featured_media.title !== "default_fallback_image" ? (
@@ -27,19 +27,25 @@ const PortfolioItem = ({ portfolio }) => {
             />
           ) : null}
         </div>
-        <h2>{portfolio.title}</h2>
+        <div className="textContainer">
+          <h2>{portfolio.acf.role}</h2>
+          <p className="excerpt">{portfolio.acf.excerpt}</p>
+          {/* <p className="stack">{portfolio.acf.excerpt}</p> */}
+          {/* <p className="role"></p> */}
 
-        <p className="excerpt">{portfolio.acf.excerpt}...</p>
-        {/* <p className="stack">{portfolio.acf.excerpt}</p> */}
-        <p className="role">{portfolio.acf.role}</p>
+          <Link to={`/portfolio/${portfolio.slug}`} className="link">
+            Read More{" "}
+          </Link>
+        </div>
       </div>
     </div>
   )
   return (
     <PortfolioItemWrapper>
-      <Link to={`/portfolio/${portfolio.slug}`} className="link">
+      {/* <Link to={`/portfolio/${portfolio.slug}`} className="link">
         {markUp}
-      </Link>
+      </Link> */}
+      {markUp}
     </PortfolioItemWrapper>
   )
 }

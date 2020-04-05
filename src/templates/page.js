@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import { PageWrapper } from "./styles/Page"
 import SEO from "../components/seo"
 
+import DOMPurify from "dompurify"
+
 const page = ({ pageContext }) => {
   const cleanHtmlTitle = DOMPurify.sanitize(pageContext.title, {
     SAFE_FOR_JQUERY: true,
