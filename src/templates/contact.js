@@ -30,8 +30,8 @@ const contact = ({ pageContext }) => {
             }}
           />
         </div>
-        <h3>My travels</h3>
-        <WorldMap />
+        {/* <h3>My travels</h3>
+        <WorldMap /> */}
         <div className="social-media">
           <ul className="social-icons">
             <li>
