@@ -1,29 +1,45 @@
 import React from "react"
 import Layout from "../components/layout"
 import { PageWrapper } from "./styles/Page"
-import ContactForm from "../components/ContactForm"
 import SEO from "../components/seo"
 
-const page = ({ pageContext }) => (
-  <Layout>
-    <SEO title="Homepage" />
+import DOMPurify from "dompurify"
 
-    <PageWrapper>
-      <div className="about">
-        <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
+const page = ({ pageContext }) => {
+  const cleanHtmlTitle = DOMPurify.sanitize(pageContext.title, {
+    SAFE_FOR_JQUERY: true,
+  })
+  const cleanHtmlContent = DOMPurify.sanitize(pageContext.content, {
+    SAFE_FOR_JQUERY: true,
+  })
 
-        <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
-      </div>
+  return (
+    <Layout>
+      <SEO title="Homepage" />
+      <PageWrapper>
+        <div className="about">
+          <h1
+            dangerouslySetInnerHTML={{
+              __html: cleanHtmlTitle,
+            }}
+          />
 
-      <div className="contact">
-        <h2>Get in touch!</h2>
-        <p className="status">
-          Drop me a line, I would love to hear about your Project.
-        </p>
-        <ContactForm />
-      </div>
-    </PageWrapper>
-  </Layout>
-)
+          <div
+            dangerouslySetInnerHTML={{
+              __html: cleanHtmlContent,
+            }}
+          />
+        </div>
+
+        <div className="contact">
+          <h2>Get in touch!</h2>
+          <p className="status">
+            I am always open to new opportunities and cool projects!
+          </p>
+        </div>
+      </PageWrapper>
+    </Layout>
+  )
+}
 
 export default page

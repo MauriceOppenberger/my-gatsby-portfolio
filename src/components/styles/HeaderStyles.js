@@ -2,8 +2,7 @@ import styled from "styled-components"
 
 export const HeaderWrapper = styled.header`
   background-color: #001c37;
-  /* background-color: rgba(255, 255, 255, 0.9); */
-  margin-bottom: 2rem;
+
   height: max-content;
   padding: 16px 0px;
   display: flex;
@@ -33,7 +32,7 @@ export const HeaderWrapper = styled.header`
 
   .navBar {
     margin-left: auto;
-    /* padding-right: 15px; */
+
     display: flex;
   }
 
@@ -41,23 +40,14 @@ export const HeaderWrapper = styled.header`
     max-width: 1800px;
   }
   .logo {
-    /* width: 70px; */
     height: auto;
     width: 3rem;
-    /* max-height: 5vw;
-    min-width: 2vw; */
+
     margin-right: 1rem;
   }
   @media screen and (max-width: 992px) {
     height: 56px;
     background-color: #001c3f;
-    /* height: 56px; */
-    .siteInfo {
-      /* display: none; */
-    }
-    .logo {
-      /* width: 40px; */
-    }
   }
   @media screen and (max-width: 390px) {
     padding: 0px;

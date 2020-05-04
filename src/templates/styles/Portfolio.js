@@ -1,16 +1,20 @@
 import styled from "styled-components"
 
 export const PortfolioWrapper = styled.div`
+  width: 95vw;
+  max-width: 1280px;
+  margin: auto;
   .center {
     width: 100%;
     margin: auto auto 2.5rem auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-column-gap: 1rem;
-    grid-row-gap: 2rem;
   }
   .project-title {
-    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .project-title h1 {
+    margin: 2rem auto;
   }
   .project-details {
     text-align: left;
@@ -19,8 +23,8 @@ export const PortfolioWrapper = styled.div`
   .project-details div {
     margin: 0.75rem auto;
     font-weight: 600;
-    font-size: small;
-    /* display: grid; */
+    font-size: 0.9rem;
+
     grid-gap: 0.5rem;
   }
   .project-content ul li {
@@ -35,7 +39,6 @@ export const PortfolioWrapper = styled.div`
   }
   .project-details div span:nth-child(2) {
     color: gray;
-    /* font-size: smaller; */
   }
 
   .explainer {
@@ -65,63 +68,76 @@ export const PortfolioWrapper = styled.div`
     margin: 1rem auto;
 
     text-decoration: underline;
-
-    /* font-size: 0.9rem; */
   }
 
-  .project-media {
-    height: initial;
-    margin: 0;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
   .project-media iframe {
-    height: 500px;
-    width: 70%;
+    display: none;
+  }
+  .project-media {
+    text-align: center;
   }
   .project-media .fixed-Img {
+    /* width: 100%;
+    height: 115vw; */
+
     width: 100%;
-    height: 80vw;
-  }
-  a p {
-    text-align: center;
-    color: #000;
-    text-decoration: underline;
+    max-width: 500px;
+
+    max-height: 400px;
+    height: 60vw;
   }
 
+  .project-main {
+    padding: 1rem 15px 0px 15px;
+    background: #fff;
+    z-index: 99;
+  }
+  .btn-container {
+    margin: 2rem 0 0;
+  }
+  .cta-btn {
+    background-color: #001c3f;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: var(--lightShadow);
+    transition: var(--mainTransition);
+  }
+  .cta-btn a {
+    display: flex;
+    height: 44px;
+    width: max-content;
+    padding: 10px 16px;
+    color: #fff;
+  }
+  .cta-btn :hover {
+    box-shadow: var(--darkShadow);
+  }
   @media screen and (min-width: 992px) {
-    .center {
-      grid-template-columns: 0.8fr 1.1fr;
-    }
-
     .project-media iframe {
-      position: fixed;
-      right: 57vw;
+      display: block;
+      width: 100%;
       height: 650px !important;
-      width: 37vw !important;
-      top: 17vmin;
+
       margin-top: 0rem;
     }
+
     .project-media .fixed-Img {
-      position: fixed !important;
-      width: 34vmax;
       height: 29vmax;
-      top: 170px;
-      right: 61%;
-      max-width: 100%;
       max-height: 500px;
+    }
+    .project-media .fixed-Img picture img {
+      object-fit: contain !important;
     }
     .project-media {
       margin: 2.5rem;
     }
-  }
-  @media screen and (min-width: 1200px) {
-    .center {
-      width: 100%;
-      /* max-width: 1170px; */
-    }
     .project-inner {
-      max-width: 90%;
+      /* max-width: 75%; */
+      margin: auto;
+    }
+    .center {
+      width: 75%;
     }
   }
 `

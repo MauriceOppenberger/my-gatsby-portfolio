@@ -16,11 +16,11 @@ const Primary = styled.main`
   min-height: 73vh !important;
 
   @media screen and (max-width: 992px) {
-    padding: 85px 0px 0px 0px !important;
+    padding: 56px 0px 0px 0px !important;
     min-height: 90vmax !important;
   }
   .site-main {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 `
 
@@ -39,7 +39,12 @@ const Layout = ({ children }) => {
           {children}
         </section>
       </Primary>
-      <ContactModal />
+      <ContactModal
+        position="fixed"
+        width="24px"
+        height="24px"
+        padding="16px"
+      />
       <Footer />
     </>
   )

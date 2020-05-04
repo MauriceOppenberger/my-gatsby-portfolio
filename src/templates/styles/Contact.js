@@ -17,16 +17,23 @@ export const ContactWrapper = styled.div`
   .technologies {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: auto auto 5rem auto;
   }
   .technologies li {
     flex: 1 1 max-content;
     margin-right: 1.3rem;
     display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
 
-    padding: 5px;
+    background: #fff;
+    border-radius: 21px;
+    padding: 8px 20px;
     /* border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px; */
+  }
+  .technologies li:hover {
+    box-shadow: var(--lightShadow);
   }
   .technologies li:nth-child(1) {
     border-bottom: 2px solid #20759b;
@@ -64,27 +71,16 @@ export const ContactWrapper = styled.div`
   .technologies li:nth-last-child(1) {
     border-bottom: 2px solid #69b23f;
   }
-
-  /* .stack {
-    display: none;
-    grid-template-columns: auto auto auto;
-    margin: 3rem auto;
-  }
-  .stack li {
-    align-items: center;
+  .profile-image {
     display: flex;
-    height: 100px;
+    align-items: baseline;
   }
-  .stack li figure img {
-    width: 90px;
-    height: auto;
-    margin: 0;
-  } */
 
   .gatsby-image-wrapper {
-    max-width: 400px;
-    margin: auto;
-    border-bottom-right-radius: 200px;
+    max-width: 100px;
+    width: 100px;
+    margin-left: 30px;
+    border-radius: 200px;
   }
 
   @media screen and (min-width: 992px) {
@@ -98,20 +94,16 @@ export const ContactWrapper = styled.div`
     .blurb {
       font-size: 1.1rem !important;
     }
-    /* .profile-image {
-      display: none;
-      position: absolute;
-      width: 400px;
-      right: 10vw;
-      bottom: 56px;
-    } */
+
     .social-media .social-icons {
       position: fixed;
       z-index: 100;
       display: flex;
       flex-direction: column;
+      height: 15%;
+      justify-content: space-between;
       right: 0;
-      bottom: 35%;
+      bottom: 45%;
       margin: 0 3vw 0 0;
       padding: 0px 16px;
     }
@@ -119,31 +111,23 @@ export const ContactWrapper = styled.div`
       width: 40px;
       display: flex;
       justify-content: center;
-      margin: 1.45rem 0rem 1rem 0 !important;
-      padding: 1rem 0;
+      margin: 0px !important;
+      /* padding: 1rem 0; */
     }
     .social-media .social-icons li a svg {
-      -webkit-transition: width, height 0.2s ease-out;
-      -moz-transition: width, height 0.2s ease-out;
-      -o-transition: width, height 0.2s ease-out;
-      transition: width, height 0.2s ease-out;
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
     }
     .social-media .social-icons li a svg:hover {
       width: 32px;
       height: 32px;
     }
     .technologies {
-      margin: 0 auto 0 0;
+      margin: 0 auto 5rem 0;
       max-width: 90%;
     }
-    /* .stack {
-      display: none;
-      grid-template-columns: auto auto auto auto;
-    }
-
-    .stack li figure img {
-      width: 120px;
-    } */
   }
 
   .blurb {
@@ -164,7 +148,19 @@ export const ContactWrapper = styled.div`
     width: inherit;
   }
 
+  .jvectormap-container {
+    svg {
+      height: 550px;
+    }
+  }
+
   @media screen and (max-width: 992px) {
+    .gatsby-image-wrapper {
+      max-width: 100px;
+
+      border-radius: 200px;
+    }
+
     .social-media .social-icons {
       display: flex;
       margin: auto;
@@ -183,14 +179,4 @@ export const ContactWrapper = styled.div`
     align-items: center;
     word-spacing: 5px;
   }
-
-  /* .profile-image {
-    height: auto;
-    overflow: hidden;
-    margin-top: auto;
-  }
-  .profile-image figure.wp-block-image {
-    display: flex;
-    margin-bottom: 0px;
-  } */
 `

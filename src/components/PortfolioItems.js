@@ -8,19 +8,28 @@ import styled from "styled-components"
 
 const PortfolioItemsWrapper = styled.div`
   .portfolio {
-    padding: 4rem 0;
+    padding: 4rem 2rem;
+    margin: auto;
+    /* max-width: 45vw; */
   }
   .center {
     width: 100%;
-    margin: 3rem auto;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    grid-column-gap: 2rem;
-    grid-row-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (max-width: 992px) {
+    .portfolio {
+      width: 100%;
+      max-width: 500px;
+    }
     .center {
+      max-width: 100%;
       grid-template-columns: 1fr;
+      /* grid-template-columns: 1fr; */
     }
   }
 `
@@ -34,7 +43,10 @@ const PortfolioItems = () => {
             id
             slug
             title
+
             acf {
+              role
+              link
               excerpt
             }
             date(formatString: "MMMM Do, Y")
@@ -43,10 +55,13 @@ const PortfolioItems = () => {
               title
               localFile {
                 childImageSharp {
-                  fluid(quality: 100, maxWidth: 500, maxHeight: 300) {
+                  fluid(quality: 100, maxWidth: 500) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }
+              }
+              author {
+                name
               }
             }
           }
@@ -57,7 +72,7 @@ const PortfolioItems = () => {
 
   return (
     <PortfolioItemsWrapper>
-      <div className="portflolio">
+      <div className="portfolio">
         <div className="center">
           {data.porfolioItems.edges.map(({ node }) => (
             <PortfolioItem key={node.id} portfolio={node} />

@@ -2,15 +2,19 @@ import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
+import DOMPurify from "dompurify"
 
 import { PortfolioWrapper } from "./styles/Portfolio"
 
-const portfolio = ({ pageContext }) => (
-  <Layout>
-    <SEO title={pageContext.title} />
-    <PortfolioWrapper>
-      <div className="container-fluid">
+const portfolio = ({ pageContext }) => {
+  return (
+    <Layout>
+      <SEO title={pageContext.title} />
+      <PortfolioWrapper>
         <div className="center">
+          <div className="project-title">
+            <h1>{pageContext.title}</h1>
+          </div>
           <div className="project-media">
             {pageContext.acf.prototype_url ? (
               <iframe
@@ -30,17 +34,32 @@ const portfolio = ({ pageContext }) => (
                 className="fixed-Img"
               />
             ) : null}
+            <div className="btn-container">
+              {pageContext.acf.client.url ? (
+                <button className="cta-btn">
+                  <a
+                    href={pageContext.acf.client.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>Visit the Website</p>
+                  </a>
+                </button>
+              ) : null}
+            </div>
           </div>
 
           <div className="project-main">
             <div className="project-inner">
-              <div className="project-title">
-                <h1>{pageContext.title}</h1>
-              </div>
+              {/* <div className="project-title">
+              <h1>{pageContext.title}</h1>
+            </div> */}
 
               <div className="project-content">
                 <div
-                  dangerouslySetInnerHTML={{ __html: pageContext.content }}
+                  dangerouslySetInnerHTML={{
+                    __html: pageContext.content,
+                  }}
                 />
               </div>
               <div className="project-subtitle">
@@ -82,21 +101,13 @@ const portfolio = ({ pageContext }) => (
                   </div>
                 ) : null}
               </div>
-              {pageContext.acf.url ? (
-                <a
-                  href={pageContext.acf.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p>Visit the Website</p>
-                </a>
-              ) : null}
             </div>
           </div>
         </div>
-      </div>
-    </PortfolioWrapper>
-  </Layout>
-)
+        {/* </div> */}
+      </PortfolioWrapper>
+    </Layout>
+  )
+}
 
 export default portfolio

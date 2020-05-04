@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://gatsbywp.oppenberger.com",
-        sitemap: "https://gatsbywp.oppenberger.com/sitemap.xml",
+        host: "https://oppenberger.com",
+        sitemap: "https://oppenberger.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
@@ -39,6 +39,8 @@ module.exports = {
         head: true,
         // enable ip anonymization
         anonymize: true,
+
+        branch: "v1.03",
       },
     },
     `gatsby-transformer-sharp`,
@@ -135,10 +137,10 @@ module.exports = {
         // Set how many pages are retrieved per API request.
         perPage: 100,
         // Search and Replace Urls across WordPress content.
-        searchAndReplaceContentUrls: {
-          sourceUrl: "https://source-url.com",
-          replacementUrl: "https://replacement-url.com",
-        },
+        // searchAndReplaceContentUrls: {
+        //   sourceUrl: "https://source-url.com",
+        //   replacementUrl: "https://replacement-url.com",
+        // },
         // Set how many simultaneous requests are sent at once.
         concurrentRequests: 10,
         // Set WP REST API routes whitelists

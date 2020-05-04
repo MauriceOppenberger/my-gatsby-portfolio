@@ -6,7 +6,6 @@ import MainMenu from "../components/MainMenu"
 
 import { HeaderWrapper } from "../components/styles/HeaderStyles"
 import SiteInfo from "./SiteInfo"
-import SiteLogo from "./SiteLogo"
 
 const Header = () => {
   const {
@@ -37,12 +36,9 @@ const Header = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="siteInfo col-md-auto">
-            <Link to="/">
-              <div className="logo">
-                <SiteLogo />
-              </div>
+            <Link to="/home">
+              <SiteInfo />
             </Link>
-            <SiteInfo />
           </div>
           <div className="navBar col-md-auto">
             <MainMenu menu={menu} />

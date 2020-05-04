@@ -1,18 +1,38 @@
 import React from "react"
 import Layout from "../components/layout"
 import { ContactWrapper } from "./styles/Contact"
+import WorldMap from "../components/WorldMap"
+import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 
-const contact = ({ pageContext }) => (
-  <Layout>
-    <SEO title="About Me" />
-    <ContactWrapper>
-      <div className="center">
+const contact = ({ pageContext }) => {
+  return (
+    <Layout>
+      <SEO title="Software Developer | About Me" />
+      <ContactWrapper>
+        <div className="center">
+          <div className="profile-image">
+            <h1
+              dangerouslySetInnerHTML={{
+                __html: pageContext.title,
+              }}
+            />
+            <Img
+              fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
+            />
+          </div>
+
+          <div
+            dangerouslySetInnerHTML={{
+              __html: pageContext.content,
+            }}
+          />
+        </div>
+        <h3>My travels</h3>
+        <WorldMap />
         <div className="social-media">
-          <h1 dangerouslySetInnerHTML={{ __html: pageContext.title }} />
-          <div dangerouslySetInnerHTML={{ __html: pageContext.content }} />
           <ul className="social-icons">
             <li>
               <a
@@ -35,14 +55,9 @@ const contact = ({ pageContext }) => (
             </li>
           </ul>
         </div>
-      </div>
-    </ContactWrapper>
-  </Layout>
-)
-// < div className = "profile-image" >
-//   <Img
-//     fluid={pageContext.featured_media.localFile.childImageSharp.fluid}
-//   />
-//       </div >
+      </ContactWrapper>
+    </Layout>
+  )
+}
 
 export default contact

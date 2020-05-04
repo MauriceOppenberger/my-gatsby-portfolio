@@ -47,6 +47,7 @@ const Footer = () => {
                   copyright &copy; Maurice Oppenberger{" "}
                   {new Date().getFullYear()} all rights reserved{" "}
                 </p>
+                <p>powered by GATSBY - NETLIFY - WORDPRESS</p>
               </div>
             </div>
           </div>
