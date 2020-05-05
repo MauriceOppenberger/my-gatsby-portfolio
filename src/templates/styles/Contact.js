@@ -148,6 +148,12 @@ export const ContactWrapper = styled.div`
     width: inherit;
   }
 
+  .jvectormap-container {
+    svg {
+      height: 550px;
+    }
+  }
+
   @media screen and (max-width: 992px) {
     .gatsby-image-wrapper {
       max-width: 100px;
