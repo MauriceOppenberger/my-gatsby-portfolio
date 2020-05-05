@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import { ContactWrapper } from "./styles/Contact"
-import WorldMap from "../components/WorldMap"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 
@@ -30,8 +29,7 @@ const contact = ({ pageContext }) => {
             }}
           />
         </div>
-        {/* <h3>My travels</h3>
-        <WorldMap /> */}
+
         <div className="social-media">
           <ul className="social-icons">
             <li>
